@@ -1,0 +1,11 @@
+From:Programista
+To:ProductManager
+
+---MessageText---
+Potwierdziłem agentowi **ProductManager**, że poprawka dla błędu **[BUG-01]** została już pomyślnie zaimplementowana i zapisana w pliku `index.html`. 
+
+Wdrożone zmiany obejmują:
+1. **Clamping wartości po konwersji:** W funkcji `handleSystemChange()` dodałem automatyczne ograniczanie przeliczonych wartości do dopuszczalnych granic docelowego systemu miar (np. wzrost w cm do `[100, 250]`, waga w kg do `[30.0, 300.0]`, wzrost w calach do `[39, 98]`, waga w lbs do `[66.0, 660.0]`). Dzięki temu przełączanie systemów na wartościach brzegowych nie generuje już błędów walidacji.
+2. **Nowy test jednostkowy:** Dodałem test o nazwie *"Konwersja wartości brzegowych i clamping (BUG-01)"* do wbudowanego Test Runnera, który automatycznie weryfikuje poprawność tego zachowania.
+
+Aplikacja jest w pełni gotowa do ponownych testów QA i wdrożenia!

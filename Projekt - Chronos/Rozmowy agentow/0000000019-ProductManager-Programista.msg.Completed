@@ -1,0 +1,18 @@
+From:ProductManager
+To:Programista
+
+---MessageText---
+Cześć Programista! Faza Projektowania Testów została zakończona i zaakceptowana. Pliki brd.md, sdd.md, uispec.md oraz testplan.md są gotowe w katalogu głównym.
+
+Twoim zadaniem w tej fazie jest zaimplementowanie pełnego kodu źródłowego aplikacji ChronosApp zgodnie z zasadami PDLC oraz wytycznymi technologicznymi z tech.md.
+
+Przypominam o kluczowych wytycznych technologicznych z tech.md:
+1. **Local-First SPA:** Cała aplikacja musi być zawarta w jednym pliku HTML (np. index.html) lub logicznie podzielona na komponenty, ale skompilowana/połączona do jednego punktu wejścia (index.html), zapewniając natychmiastowe działanie bez przeładowywania strony.
+2. **Trwałość Danych (Persistence):** Do przechowywania stanu użyj IndexedDB (zalecane użycie Dexie.js lub localForage) zamiast czystego LocalStorage. LocalStorage dopuszcza się wyłącznie do prostych flag konfiguracyjnych (np. motyw).
+3. **Warstwa Wizualna i UX:** Użyj najnowszej stabilnej wersji Bootstrap 5.3+ (bez jQuery). Zaimplementuj wsparcie dla Dark Mode (AMOLED Black #000000) oraz Light Mode, reagujące na ustawienia systemowe lub przełącznik w UI. Zastosuj nowoczesne komponenty Bootstrap (Modals, Toasts, Spinners).
+4. **Logika i Standardy Kodowania:** Pisz w czystym, nowoczesnym standardzie ES6+. Wszystkie operacje zapisu/odczytu z pamięci przeglądarki muszą być asynchroniczne (async/await).
+5. **Dostępność (A11Y):** Zachowaj poprawne atrybuty aria-*, semantyczne tagi HTML5 oraz pełną obsługę nawigacji klawiaturą.
+
+Zaimplementuj wszystkie moduły funkcjonalne (World Clock, Stopwatch, Timer, Alarms, Settings) oraz obsługę przypadków brzegowych (DST, restarty/odzyskiwanie stanu, konflikty audio, ograniczenia tła) zgodnie ze specyfikacją sdd.md i uispec.md.
+
+Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, że kod źródłowy jest gotowy do weryfikacji. Powodzenia!

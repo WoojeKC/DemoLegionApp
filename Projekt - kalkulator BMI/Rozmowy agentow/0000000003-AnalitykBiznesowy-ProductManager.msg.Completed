@@ -1,0 +1,29 @@
+From:AnalitykBiznesowy
+To:ProductManager
+
+---MessageText---
+Cześć ProductManager!
+
+Zakończyłem prace nad analizą biznesową i przygotowaniem dokumentu BRD (Business Requirements Document) dla projektu nowoczesnej aplikacji BMI SPA. Dokument został zapisany w pliku `brd.md`.
+
+### Podsumowanie wykonanych prac:
+1. **Głęboka analiza potrzeb i celów:** Przeanalizować cele biznesowe (KPI, konwersja, wiralność) oraz zdefiniowałem persony użytkowników (Kowalski, Świadomy sportowiec, Użytkownik Mobile-Only), aby dopasować do nich wymagania.
+2. **Dekompozycja na Epiki i User Stories:** Rozbiłem wymagania funkcjonalne z `task.md` na 4 logiczne Epiki oraz 14 szczegółowych User Stories z precyzyjnymi Kryteriami Akceptacji (Acceptance Criteria):
+   - **Epic 1: Konfiguracja i Wprowadzanie Danych** (wybór systemów miar, wzrost, waga, opcjonalne metadane z ostrzeżeniem dla wieku dziecięcego, dynamiczna walidacja, automatyczna konwersja jednostek).
+   - **Epic 2: Silnik Obliczeniowy i Logika Biznesowa** (obliczanie BMI, klasyfikacja WHO z kolorystyką UI, kalkulacja delty wagowej do wagi idealnej BMI = 21.7).
+   - **Epic 3: Prezentacja Wyników i Interakcja** (dashboard liczbowo-tekstowy, graficzny suwak/gage z płynną animacją 60fps, resetowanie danych, disclaimer medyczny).
+   - **Epic 4: Wiralność i Udostępnianie** (Web Share API, ikony social media, odtwarzanie stanu z parametrów URL).
+3. **Wymagania Niefunkcjonalne (NFR):** Szczegółowo opisałem wymagania dotyczące wydajności (LCP < 1.5s, FID < 50ms, bundle size < 150 KB), użyteczności (Mobile-First, WCAG 2.1 AA, kontrast 4.5:1) oraz bezpieczeństwa (Privacy by Design, SSL/TLS).
+4. **Reguły Biznesowe i Algorytmy:** Opisałem dokładne wzory matematyczne dla obu systemów miar oraz algorytm wyliczania delty wagowej.
+5. **Ryzyka i Mitygacja:** Zidentyfikowałem kluczowe ryzyka (R-01: ograniczenia metodologii BMI, R-02: skrajne dane, R-03: wydajność mobilna) i przypisałem im strategie mitygacji.
+6. **Wyłączenia z zakresu (Out of Scope):** Jasno zdefiniowałem, co nie wchodzi w skład wersji 1.0 (konta użytkowników, historia w chmurze, siatki centylowe dla dzieci itp.), aby uniknąć rozrastania się zakresu (scope creep).
+
+### Napotkane wyzwania i otwarte pytania do biznesu:
+W sekcji 9 dokumentu BRD umieściłem dwa kluczowe pytania, które warto doprecyzować przed startem prac deweloperskich:
+1. **Wykorzystanie `localStorage`:** Rekomenduję zapisywanie ostatnich parametrów użytkownika lokalnie, co poprawi retencję bez konieczności tworzenia bazy danych.
+2. **Prywatność przy udostępnianiu:** Rekomenduję, aby domyślny tekst udostępniania w social media zawierał jedynie wynik BMI i klasyfikację (bez dokładnej wagi i wzrostu), natomiast parametry w URL (niezbędne do odtworzenia wyniku) były zakodowane (np. Base64), aby chronić prywatność użytkowników i zachęcić ich do dzielenia się wynikami.
+
+Dokument `brd.md` jest w pełni gotowy do odbioru i przekazania do dalszych etapów (projektowanie UI/UX oraz deweloperka). Czekam na Twój feedback!
+
+Pozdrawiam,
+Starszy Analityk Biznesowy

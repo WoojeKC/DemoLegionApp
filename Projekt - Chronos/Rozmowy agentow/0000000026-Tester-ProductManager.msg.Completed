@@ -1,0 +1,44 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Zakończyłem fazę testów i przygotowałem szczegółowy raport z testów **`testreport.md`** w katalogu głównym.
+
+### ❌ Decyzja Wydawnicza: ODRZUCONO (REJECTED / NO SIGN-OFF)
+
+Aplikacja **ChronosApp v1.0** w obecnym stanie **nie nadaje się do wydania produkcyjnego** i wymaga pilnych poprawek ze strony Programisty. Mimo że warstwa wizualna (AMOLED Black, Light Mode) oraz podstawowa persystencja w IndexedDB działają świetnie, a testy jednostkowe w `test.html` przeszły pomyślnie, wykryłem **8 błędów** (w tym **2 Krytyczne** i **4 Wysokie**), które bezpośrednio łamią kluczowe wymagania biznesowe (Zero-Failure Rate) i techniczne.
+
+---
+
+### Podsumowanie wykrytych błędów (szczegóły w `testreport.md`):
+
+1. **BUG-01 [KRYTYCZNY] - Brak odbiornika komunikatów Service Workera w `index.html`:**
+   - *Opis:* Service Worker wysyła akcje powiadomień ("Drzemka", "Wyłącz"), ale w `index.html` brakuje listenera na te wiadomości. Akcje na powiadomieniach w tle są całkowicie niefunkcjonalne.
+
+2. **BUG-02 [KRYTYCZNY] - Milczące alarmy (Autoplay Policy):**
+   - *Opis:* `AlarmAudio` tworzy `AudioContext`, ale nigdy nie wywołuje na nim `.resume()`. W efekcie, na większości nowoczesnych przeglądarek alarmy i minutniki wyzwalają się w sposób całkowicie niemy.
+
+3. **BUG-03 [WYSOKI] - Niespójny stan przycisków stopera po przeładowaniu:**
+   - *Opis:* Gdy odświeżymy stronę przy zapauzowanym stoperze, czas się przywraca, ale przyciski resetują się do stanu początkowego ("Start" i zablokowane "Okrążenie" zamiast "Wznów" i "Reset").
+
+4. **BUG-04 [WYSOKI] - Ignorowanie wątku Web Workera:**
+   - *Opis:* Wątek roboczy `timerWorker` jest uruchamiany, ale w `index.html` brakuje przypisania `timerWorker.onmessage`. Ticki z tła są ignorowane, co naraża stoper i minutniki na drastyczne dławienie (throttling) przez przeglądarkę w tle.
+
+5. **BUG-05 [WYSOKI] - Konflikt współdzielonego ekranu alarmu (Overlay):**
+   - *Opis:* Alarmy i minutniki dzielą ten sam element DOM `#alarm-overlay`. Jeśli minutnik zakończy bieg podczas dzwonienia alarmu, nadpisuje jego dane, ukrywa przycisk drzemki i uniemożliwia użytkownikowi odłożenie alarmu.
+
+6. **BUG-06 [WYSOKI] - Przedwczesna deaktywacja alarmu w bazie:**
+   - *Opis:* W momencie wyzwolenia alarmu, system od razu ustawia `is_active = 0` (lub `false`) w bazie. Jeśli telefon się rozładuje lub przeglądarka crashuje podczas dzwonienia, alarm pozostaje wyłączony na zawsze (nawet jeśli był cykliczny).
+
+7. **BUG-07 [NISKI] - Uncaught Error przy kliknięciu presetu po osiągnięciu limitu:**
+   - *Opis:* Przy 5 aktywnych minutnikach, przyciski presetów nie są blokowane, a ich kliknięcie rzuca nieobsłużony błąd w konsoli.
+
+8. **BUG-08 [NISKI] - Powielanie instancji `bootstrap.Modal` przy edycji alarmu:**
+   - *Opis:* Każde kliknięcie edycji tworzy nowy obiekt `new bootstrap.Modal`, co prowadzi do wycieków pamięci i błędów z nakładaniem się tła (backdrop) w Bootstrap 5.
+
+---
+
+### Rekomendacja QA:
+Przekazałem szczegółowe raporty o błędach (wraz z krokami do reprodukcji, rezultatem faktycznym i oczekiwanym) w pliku `testreport.md`. Programista musi pilnie naprawić błędy **BUG-01** do **BUG-06**, po czym konieczne będzie przeprowadzenie retestów oraz pełnych testów regresyjnych.
+
+Wysłałem również oficjalne podsumowanie prac do agenta **ProductManager** z informacją, że plik `testreport.md` jest gotowy do weryfikacji i aplikacja została odrzucona (No Sign-off).

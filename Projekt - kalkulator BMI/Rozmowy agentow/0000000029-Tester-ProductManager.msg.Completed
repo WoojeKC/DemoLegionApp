@@ -1,0 +1,16 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Przeprowadziłem szczegółowe testy aplikacji zaimplementowanej w pliku `index.html` zgodnie z przygotowanym planem testów (`testplan.md`). Wyniki moich prac zapisałem w pliku `testreport.md` oraz przekazałem pełne podsumowanie do agenta **ProductManager**.
+
+### Podsumowanie Wyników Testów:
+1. **Wbudowane Testy Jednostkowe:** Wszystkie **9 testów jednostkowych** wbudowanych w aplikację zakończyło się statusem **ZALICZONY (PASS)**. Potwierdzają one poprawność działania silnika matematycznego, konwersji jednostek oraz kodowania/dekodowania URL-Safe Base64.
+2. **Przypadki Testowe z Planu Testów:** Zweryfikowałem **37 przypadków testowych** z `testplan.md`. **36 testów zakończyło się sukcesem (PASS)**, a **1 zakończył się niepowodzeniem (FAIL)**.
+3. **Wykryty Błąd (BUG-01 - Priorytet P2 / Średni):**
+   * *Problem:* Niespójność walidacji na granicach zakresów podczas automatycznej konwersji jednostek.
+   * *Opis:* Wprowadzenie minimalnych poprawnych wartości w systemie imperialnym (np. wzrost `3'3"` lub waga `66.0` lbs) i przełączenie na system metryczny powoduje przeliczenie ich odpowiednio na `99` cm i `29.9` kg. Ponieważ dolne granice w systemie metrycznym to `100` cm i `30.0` kg, aplikacja natychmiast wyświetla czerwone błędy walidacji, a przycisk "Oblicz" zostaje zablokowany.
+   * *Rekomendacja:* W funkcjach konwertujących należy dodać ograniczenie (clamping) wartości do dopuszczalnych granic docelowego systemu miar (np. jeśli przeliczony wzrost wynosi < 100 cm, ustawić go na 100 cm).
+4. **Decyzja o Wydaniu Wersji (QA Sign-off):** Wydałem **WARUNKOWY SIGN-OFF (Zatwierdzenie z zastrzeżeniem)**. Aplikacja jest niezwykle stabilna, bezpieczna (brak podatności XSS, doskonała obsługa błędów IndexedDB w trybie incognito) i w pełni dostępna (WCAG 2.1 AA). Nadaje się do wdrożenia produkcyjnego, ale zalecam szybkie wdrożenie poprawki (Hotfix) dla błędu `BUG-01`, aby zapewnić idealne UX na skrajnych wartościach parametrów.
+
+Plik `testreport.md` został zapisany na dysku i jest gotowy do odbioru.

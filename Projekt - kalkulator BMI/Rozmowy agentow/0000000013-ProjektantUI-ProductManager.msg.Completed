@@ -1,0 +1,42 @@
+From:ProjektantUI
+To:ProductManager
+
+---MessageText---
+Zaprojektowałem spójny, nowoczesny i w pełni responsywny interfejs użytkownika dla aplikacji BMI SPA, a szczegółową specyfikację zapisałem w pliku `uispec.md`. 
+
+Przesłałem również szczegółowe podsumowanie prac do agenta **ProductManager** za pomocą narzędzia komunikacji wewnętrznej.
+
+### Podsumowanie kluczowych elementów specyfikacji `uispec.md`:
+1. **System Tokenów Projektowych (Design Tokens):**
+   - **Paleta kolorów:** Opracowana dla trybu jasnego (Light) i ciemnego (Dark) z zachowaniem rygorystycznych kontrastów WCAG 2.1 AA.
+   - **Kolorystyka WHO:** Spójna z SDD i BRD, przypisana do 8 klasyfikacji medycznych (od wyczerpania po otyłość III stopnia).
+   - **Typografia:** Wykorzystanie systemowego stosu fontów (sans-serif) w celu optymalizacji wydajności (LCP) oraz precyzyjna skala wielkości i grubości pism.
+
+2. **Logiczne Przepływy Użytkownika (User Flows):**
+   - **Scenariusz 1:** Pierwsze wejście i obliczenie (system metryczny).
+   - **Scenariusz 2:** Przełączanie jednostek (system imperialny) z automatyczną konwersją wpisanych danych "w locie".
+   - **Scenariusz 3:** Wejście z linku udostępnionego (dekodowanie parametrów Base64 z URL, automatyczne wypełnienie i prezentacja wyników).
+   - **Scenariusz 4:** Resetowanie danych i powrót do stanu początkowego z przeniesieniem focusu klawiatury.
+
+3. **Struktura i Układ Ekranu (Layout & Grid):**
+   - **Mobile-First:** Jednokolumnowy układ pionowy, w którym sekcja wyników pojawia się dynamicznie pod formularzem po kliknięciu przycisku.
+   - **Desktop:** Dwukolumnowy układ (formularz po lewej, wyniki po prawej) z estetycznym placeholderem stanu pustego przed obliczeniem.
+
+4. **Szczegółowe Makiety Tekstowe (ASCII Art):**
+   - Formularz wejściowy w wersji metrycznej i imperialnej.
+   - Dashboard wynikowy z dużym wskaźnikiem BMI, klasyfikacją WHO, dynamicznym alertem rekomendacji, deltą wagową (różnica do BMI = 21.7) oraz disclaimerem.
+   - Modal udostępniania (Web Share fallback) z ikonami social media i polem kopiowania linku.
+   - Powiadomienia Toast oraz stany ładowania (Spinners).
+
+5. **Zachowanie Komponentów i Mikrointerakcje:**
+   - Opis stanów (Default, Hover, Focus, Active, Disabled, Error) dla wszystkich elementów interaktywnych.
+   - Płynna animacja markera na suwaku SVG (`transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)`) działająca w 60fps przy użyciu akceleracji sprzętowej (GPU).
+   - Płynne pojawianie się wyników (`fadeInUp`) oraz animacje alertów i powiadomień Toast.
+
+6. **Dostępność (WCAG 2.1 AA):**
+   - Weryfikacja kontrastów (wszystkie teksty spełniają wymóg min. 4.5:1).
+   - Pełna nawigacja klawiaturą (logiczny Tab Order, zarządzanie focusem, obsługa klawiszy Space/Enter/Strzałki).
+   - Poprawne użycie semantycznego HTML oraz atrybutów ARIA (`aria-live="polite"`, `aria-invalid`, `aria-describedby`).
+   - Zachowanie odpowiedniej wielkości elementów dotykowych (touch targets min. 48x48px).
+
+Specyfikacja jest w pełni gotowa do wdrożenia przez zespół deweloperski (UI Developer-friendly) i idealnie współgra z wymaganiami biznesowymi (BRD) oraz technicznymi (SDD).

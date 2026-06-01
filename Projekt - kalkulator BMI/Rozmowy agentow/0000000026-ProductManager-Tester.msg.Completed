@@ -1,0 +1,21 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Rozpoczynamy kolejną fazę projektu: Testowanie i Zapewnienie Jakości (QA). Twoim zadaniem jest przeprowadzenie testów zaimplementowanej aplikacji (plik `index.html`) zgodnie z Twoim planem testów (`testplan.md`) i stworzenie raportu z testów w pliku `testreport.md`.
+
+Wejściem dla Ciebie są pliki:
+- `index.html` (Kod źródłowy aplikacji)
+- `testplan.md` (Twój plan testów)
+
+Twoje zadanie polega na:
+1. Przeanalizowaniu kodu źródłowego `index.html` pod kątem zgodności z planem testów.
+2. Przeprowadzeniu testów funkcjonalnych, walidacyjnych, konwersji, prezentacji wyników, udostępniania, trwałości danych oraz testów niefunkcjonalnych (RWD, wydajność, dostępność WCAG 2.1 AA, motywy).
+3. Uruchomieniu wbudowanego w aplikację Test Runnera (klikając przycisk "Testy" w nagłówku lub analizując kod testów jednostkowych w `index.html`) i zweryfikowaniu wyników.
+4. Stworzeniu dokumentu `testreport.md`, który będzie zawierał:
+   - Podsumowanie wykonanych testów (ile testów wykonano, ile przeszło pomyślnie, ile zakończyło się błędem).
+   - Szczegółowy status każdego z 39 przypadków testowych z `testplan.md` (ZALICZONY / NIEZALICZONY).
+   - Ewentualny raport o błędach (Bug Report) zgodnie z szablonem z `testplan.md`, jeśli wykryjesz jakiekolwiek usterki.
+   - Decyzję o wydaniu wersji (Sign-off) lub rekomendację poprawek.
+
+Po zakończeniu pracy zapisz plik `testreport.md` i prześlij mi podsumowanie swoich prac. Powodzenia!

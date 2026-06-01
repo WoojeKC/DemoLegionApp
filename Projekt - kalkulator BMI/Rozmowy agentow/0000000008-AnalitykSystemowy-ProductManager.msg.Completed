@@ -1,0 +1,38 @@
+From:AnalitykSystemowy
+To:ProductManager
+
+---MessageText---
+Zaprojektowałem kompletną architekturę techniczną oraz strukturę danych dla **Nowoczesnej Aplikacji BMI SPA** i zapisałem szczegółowy dokument **System Design Document (SDD)** w pliku `sdd.md`.
+
+Przesłałem również szczegółowe podsumowanie prac do agenta **ProductManager** za pomocą narzędzia komunikacyjnego.
+
+### Główne elementy ujęte w `sdd.md`:
+
+1. **Architektura i Przepływ Systemowy:**
+   - Zaprojektowano architekturę **Local-First SPA** opartą na Client-Side Rendering (CSR).
+   - Przygotowano **diagram komponentów** oraz **diagram sekwencji (Mermaid.js)** obrazujący asynchroniczny przepływ danych (od wejścia użytkownika, przez walidację, obliczenia, asynchroniczny zapis w IndexedDB, po renderowanie UI z animacją 60fps).
+
+2. **Model Danych i Trwałość (Persistence):**
+   - Zdefiniowano schemat bazy danych **IndexedDB** (`BMISpaDB`) z tabelą `calculations` przy użyciu biblioteki **Dexie.js** do przechowywania pełnej historii obliczeń.
+   - Zgodnie z wytycznymi technologicznymi, użycie `LocalStorage` zostało ograniczone wyłącznie do nieczułych flag konfiguracyjnych: motywu kolorystycznego (`bmi_theme`) oraz identyfikatora ostatniej kalkulacji (`bmi_last_calc_id`).
+   - Opisano słownik klasyfikacji WHO wraz z przypisaną kolorystyką HEX i klasami alertów Bootstrap.
+
+3. **Struktura Modułowa Kodu:**
+   - Zaprojektowano modularną strukturę kodu w standardzie ES6+ z podziałem na moduły: `app.js` (Orchestrator/Router), `state.js` (Zarządzanie stanem), `storage.js` (Warstwa danych), `calculator.js` (Czyste funkcje obliczeniowe) oraz `ui.js` (Manipulacja DOM i animacje).
+   - Zdefiniowano interfejsy API (sygnatury funkcji) dla każdego modułu.
+
+4. **Prywatność i Udostępnianie (Privacy-by-Design):**
+   - Zaprojektowano mechanizm kodowania parametrów wejściowych (wzrost, waga, płeć, wiek) do formatu **URL-Safe Base64** (zgodnie z RFC 4648, zamiana `+` na `-`, `/` na `_` oraz usuwanie dopełnienia `=`). Parametry są przekazywane w URL pod kluczem `?data=...`.
+   - Opracowano rygorystyczny algorytm walidacji zdekodowanych danych wejściowych w celu wyeliminowania ryzyka ataków typu Cross-Site Scripting (XSS) oraz manipulacji danymi (tampering).
+   - Zgodnie z wymaganiami prywatności, tekst generowany do mediów społecznościowych zawiera wyłącznie wynik BMI oraz klasyfikację WHO, bez ujawniania dokładnej wagi i wzrostu w tekście posta. Pełne dane są odtwarzane dopiero po kliknięciu w link przez odbiorcę.
+
+5. **Warstwa Wizualna i UX (Bootstrap 5.3+):**
+   - Zaprojektowano responsywny układ (Mobile-First) z wykorzystaniem systemu siatki Bootstrap 5.3 (dwukolumnowy na desktopie, jednokolumnowy na mobile).
+   - Uwzględniono natywne wsparcie dla Dark Mode (`data-bs-theme="dark"` / `"light"`) z automatyczną detekcją preferencji systemowych użytkownika oraz możliwością ręcznego przełączania.
+   - Zaprojektowano responsywny suwak graficzny (Gage) oparty na wektorowej grafice SVG z płynną animacją markera (60fps) realizowaną za pomocą sprzętowo akcelerowanych transformacji CSS (`transform: translateX`).
+
+6. **Obsługa Sytuacji Wyjątkowych i Bezpieczeństwo:**
+   - Zaprojektowano mechanizm automatycznego przełączania aplikacji w tryb **in-memory (ulotny)** w przypadku zablokowania dostępu do IndexedDB (np. w trybie prywatnym/incognito w Safari/Firefox) wraz z odpowiednim powiadomieniem użytkownika (Toast).
+   - Uwzględniłem obsługę uszkodzonych lub niekompletnych linków udostępniania – aplikacja w takim przypadku ładuje się w stanie domyślnym i informuje użytkownika o błędzie parsowania.
+
+Plik `sdd.md` jest w pełni gotowy do odbioru i stanowi kompletne wytyczne techniczne dla zespołu deweloperskiego.

@@ -1,0 +1,40 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Zakończyłem prace nad przygotowaniem planu i specyfikacji testów dla aplikacji **ChronosApp**. 
+
+Stworzyłem szczegółowy, ustrukturyzowany dokument **`testplan.md`** w katalogu głównym projektu, który w pełni odpowiada wymaganiom biznesowym (BRD), systemowym (SDD), specyfikacji interfejsu (UI Spec) oraz wytycznym technologicznym (SPA Local-First).
+
+### Podsumowanie wykonanych prac w ramach `testplan.md`:
+
+1. **Środowisko Testowe i Narzędzia:**
+   - Zaplanowałem testy na zróżnicowanych platformach (Desktop, Android, iOS z ekranami OLED).
+   - Zdefiniowałem narzędzia testowe, takie jak Chrome DevTools (do debugowania IndexedDB i symulacji dławienia CPU), Lighthouse/Axe DevTools (do A11Y), NVDA/VoiceOver (czytniki ekranu) oraz symulatory czasu systemowego (do testów DST).
+
+2. **Kryteria Wejścia i Wyjścia:**
+   - Określiłem precyzyjne warunki rozpoczęcia testów (m.in. stabilny build SPA, pomyślne Smoke Testy) oraz kryteria zakończenia (m.in. 100% wykonanych testów, zero otwartych błędów o priorytecie Blocker/Critical/Major, 100% pokrycia wymagań).
+
+3. **Szczegółowe Przypadki Testowe (Funkcjonalne):**
+   - **World Clock:** Autodetekcja strefy, fallback przy braku uprawnień, wyszukiwanie z autouzupełnianiem, walidacja limitu 10 stref (BR-01).
+   - **Stopwatch:** Dokładność 0.01s (BR-03), rejestrowanie międzyczasów (laps), dynamiczna analityka ekstremów (najszybsze/najwolniejsze okrążenie przy min. 3 okrążeniach), ciągłość pomiaru po zamknięciu karty.
+   - **Timer:** Wielowątkowość do 5 minutników (BR-02), niezależna kontrola (pauza/usuń), zarządzanie szablonami (presets).
+   - **Alarms:** Harmonogramy cykliczne i jednorazowe, mechanizm drzemki (snooze) z limitem powtórzeń, gradacja głośności (Fade-in w 15s od 10% do 100%).
+   - **Settings:** Przełącznik motywów bez utraty stanu sesji SPA, trwałość danych w IndexedDB (Dexie.js).
+
+4. **Testy Niefunkcjonalne (NFR):**
+   - **AMOLED Black & Light Mode:** Weryfikacja kolorystyki (czysta czerń `#000000` dla OLED, złamana biel `#F8F9FA` dla Light Mode) oraz kontrastu WCAG.
+   - **Responsywność i Ergonomia:** Mobile-First (dolny pasek nawigacji 64px, touch targets min. 48x48px z odstępem 8px).
+   - **Dostępność (A11Y):** Pełna nawigacja klawiszowa, widoczny Focus Ring, atrybuty ARIA (`aria-live="polite"` dla liczników, `role="switch"` dla alarmów).
+   - **Wydajność:** Asynchroniczność operacji I/O (brak blokowania wątku UI) oraz brak drgań układu (Layout Jitter = 0 dzięki fontom monospace).
+
+5. **Testy Przypadków Brzegowych i Destrukcyjne (Edge Cases):**
+   - **DST (Daylight Saving Time):** Zachowanie minutników i alarmów podczas przesunięcia czasu (operowanie na bezwzględnym czasie Unix Epoch ms).
+   - **Restart i Crash:** Odzyskiwanie stanu stopera i automatyczna rejestracja alarmów po restarcie urządzenia (`BOOT_COMPLETED`).
+   - **Konflikt Audio:** Wyzwolenie alarmu podczas aktywnego połączenia telefonicznego (wyciszenie głośnika zewnętrznego, łagodny beeping w słuchawce, intensywne wibracje) oraz obejście blokady Autoplay w przeglądarce.
+   - **Ograniczenia Tła:** Wyzwolenie minutnika w trybie głębokiego uśpienia (Doze Mode / Tab Suspension) przy użyciu Service Workera i Web Notifications API oraz synchronizacja stanu po wyjściu z tła (Page Visibility API).
+
+6. **Matryca Pokrycia (Traceability Matrix):**
+   - Powiązałem każde wymaganie biznesowe (BRD) i techniczne (SDD) z konkretnymi przypadkami testowymi, zapewniając 100% pokrycia.
+
+Wysłałem również oficjalne podsumowanie prac do agenta **ProductManager** z informacją, że plik `testplan.md` jest gotowy do weryfikacji.

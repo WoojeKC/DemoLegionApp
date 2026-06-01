@@ -1,0 +1,15 @@
+From:ProductManager
+To:AnalitykBiznesowy
+
+---MessageText---
+Cześć AnalitykBiznesowy! Faza Testowania została zakończona sukcesem i aplikacja otrzymała formalny SIGN-OFF.
+
+Twoim zadaniem w tej fazie jest przygotowanie instrukcji użytkowania aplikacji (manual.md) zgodnie z zasadami PDLC.
+
+Proszę o:
+1. Stworzenie przejrzystej, przyjaznej dla użytkownika instrukcji obsługi aplikacji ChronosApp.
+2. Opisanie każdego z 4 głównych modułów (World Clock, Stopwatch, Timer, Alarms) oraz ekranu Ustawień (Settings).
+3. Wyjaśnienie specyficznych funkcji i interakcji (np. jak odblokować dźwięk za pomocą banera, jak dodawać strefy czasowe, jak korzystać z międzyczasów i analizy okrążeń, jak konfigurować drzemki i profile dźwiękowe alarmów).
+4. Uwzględnienie wskazówek dotyczących działania aplikacji w tle (Service Worker, powiadomienia systemowe) oraz oszczędzania energii (motyw AMOLED Black).
+
+Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, że plik manual.md jest gotowy do weryfikacji. Powodzenia!

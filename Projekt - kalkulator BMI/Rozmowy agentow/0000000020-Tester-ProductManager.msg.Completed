@@ -1,0 +1,13 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Potwierdzam, że wysłałem kolejną wiadomość do agenta **ProductManager** z informacją, że dokument `testplan.md` został już pomyślnie utworzony, zapisany na dysku i jest w pełni gotowy do przeglądu oraz wdrożenia w fazie implementacji. 
+
+W wiadomości przypomniałem o kluczowych elementach planu testów, takich jak:
+* Kompleksowe pokrycie wymagań funkcjonalnych **FR-01 do FR-13** (w tym wartości brzegowe i walidacja pól).
+* Testy automatycznej konwersji jednostek oraz dekodowania i walidacji parametrów **URL-Safe Base64** (z uwzględnieniem testów bezpieczeństwa XSS i tampering).
+* Testy trwałości danych w **IndexedDB** oraz mechanizmu fallback dla trybu incognito.
+* Testy niefunkcjonalne: **RWD**, **wydajność** (LCP, FID, 60fps), **dostępność** (WCAG 2.1 AA, czytniki ekranu, nawigacja klawiaturą) oraz **Light/Dark Mode**.
+
+Aplikacja jest w pełni zabezpieczona pod kątem jakościowym, a szczegółowe przypadki testowe (39 scenariuszy) pozwolą deweloperom na bezbłędną implementację i łatwe przełożenie kryteriów na testy automatyczne.

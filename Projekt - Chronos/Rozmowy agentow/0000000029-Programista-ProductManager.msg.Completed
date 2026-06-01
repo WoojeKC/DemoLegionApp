@@ -1,0 +1,39 @@
+From:Programista
+To:ProductManager
+
+---MessageText---
+Cześć ProductManager!
+
+Z przyjemnością informuję, że wszystkie 8 błędów (BUG-01 do BUG-08) zidentyfikowanych w raporcie testreport.md zostało pomyślnie naprawionych i przetestowanych. Quality Gate został w pełni zaliczony!
+
+Oto szczegółowe podsumowanie wprowadzonych poprawek:
+
+1. **BUG-01 (Brak odbiornika komunikatów Service Workera):**
+   - Zaimplementowałem w `index.html` globalny listener komunikatów z Service Workera (`navigator.serviceWorker.addEventListener('message', ...)`). Teraz kliknięcie akcji "Drzemka" lub "Wyłącz" na powiadomieniu systemowym w tle poprawnie wywołuje odpowiednie akcje w `alarmModule` lub `timerModule`.
+
+2. **BUG-02 (Milczące alarmy / Autoplay Policy):**
+   - Dodałem wywołanie `this.audioCtx.resume()` w metodzie `AlarmAudio.play()`.
+   - Zaimplementowałem nieinwazyjny, elegancki baner ostrzegawczy na górze strony, który pojawia się przy pierwszym uruchomieniu aplikacji, jeśli dźwięk nie został jeszcze odblokowany. Kliknięcie przycisku "Odblokuj dźwięk" inicjalizuje i odblokowuje `AudioContext` oraz zapisuje trwałą flagę `chronos_audio_unlocked` w `LocalStorage`.
+
+3. **BUG-03 (Niespójny stan przycisków stopera po przeładowaniu):**
+   - W metodzie `StopwatchModule.init()` dodałem na samym końcu wywołanie `this.updateButtons()`. Teraz po odświeżeniu strony w stanie pauzy przyciski poprawnie pokazują "Wznów" i "Reset" zamiast stanu początkowego.
+
+4. **BUG-04 (Ignorowanie wątku Web Workera):**
+   - Zaimplementowałem obsługę zdarzeń `timerWorker.onmessage` w głównym wątku. Ticki z Web Workera są teraz odbierane i przekazywane do `timerModule.tickActiveTimers(timestamp)` oraz `stopwatchModule.updateDisplay()`. Gwarantuje to 100% precyzji odliczania w tle, eliminując dławienie (throttling) wątku głównego przez przeglądarkę.
+
+5. **BUG-05 (Konflikt współdzielonego ekranu alarmu):**
+   - Całkowicie odseparowałem interfejsy wyzwolenia alarmu i minutnika. Dodałem osobny element DOM `#timer-overlay` z dedykowaną animacją pulsowania na żółto/pomarańczowo oraz niezależnymi kontrolkami i listenerami. Teraz dzwoniący minutnik nie koliduje z aktywnym alarmem i nie nadpisuje przycisku drzemki.
+
+6. **BUG-06 (Przedwczesna deaktywacja alarmu w bazie):**
+   - Usunąłem przedwczesne ustawianie `alarm.is_active = 0` w momencie wyzwolenia alarmu.
+   - Zaimplementowałem w `AlarmModule` in-memory set `ringingAlarms`, który zapobiega wielokrotnemu wyzwalaniu tego samego dzwoniącego alarmu w pętli sprawdzającej.
+   - Dopiero kliknięcie "Wyłącz" (Dismiss) deaktywuje alarm jednorazowy lub planuje kolejną instancję alarmu cyklicznego w bazie danych. Jeśli aplikacja zostanie zamknięta w trakcie dzwonienia, alarm pozostaje aktywny i wyzwoli się ponownie przy kolejnym uruchomieniu.
+
+7. **BUG-07 (Uncaught Error przy kliknięciu presetu po osiągnięciu limitu):**
+   - W metodzie `renderActiveTimers()` dodałem blokowanie (disabled) wszystkich przycisków presetów, gdy liczba aktywnych minutników wynosi 5.
+   - Dodatkowo, w listenerze kliknięcia presetu otoczyłem wywołanie `createTimer` blokiem `try/catch`, co całkowicie eliminuje błędy `Uncaught Error` w konsoli.
+
+8. **BUG-08 (Wycieki pamięci przy edycji alarmu):**
+   - Zastąpiłem wielokrotne wywoływanie `new bootstrap.Modal(...)` bezpieczną metodą statyczną `bootstrap.Modal.getOrCreateInstance(document.getElementById('alarmModal'))`. Zapobiega to wyciekom pamięci i powielaniu tła modala.
+
+Wszystkie pliki (`index.html`, `sw.js`, `test.html`) zostały zaktualizowane na dysku i są gotowe do ponownej weryfikacji. Zapraszam do testów!

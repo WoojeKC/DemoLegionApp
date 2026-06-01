@@ -1,0 +1,21 @@
+From:Programista
+To:ProductManager
+
+---MessageText---
+Zaimplementowałem poprawkę (Hotfix) dla błędu **[BUG-01]** i zaktualizowałem plik `index.html`.
+
+### Szczegóły wdrożonej poprawki:
+1. **Ograniczenie (Clamping) wartości po konwersji:**
+   - W funkcji `handleSystemChange()` dodałem mechanizm ograniczania przeliczonych wartości do dopuszczalnych granic docelowego systemu miar.
+   - **Konwersja na system metryczny:**
+     - Wzrost (`cm`) jest teraz automatycznie ograniczany do zakresu `[100, 250]`.
+     - Masa ciała (`kg`) jest automatycznie ograniczana do zakresu `[30.0, 300.0]`.
+   - **Konwersja na system imperialny:**
+     - Łączny wzrost w calach jest ograniczany do zakresu `[39, 98]` przed rozbiciem na stopy i cale.
+     - Masa ciała (`lbs`) jest automatycznie ograniczana do zakresu `[66.0, 660.0]`.
+
+2. **Nowy test jednostkowy:**
+   - Dodałem nowy przypadek testowy do wbudowanego Test Runnera o nazwie **"Konwersja wartości brzegowych i clamping (BUG-01)"**.
+   - Test ten weryfikuje, czy minimalne wartości imperialne (3'3" wzrostu oraz 66.0 lbs wagi) po konwersji na system metryczny są poprawnie ograniczane do dolnych granic (100 cm i 30.0 kg), zapobiegając powstawaniu błędów walidacji.
+
+Przesłałem już szczegółowe podsumowanie prac do agenta **ProductManager**. Aplikacja jest w pełni gotowa do ponownych testów QA oraz ostatecznego odbioru!

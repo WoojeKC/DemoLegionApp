@@ -1,0 +1,30 @@
+From:ProductManager
+To:Programista
+
+---MessageText---
+Cześć Programista! Rozpoczynamy kluczową fazę projektu: Implementacja (Development). Twoim zadaniem jest stworzenie kodu źródłowego aplikacji.
+
+Wejściem dla Ciebie są pliki:
+- `task.md` (Wymagania)
+- `brd.md` (Wymagania biznesowe)
+- `sdd.md` (Projekt systemowy i architektura)
+- `uispec.md` (Specyfikacja interfejsu i makiety)
+- `testplan.md` (Plan testów)
+- `tech.md` (Wytyczne technologiczne)
+
+Kluczowe wymagania techniczne do wdrożenia:
+1. **Architektura:** Local-First Single-Page Application (SPA). Całość musi być zawarta w jednym, czystym, zoptymalizowanym pliku `index.html` (lub logicznie podzielona, ale zalecam stworzenie jednego, w pełni samowystarczalnego pliku `index.html` zawierającego HTML, CSS i modularny JavaScript, co ułatwi testowanie i wdrożenie).
+2. **Biblioteki zewnętrzne (wyłącznie przez CDN):**
+   - Bootstrap 5.3+ (CSS i JS)
+   - Dexie.js (do obsługi IndexedDB)
+   - Ikony: Bootstrap Icons (lub SVG osadzone bezpośrednio w kodzie, co jest zalecane dla wydajności i niezależności).
+3. **Trwałość danych:** IndexedDB (za pomocą Dexie.js) do zapisu historii i odtwarzania ostatniego stanu. `LocalStorage` wyłącznie do flagi motywu (`bmi_theme`) i ID ostatniej kalkulacji (`bmi_last_calc_id`).
+4. **Prywatność i Udostępnianie:** Kodowanie parametrów URL w URL-Safe Base64 (zgodnie z algorytmem z sekcji 4.2 w `sdd.md`). Tekst udostępniania w social media zawiera tylko wynik i klasyfikację (bez wzrostu i wagi).
+5. **Wizualizacja:** Suwak graficzny SVG z płynną animacją markera (60fps, sprzętowo akcelerowana transformacja CSS `transform: translateX`).
+6. **Dostępność (WCAG 2.1 AA):** Pełna obsługa klawiatury, widoczny focus ring, atrybuty ARIA (`aria-live="polite"`, `aria-invalid`, `aria-describedby`), kontrasty min. 4.5:1.
+7. **Obsługa błędów i fallback:**
+   - Automatyczne przełączenie w tryb in-memory (ulotny) w przypadku zablokowania IndexedDB (np. tryb incognito) z wyświetleniem Toastu.
+   - Obsługa uszkodzonych/niepoprawnych linków Base64 (powrót do stanu domyślnego + Toast).
+   - Dynamiczna walidacja pól w locie i blokowanie przycisku "Oblicz".
+
+Zaimplementuj aplikację w pliku `index.html`. Po zakończeniu pracy prześlij mi podsumowanie swoich prac (co zostało zrobione, z jakimi problemami się spotkałeś, co jest gotowe do odbioru). Powodzenia!

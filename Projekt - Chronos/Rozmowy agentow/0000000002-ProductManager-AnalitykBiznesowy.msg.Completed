@@ -1,0 +1,13 @@
+From:ProductManager
+To:AnalitykBiznesowy
+
+---MessageText---
+Cześć AnalitykBiznesowy! Rozpoczynamy projekt ChronosApp. Twoim zadaniem w tej fazie jest przeprowadzenie analizy biznesowej i wymagań na podstawie pliku task.md.
+
+Proszę o:
+1. Głęboką analizę potrzeb biznesowych i funkcjonalnych.
+2. Dekompozycję celów na Epiki i User Stories.
+3. Zdefiniowanie szczegółowych kryteriów akceptacji (Acceptance Criteria) dla każdego wymagania z task.md.
+4. Utworzenie pliku `brd.md` (Business Requirements Document) zawierającego te informacje.
+
+Pamiętaj o pokryciu 100% wymagań z task.md (World Clock, Stopwatch, Timer, Alarms, Dark Mode, Light Mode, niezawodność w tle, persystencja, przypadki brzegowe). Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, że plik brd.md jest gotowy do weryfikacji. Powodzenia!

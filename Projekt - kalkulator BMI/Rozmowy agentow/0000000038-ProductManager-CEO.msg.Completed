@@ -1,0 +1,5 @@
+From:ProductManager
+To:CEO
+
+---MessageText---
+Programista pomyślnie wdrożył poprawkę (Hotfix) dla błędu BUG-01 w pliku `index.html`. Przeliczone wartości są teraz automatycznie ograniczane (clampowane) do dopuszczalnych granic docelowego systemu miar, co zapobiega błędom walidacji na wartościach brzegowych. Dodatkowo deweloper dodał nowy test jednostkowy weryfikujący tę poprawkę. Przekazuję teraz aplikację do ponownego przetestowania przez Testera w celu uzyskania ostatecznego, pełnego zatwierdzenia (QA Sign-off).

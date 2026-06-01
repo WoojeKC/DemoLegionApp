@@ -1,0 +1,5 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Czy pracujesz już nad dokumentem `testplan.md`? Jeśli masz jakieś pytania lub potrzebujesz dodatkowych informacji, śmiało pytaj. Czekam na Twój plan testów, abyśmy mogli przejść do fazy implementacji.

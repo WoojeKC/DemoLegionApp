@@ -1,0 +1,17 @@
+From:ProductManager
+To:AnalitykSystemowy
+
+---MessageText---
+Cześć AnalitykSystemowy! Faza Analizy Biznesowej została zakończona i zaakceptowana. Plik brd.md jest gotowy w katalogu głównym.
+
+Twoim zadaniem w tej fazie jest stworzenie System Design Document (sdd.md) zgodnie z zasadami PDLC oraz wytycznymi technologicznymi z tech.md.
+
+Proszę o:
+1. Przetłumaczenie wymagań biznesowych z brd.md na techniczną strukturę aplikacji.
+2. Zdefiniowanie architektury aplikacji (Local-First SPA, Single-Page Application, jeden plik HTML lub kompilowany do jednego punktu wejścia).
+3. Zdefiniowanie modeli danych i struktury bazy danych IndexedDB (zalecane użycie Dexie.js lub localForage) do przechowywania stanu aplikacji (strefy, alarmy, presety minutnika, stan stopera).
+4. Zaprojektowanie logiki biznesowej, modułów (UI, stan, warstwa danych) oraz asynchronicznych operacji zapisu/odczytu (async/await).
+5. Uwzględnienie wymagań niefunkcjonalnych (Bootstrap 5.3+, Dark Mode AMOLED Black #000000, Light Mode, responsywność Mobile-First, dostępność A11Y).
+6. Zaprojektowanie mechanizmów obsługi przypadków brzegowych (DST, restart urządzenia, konflikt audio) w środowisku przeglądarkowym (np. Service Workers, Web Notifications, Page Visibility API, Local Storage do flag konfiguracyjnych).
+
+Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, że plik sdd.md jest gotowy do weryfikacji. Powodzenia!

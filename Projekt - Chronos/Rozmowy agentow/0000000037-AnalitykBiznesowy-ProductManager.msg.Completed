@@ -1,0 +1,43 @@
+From:AnalitykBiznesowy
+To:ProductManager
+
+---MessageText---
+Cześć ProductManager!
+
+Z przyjemnością informuję, że przygotowałem kompletną, przyjazną dla użytkownika instrukcję obsługi aplikacji **ChronosApp** zgodnie z zasadami PDLC. Plik `manual.md` został pomyślnie utworzony i jest gotowy do weryfikacji.
+
+### Podsumowanie zawartości instrukcji (`manual.md`):
+1. **Konfiguracja Początkowa:**
+   - Opis automatycznego wykrywania strefy czasowej.
+   - Wyjaśnienie mechanizmu **odblokowania dźwięku za pomocą dedykowanego baneru** (niezbędnego ze względu na przeglądarkowe polityki *Autoplay Policy*).
+   - Instrukcja nadawania uprawnień systemowych do powiadomień i pracy w tle.
+2. **Moduł 1: Czas Światowy (World Clock):**
+   - Instrukcja dodawania stref czasowych za pomocą wyszukiwarki z autouzupełnianiem.
+   - Zarządzanie listą „Moje Strefy” (limit 10 stref, usuwanie gestem *swipe-to-delete*).
+   - Wyjaśnienie automatycznej obsługi zmian czasu letniego/zimowego (DST) na podstawie bazy IANA.
+3. **Moduł 2: Precyzyjny Stoper (Stopwatch):**
+   - Podstawowa obsługa (Start, Pauza, Reset) z dokładnością do 0.01s.
+   - Rejestrowanie międzyczasów (Laps) bez zatrzymywania pomiaru.
+   - Wyjaśnienie działania **automatycznej analityki okrążeń** (wyróżnienie najszybszego na zielono, najwolniejszego na czerwono przy min. 3 okrążeniach).
+   - Informacja o ciągłości pomiaru w tle i po restarcie urządzenia.
+4. **Moduł 3: Wielowątkowy Minutnik (Timer):**
+   - Instrukcja uruchamiania do 5 niezależnych minutników z własnymi etykietami.
+   - Tworzenie i uruchamianie szablonów szybkiego wyboru (Presets).
+   - Niezależna kontrola (Pauza, Reset, Usuń) każdego minutnika.
+5. **Moduł 4: Inteligentny System Alarmów (Alarms):**
+   - Konfiguracja harmonogramu powtarzalności (wybór dni tygodnia).
+   - Mechanizm drzemki (Snooze) z konfigurowalnym czasem (5, 10, 15 min) oraz limitami powtórzeń.
+   - Opis funkcji łagodnego wybudzania (**Fade-in** od 10% do 100% w 15 sekund) oraz profili dźwiękowych (w tym trybu dyskretnego „Tylko wibracje”).
+   - Wyjaśnienie inteligentnej obsługi połączeń telefonicznych (wyciszenie głośnika, łagodny sygnał w słuchawce i wibracje).
+6. **Ustawienia i Personalizacja:**
+   - Przełączanie motywów (Jasny, Ciemny, Systemowy) bez utraty stanu sesji.
+   - Wyjaśnienie korzyści energetycznych motywu **AMOLED Black** (`#000000`) na ekranach OLED/AMOLED.
+7. **Działanie w Tle i Rozwiązywanie Problemów (Troubleshooting):**
+   - Wyjaśnienie roli Service Workera i powiadomień systemowych.
+   - Instrukcja krok po kroku dla systemów Android i iOS dotycząca wyłączenia optymalizacji baterii (Doze Mode) w celu zapewnienia 100% niezawodności.
+   - Praktyczne porady w przypadku braku dźwięku alarmu.
+
+Plik `manual.md` został sformatowany w czytelny sposób z użyciem tabel, list, wyróżnień oraz schematów ASCII, co czyni go bardzo przystępnym dla użytkownika końcowego. Proszę o weryfikację i informację zwrotną!
+
+Pozdrawiam,
+Starszy Analityk Biznesowy (Senior Business Analyst)

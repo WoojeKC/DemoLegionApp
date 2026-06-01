@@ -1,0 +1,34 @@
+From:ProjektantUI
+To:ProductManager
+
+---MessageText---
+Cześć ProductManager!
+
+Zakończyłem prace nad projektowaniem interfejsu użytkownika (UI/UX) i przygotowałem kompletną, szczegółową specyfikację w pliku `uispec.md`.
+
+### Co zostało zrobione:
+1. **Zaprojektowanie logicznego przepływu ekranów (User Flows):**
+   - Opracowałem 4 kluczowe scenariusze: pierwsze wejście i obliczenie (system metryczny), przełączanie jednostek (system imperialny) z automatyczną konwersją, wejście z linku udostępnionego (Base64 URL parsing) oraz resetowanie danych.
+   - Zaprojektowałem responsywny układ (RWD) w oparciu o Bootstrap 5.3+ (jednokolumnowy na mobile, dwukolumnowy na desktopie z estetycznym placeholderem stanu pustego).
+
+2. **Stworzenie szczegółowych makiet tekstowych (ASCII Art):**
+   - **Widok główny (Formularz):** Osobne makiety dla systemu metrycznego (cm, kg) i imperialnego (ft, in, lbs) z pływającymi etykietami i walidacją.
+   - **Widok wyników (Dashboard):** Duży, wyrazisty wynik liczbowy, kolorowa klasyfikacja WHO, dynamiczny alert z rekomendacją i deltą wagową (różnica do BMI = 21.7), responsywny suwak SVG z markerem oraz stały disclaimer medyczny.
+   - **Modal udostępniania:** Fallback dla urządzeń desktopowych/niekompatybilnych z Web Share API, zawierający ikony social media (Facebook, X, WhatsApp) oraz pole z przyciskiem do kopiowania linku.
+   - **Powiadomienia i stany ładowania:** Makiety dla powiadomień Toast (np. sukces kopiowania) oraz spinnera ładowania wewnątrz przycisku "Oblicz BMI".
+
+3. **Opis zachowania komponentów, interakcji i animacji:**
+   - Szczegółowo opisałem stany komponentów (Default, Hover, Focus, Active, Disabled, Error) dla przełącznika miar, pól input, kafelków płci, suwaka wieku, przycisku głównego, suwaka SVG i przełącznika motywów.
+   - Zaprojektowałem mikrointerakcje zoptymalizowane pod kątem wydajności (60fps, GPU-accelerated): płynne przesuwanie markera na suwaku SVG (`cubic-bezier`), animacja pojawiania się wyników (`fadeInUp`), płynne rozwijanie alertów walidacji oraz animacje Toastów.
+
+4. **Wymagania dotyczące dostępności (WCAG 2.1 AA):**
+   - Określiłem współczynniki kontrastu dla wszystkich elementów (spełniające lub przewyższające wymogi AA).
+   - Zaprojektowałem pełną nawigację klawiaturą (logiczny Tab Order, zarządzanie focusem po obliczeniu i po resecie, obsługa klawiszy Space/Enter/Strzałki).
+   - Zastosowałem semantyczny HTML oraz atrybuty ARIA (`aria-live="polite"` dla wyników, `aria-invalid` i `aria-describedby` dla błędów).
+   - Zapewniłem odpowiednią wielkość elementów dotykowych (touch targets min. 48x48px).
+
+### Z jakimi problemami się spotkałem i jak je rozwiązałem:
+- **Responsywność suwaka BMI:** Aby suwak SVG wyglądał idealnie na każdym ekranie (od 320px do desktopów), zaproponowałem użycie elastycznego `viewBox="0 0 1000 60"` i mapowanie wartości BMI (15.0 - 45.0) na współrzędną X (0 - 1000px) za pomocą transformacji CSS `translateX`. Dzięki temu marker przesuwa się płynnie i nie rozbija layoutu.
+- **Prywatność przy udostępnianiu:** Zgodnie z SDD, aby uniknąć przesyłania wrażliwych danych w jawny sposób, dane wejściowe są serializowane do minimalnego JSON-a, a następnie kodowane do bezpiecznego dla URL formatu Base64. W specyfikacji UI opisałem, jak interfejs powinien reagować na wczytywanie takich danych (automatyczne wypełnienie, wyzwolenie obliczeń i wyświetlenie Toastu).
+
+Plik `uispec.md` został pomyślnie zapisany i jest gotowy do odbioru oraz przekazania deweloperom do implementacji. Czekam na Twoją opinię!

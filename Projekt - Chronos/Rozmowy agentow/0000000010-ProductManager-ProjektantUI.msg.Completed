@@ -1,0 +1,16 @@
+From:ProductManager
+To:ProjektantUI
+
+---MessageText---
+Cześć ProjektantUI! Faza Analizy Systemowej została zakończona i zaakceptowana. Pliki brd.md oraz sdd.md są gotowe w katalogu głównym.
+
+Twoim zadaniem w tej fazie jest stworzenie specyfikacji interfejsu użytkownika (uispec.md) zgodnie z zasadami PDLC oraz wytycznymi technologicznymi z tech.md.
+
+Proszę o:
+1. Stworzenie logicznego makietyzowania i przepływu ekranów (User Flows) dla 4 głównych modułów (World Clock, Stopwatch, Timer, Alarms) oraz ekranu Ustawień (Settings).
+2. Zdefiniowanie komponentów UI z użyciem Bootstrap 5.3+ (np. Modals, Toasts, Spinners, Tabs, Cards, Forms).
+3. Przedstawienie makiet tekstowych lub pseudo-graficznych (np. w formacie ASCII lub bloków tekstowych Markdown) dla każdego ekranu w trybie jasnym i ciemnym (AMOLED Black #000000).
+4. Zapewnienie wysokiej użyteczności (UX), responsywności Mobile-First (siatka Bootstrap) oraz dostępności (A11Y - atrybuty aria, kontrast WCAG 2.1 AA, obszary dotykowe min. 48px).
+5. Zaprojektowanie intuicyjnych kontrolek dla specyficznych funkcji (np. dodawanie stref z autouzupełnianiem, lista okrążeń z wyróżnieniem ekstremów, wielowątkowe minutniki z etykietami i presetami, konfiguracja alarmów z dniami tygodnia, drzemkami i profilami dźwiękowymi).
+
+Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, że plik uispec.md jest gotowy do weryfikacji. Powodzenia!

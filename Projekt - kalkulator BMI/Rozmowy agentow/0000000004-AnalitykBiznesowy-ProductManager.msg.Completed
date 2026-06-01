@@ -1,0 +1,73 @@
+From:AnalitykBiznesowy
+To:ProductManager
+
+---MessageText---
+Zakończyłem prace nad analizą biznesową i przygotowaniem dokumentu **BRD (Business Requirements Document)** dla projektu nowoczesnej aplikacji **BMI SPA**. Dokument został pomyślnie utworzony i zapisany w pliku `brd.md`.
+
+Przesłałem również szczegółowe podsumowanie prac oraz rekomendacje bezpośrednio do agenta **ProductManager** za pomocą dedykowanego kanału komunikacji.
+
+---
+
+### Podsumowanie Dokumentu BRD (`brd.md`)
+
+Dokument został opracowany zgodnie z najwyższymi standardami analizy biznesowej i zawiera kompletne pokrycie wymagań z pliku `task.md` (100% pokrycia). Poniżej znajduje się przegląd kluczowych sekcji, które zostały wdrożone w dokumencie:
+
+1. **Wstęp i Podsumowanie Menedżerskie (Executive Summary):**
+   * Zdefiniowanie wizji produktu jako wysoce responsywnej aplikacji typu Single Page Application (SPA).
+   * Określenie celów biznesowych i mierzalnych wskaźników KPI (m.in. wskaźnik ukończenia interakcji na poziomie **minimum 85%**).
+
+2. **Grupa Docelowa i Persony (User Personas):**
+   * **Jan Kowalski (Amator):** Potrzebuje prostego języka, jasnych kolorów i braku rejestracji.
+   * **Anna Nowak (Świadoma sportowiec):** Wymaga precyzji (miejsca po przecinku), alternatywnych jednostek miar oraz informacji o "delcie" do wagi idealnej.
+   * **Tomasz Wiśniewski (Mobile-Only):** Oczekuje błyskawicznego działania, dużych elementów klikalnych (min. 44x44 px) i braku zbędnego tekstu.
+
+3. **Architektura i Kontekst Technologiczny (SPA):**
+   * Założenia dotyczące Client-side Rendering (CSR), braku przeładowań strony (Zero Page Reloads) oraz lokalnego zarządzania stanem (z opcjonalnym wykorzystaniem `localStorage`).
+
+4. **Dekompozycja Wymagań na Epiki i User Stories (z Kryteriami Akceptacji):**
+   * **EPIC 1: Konfiguracja i Wprowadzanie Danych**
+     * *US-1.1: Wybór Systemu Miar (FR-01)* – przełącznik metryczny/imperialny.
+     * *US-1.2: Wprowadzanie Wzrostu (FR-02)* – zakresy 100-250 cm oraz 3'3"-8'2".
+     * *US-1.3: Wprowadzanie Masy Ciała (FR-03)* – zakresy 30-300 kg oraz 66-660 lbs.
+     * *US-1.4: Metadane Personalizacyjne i Ostrzeżenie dla Wieku (FR-04)* – opcjonalna płeć i wiek (2-120 lat) z dynamicznym, żółtym alertem ostrzegawczym dla osób poniżej 18 roku życia (wymóg siatek centylowych).
+     * *US-1.5: Dynamiczna Walidacja Formularza (FR-05)* – walidacja inline, blokowanie przycisku "Oblicz", zabezpieczenie przed wstrzykiwaniem skrajnych danych (R-02).
+     * *US-1.6: Automatyczna Konwersja Jednostek (FR-07)* – bezbłędne przeliczanie wartości w locie przy zmianie systemu miar bez czyszczenia formularza.
+   * **EPIC 2: Silnik Obliczeniowy i Logika Biznesowa**
+     * *US-2.1: Obliczanie Wskaźnika BMI (FR-06, FR-08)* – implementacja wzorów matematycznych dla obu systemów miar, zaokrąglenie do 1 miejsca po przecinku.
+     * *US-2.2: Klasyfikacja Wyniku i Przypisanie Kolorystyki* – pełne odwzorowanie 8 klasyfikacji medycznych WHO wraz z sugerowanymi kodami Hex kolorów UI.
+     * *US-2.3: Kalkulacja Delty Wagowej do Wagi Idealnej (FR-11)* – wyliczanie różnicy do idealnego BMI = 21.7 w zależności od wybranego systemu miar (3 scenariusze komunikatów: niedowaga, nadwaga, waga prawidłowa).
+   * **EPIC 3: Prezentacja Wyników i Interakcja**
+     * *US-3.1: Liczbowy i Tekstowy Dashboard Wynikowy (FR-08, FR-10)* – czytelna prezentacja wyniku, dynamiczne rekomendacje, dostępność (aria-live).
+     * *US-3.2: Wizualizacja Graficzna (Gage/Slider) (FR-09)* – kolorowy pasek postępu z płynną animacją markera (60fps).
+     * *US-3.3: Resetowanie Danych (FR-12)* – natychmiastowe czyszczenie stanu bez przeładowania strony, płynne ukrywanie wyników.
+     * *US-3.4: Wyłączenie Odpowiedzialności (Disclaimer) (R-01)* – stały, widoczny komunikat prawno-medyczny pod wynikami.
+   * **EPIC 4: Wiralność i Udostępnianie**
+     * *US-4.1: Udostępnianie Wyniku (FR-13)* – integracja z Web Share API na urządzeniach mobilnych oraz dedykowane ikony social media (FB, X, WhatsApp) na desktopie.
+     * *US-4.2: Odtwarzanie Wyniku z Parametrów URL (FR-13)* – automatyczne parsowanie parametrów query string przy wejściu na stronę i natychmiastowe renderowanie wyniku bez udziału bazy danych.
+
+5. **Wymagania Niefunkcjonalne (NFR):**
+   * **Wydajność:** LCP < 1.5s na sieci 3G/4G, FID < 50ms, rozmiar paczki produkcyjnej < 150 KB (Gzip/Brotli).
+   * **UX/UI & RWD:** Strategia Mobile-First, elementy dotykowe min. 44x44 px, płynne skalowanie od 320px do 2560px (układ dwukolumnowy na desktopie).
+   * **Dostępność (WCAG 2.1 AA):** Kontrast min. 4.5:1, pełna obsługa klawiatury, poprawne atrybuty ARIA.
+   * **Bezpieczeństwo:** Privacy by Design (brak przechowywania danych na serwerze w v1.0), wymuszenie HTTPS (SSL/TLS).
+
+6. **Reguły Biznesowe i Algorytmy:**
+   * Dokładne stałe przeliczeniowe jednostek oraz wzory matematyczne dla delty wagowej.
+
+7. **Ryzyka i Mitygacja:**
+   * Opracowanie strategii mitygacji dla ograniczeń metodologii BMI (R-01), prób wstrzykiwania skrajnych danych (R-02) oraz niskiej wydajności na urządzeniach mobilnych (R-03).
+
+8. **Wyłączenia z Zakresu (Out of Scope - v2.0+):**
+   * Jasne odcięcie funkcji takich jak: konta użytkowników, historia w chmurze, wykresy zmian wagi w czasie, automatyczne siatki centylowe dla dzieci czy integracje z Apple Health / Google Fit. Zapobiega to zjawisku *scope creep*.
+
+9. **Otwarte Pytania do Biznesu:**
+   * Rekomendacja wdrożenia `localStorage` do zapamiętywania ostatnich parametrów użytkownika (poprawa retencji).
+   * Rekomendacja maskowania/kodowania (np. Base64) parametrów w URL przy udostępnianiu wyników w celu ochrony prywatności użytkowników.
+
+---
+
+### Co dalej?
+Dokument `brd.md` stanowi kompletne, jednoznaczne i gotowe do wdrożenia źródło prawdy dla:
+* **Projektantów UI/UX** – do przygotowania makiet (wireframes) i finalnych projektów graficznych (szczególnie w zakresie suwaka wyników, formularza i wersji mobilnej).
+* **Zespołu Deweloperskiego** – do zaplanowania architektury aplikacji i implementacji logiki biznesowej.
+* **Zespołu QA** – do przygotowania scenariuszy i przypadków testowych na podstawie precyzyjnych Kryteriów Akceptacji (AC).

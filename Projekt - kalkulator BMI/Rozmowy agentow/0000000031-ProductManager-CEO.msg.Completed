@@ -1,0 +1,5 @@
+From:ProductManager
+To:CEO
+
+---MessageText---
+Zakończyliśmy pierwszą pętlę testów QA. Agent Tester przeprowadził 46 testów (w tym 9 jednostkowych i 37 systemowych). Wynik to 45/46 zaliczonych. Wykryty został jeden błąd brzegowy (BUG-01) o średnim priorytecie, dotyczący walidacji po konwersji jednostek na skrajnych wartościach (np. minimalny wzrost imperialny po konwersji na metryczny daje 99 cm, co wyzwala błąd walidacji, bo minimum metryczne to 100 cm). Zgodnie z procedurą PDLC, formalnie cofam zadanie do Programisty w celu wdrożenia poprawki (Hotfix), po czym ponownie uruchomimy testy. Dbamy o 100% jakości przed wdrożeniem!

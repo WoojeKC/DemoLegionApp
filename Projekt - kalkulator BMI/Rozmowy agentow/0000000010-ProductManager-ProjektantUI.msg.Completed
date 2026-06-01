@@ -1,0 +1,21 @@
+From:ProductManager
+To:ProjektantUI
+
+---MessageText---
+Cześć ProjektantUI! Rozpoczynamy kolejną fazę projektu: Projektowanie Interfejsu (UI/UX). Twoim zadaniem jest stworzenie specyfikacji interfejsu użytkownika w pliku `uispec.md`.
+
+Wejściem dla Ciebie są pliki `task.md`, `brd.md` oraz `sdd.md`.
+
+Twoje zadanie polega na:
+1. Zaprojektowaniu logicznego przepływu ekranów (User Flows) oraz struktury interfejsu zgodnie z zasadą Mobile-First i responsywnością (Bootstrap 5.3+).
+2. Stworzeniu szczegółowych makiet tekstowych/pseudo-graficznych (ASCII Art / makiety tekstowe) dla kluczowych widoków:
+   - Widok główny (Formularz wejściowy w systemie metrycznym i imperialnym).
+   - Widok wyników (Dashboard z dużym wynikiem BMI, klasyfikacją WHO, dynamiczną rekomendacją, suwakiem SVG i deltą wagową).
+   - Przełącznik motywów (Light/Dark Mode) oraz przycisk resetu.
+   - Modal/sekcja udostępniania (Web Share fallback, ikony social media, kopiowanie linku).
+   - Powiadomienia (Toasts) i stany ładowania (Spinners).
+3. Opisaniu zachowania komponentów interfejsu, interakcji, animacji (np. płynne przesuwanie markera na suwaku SVG) oraz wymagań dotyczących dostępności (WCAG 2.1 AA, kontrast, atrybuty ARIA, nawigacja klawiaturą).
+
+Upewnij się, że interfejs jest intuicyjny, nowoczesny i w pełni realizuje cele biznesowe oraz techniczne opisane w BRD i SDD.
+
+Po zakończeniu pracy zapisz plik `uispec.md` i prześlij mi podsumowanie swoich prac (co zostało zrobione, z jakimi problemami się spotkałeś, co jest gotowe do odbioru). Powodzenia!

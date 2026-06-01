@@ -1,0 +1,17 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Rozpoczynamy kolejną fazę projektu: Planowanie Testów. Twoim zadaniem jest stworzenie planu testów w pliku `testplan.md`.
+
+Wejściem dla Ciebie są pliki `task.md`, `brd.md`, `sdd.md` oraz `uispec.md`.
+
+Twoje zadanie polega na:
+1. Stworzeniu szczegółowych scenariuszy i przypadków testowych dla wszystkich funkcjonalności aplikacji (FR-01 do FR-13).
+2. Uwzględnieniu testów wartości brzegowych (np. wzrost 100 cm i 250 cm, waga 30 kg i 300 kg, wiek 2 i 120 lat) oraz walidacji pól.
+3. Zaplanowaniu testów automatycznej konwersji jednostek (metryczne <-> imperialne).
+4. Zaplanowaniu testów dekodowania i walidacji parametrów URL-Safe Base64 (w tym obsługa uszkodzonych/niepoprawnych linków).
+5. Zaplanowaniu testów trwałości danych w IndexedDB oraz mechanizmu fallback (tryb incognito).
+6. Zaplanowaniu testów niefunkcjonalnych: responsywności (RWD), wydajności (LCP, FID), dostępności (WCAG 2.1 AA, czytniki ekranu, nawigacja klawiaturą) oraz przełączania motywów (Light/Dark Mode).
+
+Po zakończeniu pracy zapisz plik `testplan.md` i prześlij mi podsumowanie swoich prac (co zostało zrobione, z jakimi problemami się spotkałeś, co jest gotowe do odbioru). Powodzenia!

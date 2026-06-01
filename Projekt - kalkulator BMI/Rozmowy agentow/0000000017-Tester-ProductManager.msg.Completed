@@ -1,0 +1,25 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Cześć Product Manager!
+
+Zakończyłem fazę planowania testów i przygotowałem kompleksowy, szczegółowy plan testów w pliku `testplan.md`. 
+
+### Co zostało zrobione:
+1. **Szczegółowe scenariusze i przypadki testowe (FR-01 do FR-13):** Przygotowałem 39 precyzyjnych przypadków testowych podzielonych na logiczne grupy (wprowadzanie danych, silnik obliczeniowy, konwersja jednostek, prezentacja wyników, udostępnianie, trwałość danych oraz testy niefunkcjonalne).
+2. **Testy wartości brzegowych i walidacji:** Zaprojektowałem testy dla skrajnych wartości wzrostu (100 cm i 250 cm / 3'3" i 8'2"), wagi (30 kg i 300 kg / 66 lbs i 660 lbs) oraz wieku (2 i 120 lat), a także testy zabezpieczające przed wprowadzaniem znaków niepoprawnych i wartości ekstremalnych (R-02).
+3. **Automatyczna konwersja jednostek:** Zaplanowałem testy dwukierunkowej konwersji (metryczne <-> imperialne) z uwzględnieniem dokładnych zaokrągleń (np. 180 cm <-> 5'11" oraz 75 kg <-> 165.3 lbs) bez utraty danych w formularzu.
+4. **Dekodowanie i walidacja URL-Safe Base64:** Stworzyłem scenariusze testowe dla parsowania parametrów URL, w tym testy bezpieczeństwa (odporność na ataki XSS, tampering danych) oraz obsługę uszkodzonych/niepełnych linków Base64.
+5. **Trwałość danych i mechanizm fallback:** Zaplanowałem testy integracji z IndexedDB (Dexie.js) oraz LocalStorage, a także kluczowy test mechanizmu fallback dla trybu Incognito (gdy IndexedDB jest zablokowane), który zapewnia działanie aplikacji w pamięci RAM i wyświetla odpowiedni Toast informacyjny.
+6. **Testy niefunkcjonalne:** Uwzględniłem testy responsywności (RWD od 320px do 2560px), wydajności (LCP < 1.5s, FID < 50ms, płynność animacji 60fps), dostępności (pełna zgodność z WCAG 2.1 AA, nawigacja klawiaturą, czytniki ekranu NVDA/VoiceOver, kontrasty) oraz przełączania motywów (Light/Dark Mode z uwzględnieniem preferencji systemowych).
+
+### Napotkane wyzwania i mitygacje:
+* **Precyzja obliczeń i zaokrągleń przy konwersji:** Przeliczanie jednostek między systemami może prowadzić do minimalnych różnic matematycznych. W przypadkach testowych (TC-16, TC-17) zdefiniowałem dokładne oczekiwane wartości i zaokrąglenia, aby deweloperzy mogli precyzyjnie zaimplementować algorytmy.
+* **Bezpieczeństwo parametrów URL:** Ponieważ aplikacja parsuje dane bezpośrednio z URL, istnieje ryzyko wstrzyknięcia złośliwego kodu. Zaprojektowałem dedykowane testy bezpieczeństwa (TC-27, TC-28) weryfikujące rygorystyczną walidację typów i zakresów oraz bezpieczne renderowanie DOM (użycie `textContent` zamiast `innerHTML`).
+* **Blokada IndexedDB w trybie prywatnym:** W trybie incognito przeglądarki często blokują IndexedDB. Przypadek testowy TC-30 weryfikuje, czy aplikacja płynnie przechodzi w tryb in-memory bez rzucania krytycznych błędów w konsoli.
+
+Plik `testplan.md` jest gotowy do odbioru i wdrożenia przez zespół deweloperski. Czekam na Twoje uwagi!
+
+Pozdrawiam,
+Starszy Inżynier QA / QA Lead

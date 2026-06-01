@@ -1,0 +1,41 @@
+From:ProductManager
+To:Programista
+
+---MessageText---
+Cześć Programista! Faza Testowania i QA wykazała krytyczne błędy w zaimplementowanej aplikacji ChronosApp. Quality Gate nie został zaliczony, dlatego formalnie cofam projekt do fazy poprawek deweloperskich.
+
+Proszę o pilne zapoznanie się z plikiem testreport.md i usunięcie następujących błędów:
+
+1. **[KRYTYCZNY] BUG-01: Brak odbiornika komunikatów Service Workera w index.html**
+   - *Problem:* sw.js wysyła `NOTIFICATION_ACTION` przez `client.postMessage`, ale w index.html brakuje listenera (`navigator.serviceWorker.addEventListener('message', ...)`), przez co akcje "Drzemka" i "Wyłącz" na powiadomieniach systemowych nie działają.
+   - *Rozwiązanie:* Dodaj listener w index.html, który odbierze te komunikaty i wywoła odpowiednie akcje w alarmModule lub timerModule.
+
+2. **[KRYTYCZNY] BUG-02: Milczące alarmy z powodu zablokowanego AudioContext (Autoplay Policy)**
+   - *Problem:* Alarmy i minutniki dzwonią bezgłośnie, ponieważ AudioContext nie jest odblokowany/wznowiony. W konsoli pojawia się błąd o braku interakcji użytkownika.
+   - *Rozwiązanie:* Upewnij się, że `AlarmAudio.play()` wywołuje `this.audioCtx.resume()`. Dodatkowo, zaimplementuj mechanizm (np. nieinwazyjny baner lub przycisk przy pierwszym uruchomieniu), który wymusi interakcję użytkownika i odblokuje audio, zapisując flagę w LocalStorage.
+
+3. **[WYSOKI] BUG-03: Niespójny stan przycisków stopera po przeładowaniu strony w stanie pauzy**
+   - *Problem:* Po odświeżeniu strony, gdy stoper jest zapauzowany, licznik pokazuje poprawny czas, ale przyciski pokazują stan początkowy (Start/Okrążenie zamiast Wznów/Reset).
+   - *Rozwiązanie:* W `StopwatchModule.init()` wywołaj na końcu `this.updateButtons()`, aby przyciski odzwierciedlały stan `paused`.
+
+4. **[WYSOKI] BUG-04: Ignorowanie wątku Web Workera (Ryzyko dławienia liczników w tle)**
+   - *Problem:* timerWorker jest tworzony i uruchamiany, ale w głównym kodzie brakuje przypisania obsługi zdarzeń `timerWorker.onmessage = ...`. Ticki z tła są ignorowane, co powoduje dławienie liczników przy zminimalizowanej karcie.
+   - *Rozwiązanie:* Zaimplementuj obsługę `timerWorker.onmessage` w głównym wątku, aby ticki z Web Workera synchronizowały i wymuszały dokładne odliczanie czasu stopera i minutników.
+
+5. **[WYSOKI] BUG-05: Konflikt współdzielonego ekranu alarmu (Overlay) między alarmami a minutnikami**
+   - *Problem:* Oba moduły współdzielą ten sam element DOM `#alarm-overlay`. Gdy minutnik kończy bieg jako drugi, nadpisuje dzwoniący alarm, ukrywa przycisk drzemki i nadpisuje listenery, co uniemożliwia drzemkę alarmu.
+   - *Rozwiązanie:* Odseparuj interfejsy wyzwolenia alarmu i minutnika (np. osobne modale/overlays) lub zaimplementuj kolejkę zdarzeń (Event Queue).
+
+6. **[WYSOKI] BUG-06: Deaktywacja alarmu w bazie danych przed potwierdzeniem przez użytkownika (Ryzyko utraty alarmu)**
+   - *Problem:* W momencie wyzwolenia alarmu, `triggerAlarm` natychmiast ustawia `alarm.is_active = 0` w IndexedDB. Jeśli aplikacja zostanie zamknięta przed kliknięciem "Wyłącz", alarm pozostaje trwale wyłączony i nigdy więcej się nie wyzwoli.
+   - *Rozwiązanie:* Alarm powinien pozostać aktywny (`is_active = 1`) w bazie danych podczas dzwonienia. Dopiero kliknięcie "Wyłącz" (Dismiss) powinno deaktywować alarm jednorazowy lub zaplanować kolejną instancję alarmu cyklicznego.
+
+7. **[NISKI] BUG-07: Uncaught Error w konsoli przy kliknięciu presetu minutnika po osiągnięciu limitu**
+   - *Problem:* Przyciski presetów pozostają aktywne po osiągnięciu limitu 5 minutników, a ich kliknięcie rzuca nieobsłużony błąd w konsoli.
+   - *Rozwiązanie:* Blokuj przyciski presetów (disabled) w `renderActiveTimers()` tak samo jak główny przycisk submit, gdy działa 5 minutników. Otocz wywołanie `createTimer` blokiem try/catch.
+
+8. **[NISKI] BUG-08: Tworzenie wielu instancji bootstrap.Modal przy edycji alarmu (Wycieki pamięci)**
+   - *Problem:* Każde kliknięcie edycji alarmu wykonuje `new bootstrap.Modal(...)`, co powoduje wycieki pamięci i powielanie tła modala.
+   - *Rozwiązanie:* Użyj `bootstrap.Modal.getOrCreateInstance(document.getElementById('alarmModal'))`.
+
+Proszę o zaktualizowanie plików index.html, sw.js oraz test.html w celu usunięcia tych błędów. Po zakończeniu prac poinformuj mnie, że poprawki są gotowe do ponownej weryfikacji. Powodzenia!

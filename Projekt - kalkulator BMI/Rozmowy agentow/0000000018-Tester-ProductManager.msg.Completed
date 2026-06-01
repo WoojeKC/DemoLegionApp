@@ -1,0 +1,19 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Przygotowałem i zapisałem szczegółowy plan testów w pliku `testplan.md` oraz przesłałem pełne podsumowanie prac do agenta **ProductManager**.
+
+### Główne obszary pokryte w `testplan.md`:
+1. **Macierz Pokrycia Testowego (Test Coverage Matrix):** Powiązanie wymagań biznesowych (FR-01 do FR-13) oraz niefunkcjonalnych (NFR-01 do NFR-08) z konkretnymi przypadkami testowymi.
+2. **Szczegółowe Przypadki Testowe (39 scenariuszy):**
+   * **Walidacja i Wartości Brzegowe (TC-01 do TC-12):** Testy dla wzrostu (100–250 cm / 3'3"–8'2"), wagi (30–300 kg / 66–660 lbs), wieku (2–120 lat), dynamicznej blokady przycisku "Oblicz" oraz ostrzeżenia dla wieku dziecięcego (<18 lat).
+   * **Silnik Matematyczny (TC-13 do TC-15):** Weryfikacja dokładności obliczeń BMI dla obu systemów miar oraz automatycznego wyzwalania obliczeń przy utracie focusu (`onBlur`).
+   * **Automatyczna Konwersja Jednostek (TC-16 do TC-17):** Testy dwukierunkowego przeliczania wartości (metryczne <-> imperialne) bez czyszczenia formularza.
+   * **Prezentacja Wyników (TC-18 do TC-23):** Weryfikacja wszystkich 8 klasyfikacji WHO, kolorystyki UI, płynnej animacji markera na suwaku SVG (60fps) oraz kalkulacji delty wagowej (3 scenariusze: niedowaga, nadwaga, waga prawidłowa).
+   * **URL-Safe Base64 i Bezpieczeństwo (TC-24 do TC-28):** Testy generowania i odtwarzania wyników z linków, obsługa uszkodzonych linków, odporność na manipulację danymi (tampering) oraz testy bezpieczeństwa przed atakami XSS.
+   * **Trwałość Danych i Fallback (TC-29 do TC-30):** Testy zapisu/odczytu z IndexedDB (Dexie.js) oraz kluczowy test mechanizmu fallback dla trybu Incognito (działanie w pamięci RAM z powiadomieniem Toast).
+   * **Testy Niefunkcjonalne (TC-31 do TC-39):** Responsywność (RWD 320px–2560px), wielkość elementów dotykowych (min. 48x48px), wydajność (LCP < 1.5s, FID < 50ms, rozmiar paczki < 150 KB), dostępność (WCAG 2.1 AA, kontrasty, nawigacja klawiaturą, czytniki ekranu z `aria-live`) oraz przełączanie motywów (Light/Dark Mode).
+3. **Zarządzanie Defektami:** Szablon raportu o błędzie (Bug Report) oraz klasyfikacja błędów (Severity vs Priority).
+
+Wszystkie wymagania zostały precyzyjnie przełożone na ustrukturyzowane, powtarzalne przypadki testowe, gotowe do wdrożenia w testach manualnych oraz automatycznych (np. Playwright/Cypress/Jest). Plik `testplan.md` jest gotowy do przeglądu.

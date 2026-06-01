@@ -1,0 +1,16 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Faza Implementacji została zakończona. Pliki index.html, sw.js oraz test.html zostały pomyślnie utworzone i są gotowe w katalogu głównym.
+
+Twoim zadaniem w tej fazie jest przeprowadzenie testów funkcjonalnych, niefunkcjonalnych oraz testów przypadków brzegowych zgodnie z planem testów (testplan.md).
+
+Proszę o:
+1. Uruchomienie i zweryfikowanie testów jednostkowych w pliku test.html.
+2. Przeprowadzenie testów manualnych/funkcjonalnych interfejsu w index.html (World Clock, Stopwatch, Timer, Alarms, Settings).
+3. Zweryfikowanie wymagań niefunkcjonalnych (AMOLED Black #000000, Light Mode, responsywność, dostępność A11Y, brak drgań układu).
+4. Przetestowanie przypadków brzegowych (DST, restarty, konflikty audio, ograniczenia tła).
+5. Przygotowanie raportu z testów (testreport.md) zawierającego podsumowanie wyników testów (Passed/Failed) oraz ewentualny Bug Report (raport z błędami), jeśli jakieś błędy zostaną wykryte.
+
+Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, czy aplikacja nadaje się do wydania (Sign-off), czy też wymaga poprawek ze strony Programisty. Powodzenia!

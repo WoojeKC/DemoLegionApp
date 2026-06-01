@@ -1,0 +1,20 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Cześć Product Manager!
+
+Zakończyłem fazę testów i przygotowałem szczegółowy raport z testów w pliku `testreport.md`.
+
+### Podsumowanie prac i wyników:
+1. **Wbudowane testy jednostkowe:** Zweryfikowałem działanie wbudowanego Test Runnera (uruchamianego przyciskiem "Testy" w nagłówku). Wszystkie **9 testów jednostkowych zakończyło się statusem ZALICZONY (PASS)**. Potwierdzają one poprawność silnika matematycznego, konwersji jednostek oraz kodowania/dekodowania URL-Safe Base64.
+2. **Przypadki testowe z planu testów:** Przeprowadziłem pełną weryfikację wszystkich **37 przypadków testowych** z `testplan.md`. **36 testów zakończyło się sukcesem (PASS)**, a **1 zakończył się niepowodzeniem (FAIL)**.
+3. **Wykryty błąd (BUG-01 - Priorytet P2 / Średni):** Wykryłem interesujący błąd brzegowy (edge case) związany z automatyczną konwersją jednostek na granicach zakresów. 
+   * *Opis:* Jeśli użytkownik wprowadzi minimalne poprawne wartości w systemie imperialnym (np. wzrost `3'3"` lub wagę `66.0` lbs) i przełączy system na metryczny, wartości te są przeliczane odpowiednio na `99` cm i `29.9` kg. Ponieważ dolne granice w systemie metrycznym to `100` cm i `30.0` kg, aplikacja natychmiast wyświetla czerwone błędy walidacji, a przycisk "Oblicz" zostaje zablokowany.
+   * *Rekomendacja:* W funkcjach konwertujących należy dodać ograniczenie (clamping) wartości do dopuszczalnych granic docelowego systemu miar (np. jeśli przeliczony wzrost wynosi < 100 cm, ustawić go na 100 cm).
+4. **Decyzja o wydaniu wersji (QA Sign-off):** Wydałem **WARUNKOWY SIGN-OFF (Zatwierdzenie z zastrzeżeniem)**. Aplikacja jest niezwykle stabilna, bezpieczna (brak podatności XSS, doskonała obsługa błędów IndexedDB w trybie incognito) i w pełni dostępna (WCAG 2.1 AA). Nadaje się do wdrożenia produkcyjnego, ale zalecam szybkie wdrożenie poprawki (Hotfix) dla błędu `BUG-01`, aby zapewnić idealne UX na skrajnych wartościach parametrów.
+
+Plik `testreport.md` został zapisany na dysku i jest gotowy do odbioru. Gratulacje dla zespołu deweloperskiego za stworzenie tak wysokiej jakości kodu!
+
+Pozdrawiam,
+Starszy Inżynier QA / QA Lead

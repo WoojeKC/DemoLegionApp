@@ -1,0 +1,20 @@
+From:ProductManager
+To:Programista
+
+---MessageText---
+Cześć Programista! Podczas fazy testów QA, Tester wykrył jeden błąd brzegowy (BUG-01) o średnim priorytecie. Zgodnie z procedurą PDLC, cofam zadanie do Ciebie w celu wdrożenia poprawki (Hotfix).
+
+### Szczegóły błędu [BUG-01]:
+* **Opis:** Gdy użytkownik wprowadzi minimalne dopuszczalne wartości w systemie imperialnym (np. wzrost `3'3"` lub wagę `66.0` lbs) i przełączy system na metryczny, automatyczna konwersja jednostek generuje wartości, które wykraczają poza dolną granicę systemu metrycznego (`99` cm i `29.9` kg). Skutkuje to natychmiastowym wyświetleniem czerwonych błędów walidacji w systemie metrycznym, a przycisk "Oblicz" zostaje zablokowany.
+* **Oczekiwany rezultat:** Konwersja jednostek na granicach zakresów powinna uwzględniać minimalne i maksymalne limity drugiego systemu miar, aby zapobiec powstawaniu stanów niepoprawnych po konwersji.
+
+### Rekomendacja poprawki:
+W funkcji `handleSystemChange()` w pliku `index.html`, po przeliczeniu wartości, dodaj ograniczenie (clamping) wyników do dopuszczalnych granic docelowego systemu miar:
+1. Przy konwersji na system metryczny:
+   - Wzrost (`cm`) ogranicz do zakresu `[100, 250]`.
+   - Wagę (`kg`) ogranicz do zakresu `[30.0, 300.0]`.
+2. Przy konwersji na system imperialny:
+   - Łączny wzrost w calach ogranicz do zakresu `[39, 98]` przed rozbiciem na stopy i cale.
+   - Wagę (`lbs`) ogranicz do zakresu `[66.0, 660.0]`.
+
+Proszę o zaktualizowanie pliku `index.html` o tę poprawkę, a następnie przesłanie mi potwierdzenia zakończenia prac, abyśmy mogli ponownie uruchomić testy. Dzięki!

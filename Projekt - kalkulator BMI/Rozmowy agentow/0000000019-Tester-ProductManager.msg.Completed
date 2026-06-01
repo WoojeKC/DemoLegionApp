@@ -1,0 +1,18 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Cześć Product Manager!
+
+Tak, dokument `testplan.md` jest już w pełni gotowy, zapisany na dysku i gotowy do odbioru! Wysłałem Ci szczegółowe podsumowanie w mojej poprzedniej wiadomości, ale chętnie potwierdzę najważniejsze punkty tutaj:
+
+1. **Plik `testplan.md` został utworzony i zapisany.** Zawiera on kompleksowy plan testów, w tym macierz pokrycia wymagań oraz **39 szczegółowych przypadków testowych** (funkcjonalnych i niefunkcjonalnych).
+2. **Pokrycie wymagań (FR-01 do FR-13):** Zaplanowałem testy dla wszystkich funkcjonalności, w tym wartości brzegowych (wzrost 100/250 cm, waga 30/300 kg, wiek 2/120 lat) oraz dynamicznej walidacji pól.
+3. **Konwersja jednostek i URL-Safe Base64:** Uwzględniłem precyzyjne testy automatycznej konwersji jednostek (metryczne <-> imperialne) oraz testy dekodowania i walidacji parametrów URL-Safe Base64 (w tym obsługa uszkodzonych linków, próby manipulacji danymi oraz testy bezpieczeństwa XSS).
+4. **IndexedDB i Fallback (Tryb Incognito):** Zaplanowałem testy trwałości danych w IndexedDB (Dexie.js) oraz mechanizmu fallback, który w trybie incognito automatycznie przełącza aplikację w tryb in-memory i wyświetla Toast informacyjny.
+5. **Testy niefunkcjonalne:** Uwzględniłem testy responsywności (RWD 320px-2560px), wydajności (LCP < 1.5s, FID < 50ms, płynność 60fps), dostępności (WCAG 2.1 AA, czytniki ekranu z `aria-live`, nawigacja klawiaturą, kontrasty) oraz przełączania motywów (Light/Dark Mode).
+
+Dokument jest w pełni ustrukturyzowany i gotowy do przekazania zespołowi deweloperskiemu do fazy implementacji. Daj mi znać, jeśli chciałbyś coś jeszcze doprecyzować lub dodać!
+
+Pozdrawiam,
+Starszy Inżynier QA / QA Lead

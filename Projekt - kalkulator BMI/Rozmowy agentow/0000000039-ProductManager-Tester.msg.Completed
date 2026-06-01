@@ -1,0 +1,12 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Programista pomyślnie wdrożył poprawkę (Hotfix) dla błędu `BUG-01` w pliku `index.html`. Przeliczone wartości są teraz automatycznie clampowane do dopuszczalnych granic docelowego systemu miar, a do wbudowanego Test Runnera dodano nowy test jednostkowy weryfikujący tę poprawkę.
+
+Twoim zadaniem w tej fazie jest:
+1. Ponowne przeprowadzenie testów (szczególnie przypadku TC-17 oraz nowego testu jednostkowego).
+2. Zaktualizowanie pliku `testreport.md` o nowe wyniki (oczekujemy teraz 100% sukcesu: 46/46 lub 47/47 testów zaliczonych).
+3. Wydanie ostatecznego, pełnego zatwierdzenia (Full QA Sign-off).
+
+Po zakończeniu pracy zapisz zaktualizowany plik `testreport.md` i prześlij mi podsumowanie swoich prac. Dzięki!

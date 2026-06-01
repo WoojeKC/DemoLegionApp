@@ -1,0 +1,43 @@
+From:ProjektantUI
+To:ProductManager
+
+---MessageText---
+Zakończyłem prace nad specyfikacją interfejsu użytkownika (UI) dla aplikacji **ChronosApp**. Plik **`uispec.md`** został pomyślnie utworzony w katalogu głównym projektu i jest w pełni gotowy do weryfikacji.
+
+Wysłałem również szczegółowe podsumowanie prac do agenta **ProductManager** za pomocą dedykowanego narzędzia komunikacyjnego.
+
+### Podsumowanie zawartości pliku `uispec.md`:
+
+1. **System Tokenów Wizualnych (Design Tokens):**
+   * **Paleta Kolorów:** Zdefiniowano dokładne wartości HEX dla motywu jasnego (Light Mode) oraz zoptymalizowanego motywu ciemnego (**AMOLED Black — `#000000`**), który wyłącza piksele na ekranach OLED/AMOLED, drastycznie redukując zużycie baterii (zgodnie z wymaganiem biznesowym **BR-02**).
+   * **Typografia:** Wprowadzono podział na krój podstawowy (Sans-Serif) oraz krój dla liczników (**Monospace**), co zapobiega drganiom cyfr i przesunięciom układu (Layout Shifts) podczas szybkiego odświeżania czasu.
+   * **Odstępy i Siatka:** Zastosowano system odstępów oparty na wielokrotności `0.25rem` (4px) oraz responsywną siatkę Bootstrap 5.3.
+
+2. **Globalny Układ i Nawigacja (Global Layout & Navigation):**
+   * **Mobile-First (<768px):** Sticky top header z logo i przełącznikiem motywów oraz **Sticky Bottom Navigation Bar** o wysokości `64px` z dużymi obszarami dotykowymi (touch targets min. `48px x 48px`).
+   * **Desktop (≥768px):** Stały boczny panel nawigacyjny (**Sidebar**) o szerokości `240px` i wielokolumnowy układ kart (Grid).
+   * **Theme Switcher:** Płynne przełączanie motywów (Jasny | Ciemny | Systemowy) bez przeładowania strony i bez utraty stanu sesji (np. działającego stopera).
+
+3. **Przepływy Użytkownika (User Flows):**
+   * Przedstawiono logiczne ścieżki poruszania się użytkownika dla kluczowych scenariuszy: dodawanie strefy czasowej, obsługa stopera (start, pauza, okrążenie, reset) oraz konfiguracja i wyzwolenie alarmu w tle.
+
+4. **Specyfikacja Ekranów i Makiety ASCII:**
+   * Dla każdego z 5 ekranów (**World Clock, Stopwatch, Timer, Alarms, Settings**) przygotowano szczegółowy opis hierarchii wizualnej, użytych komponentów Bootstrap 5.3 oraz **dwie makiety tekstowe ASCII** (osobno dla trybu jasnego i ciemnego AMOLED Black).
+   * Określono stany i warianty komponentów (Default, Hover, Active, Focus, Disabled, Loading/Skeletons).
+
+5. **Specyficzne Kontrolki i Komponenty (Custom UI Controls):**
+   * **Zone Search Autocomplete:** Wyszukiwarka stref czasowych w modalu z filtrowaniem w czasie rzeczywistym, przyciskiem czyszczenia `[x]` i pełną obsługą klawiatury.
+   * **Lap List with Extremes:** Lista okrążeń stopera z automatycznym, kontrastowym wyróżnianiem najszybszego (zielony) i najwolniejszego (czerwony) okrążenia (wymagane min. 3 okrążenia).
+   * **Weekday Picker:** Kontrolka w postaci 7 okrągłych przycisków dni tygodnia z wyraźnym stanem aktywnym i atrybutami `aria-pressed`.
+   * **Snooze Slider & Limit:** Suwak czasu drzemki oraz stepper limitu powtórzeń z automatycznym poszarzaniem (disabled) przy wyłączeniu drzemki.
+
+6. **Mikrointerakcje i Animacje:**
+   * Określono precyzyjne parametry czasowe (timingi: `150ms`, `250ms`, `350ms`) oraz krzywe przejść (`cubic-bezier`) dla płynnych animacji (np. kurczenie się paska postępu minutnika, wsuwanie okrążeń stopera, pulsowanie ekranu wyzwolonego alarmu).
+
+7. **Dostępność (A11Y) i Standardy WCAG 2.1 AA:**
+   * **Kontrast:** Wszystkie teksty główne posiadają kontrast do tła przekraczający **7:1** (spełniając standard WCAG AAA), a teksty pomocnicze minimum **4.5:1**.
+   * **Nawigacja Klawiaturą:** Wyraźne ramki skupienia (`:focus-visible`) o szerokości `3px` oraz skróty klawiszowe (np. `Spacja` dla start/pauza, `Escape` dla zamknięcia modala/wyciszenia alarmu).
+   * **Atrybuty ARIA:** Zastosowanie `aria-live="polite"` dla dynamicznych liczników, `role="switch"` dla przełączników alarmów oraz `aria-label` dla przycisków ikonowych.
+   * **Obszary Dotykowe:** Minimalny rozmiar każdego elementu klikalnego na urządzeniach mobilnych wynosi **`48px x 48px`** z marginesem bezpieczeństwa minimum **`8px`**.
+
+Plik `uispec.md` jest w pełni gotowy do wdrożenia przez zespół deweloperski i stanowi solidny pomost pomiędzy wymaganiami biznesowymi a implementacją techniczną.

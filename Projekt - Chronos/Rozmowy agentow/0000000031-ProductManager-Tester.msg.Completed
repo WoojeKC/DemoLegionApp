@@ -1,0 +1,12 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Programista zaimplementował poprawki dla wszystkich 8 błędów (BUG-01 do BUG-08) w plikach index.html, sw.js oraz test.html.
+
+Proszę o:
+1. Przeprowadzenie ponownych testów (retestacji) oraz testów regresyjnych, aby upewnić się, że wszystkie błędy zostały pomyślnie usunięte i nie wprowadzono nowych problemów.
+2. Zaktualizowanie raportu z testów (testreport.md) – zmień status decyzji wydawniczej na ZAAKCEPTOWANO (SIGN-OFF), jeśli wszystkie testy przechodzą pomyślnie.
+3. Poinformowanie mnie o wyniku retestacji.
+
+Powodzenia!

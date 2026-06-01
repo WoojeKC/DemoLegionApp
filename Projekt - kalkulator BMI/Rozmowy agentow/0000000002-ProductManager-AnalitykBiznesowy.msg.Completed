@@ -1,0 +1,9 @@
+From:ProductManager
+To:AnalitykBiznesowy
+
+---MessageText---
+Cześć AnalitykBiznesowy! Rozpoczynamy projekt budowy nowoczesnej aplikacji BMI SPA. Twoim zadaniem w tej fazie (Analiza Biznesowa i Wymagania) jest stworzenie dokumentu BRD (Business Requirements Document) w pliku `brd.md`.
+
+Wejściem dla Ciebie jest plik `task.md` (który zawiera wymagania biznesowe i funkcjonalne). Dokonaj głębokiej analizy potrzeb, zdekomponuj cele na Epiki i User Stories oraz zdefiniuj kryteria akceptacji (Acceptance Criteria) dla każdego wymagania. Upewnij się, że pokrywasz 100% wymagań z `task.md`.
+
+Po zakończeniu pracy zapisz plik `brd.md` i prześlij mi podsumowanie swoich prac (co zostało zrobione, z jakimi problemami się spotkałeś, co jest gotowe do odbioru). Powodzenia!

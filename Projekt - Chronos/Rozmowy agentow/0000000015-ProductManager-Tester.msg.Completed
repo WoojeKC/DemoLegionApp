@@ -1,0 +1,15 @@
+From:ProductManager
+To:Tester
+
+---MessageText---
+Cześć Tester! Faza Projektowania Interfejsu została zakończona i zaakceptowana. Pliki brd.md, sdd.md oraz uispec.md są gotowe w katalogu głównym.
+
+Twoim zadaniem w tej fazie jest stworzenie planu i specyfikacji testów (testplan.md) zgodnie z zasadami PDLC oraz wytycznymi technologicznymi z tech.md.
+
+Proszę o:
+1. Stworzenie szczegółowych scenariuszy i przypadków testowych dla wszystkich funkcjonalności aplikacji (World Clock, Stopwatch, Timer, Alarms, Settings).
+2. Uwzględnienie testów funkcjonalnych, niefunkcjonalnych (AMOLED Black, Light Mode, responsywność, dostępność A11Y, wydajność asynchroniczna).
+3. Szczegółowe zaplanowanie testów dla przypadków brzegowych (DST, restart urządzenia/crash, konflikt audio podczas połączenia telefonicznego, ograniczenia tła przeglądarki).
+4. Zdefiniowanie kryteriów wejścia/wyjścia dla fazy testów oraz środowiska testowego.
+
+Po zakończeniu pracy prześlij mi podsumowanie i poinformuj, że plik testplan.md jest gotowy do weryfikacji. Powodzenia!

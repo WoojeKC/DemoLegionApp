@@ -1,0 +1,18 @@
+From:ProductManager
+To:AnalitykSystemowy
+
+---MessageText---
+Cześć AnalitykSystemowy! Rozpoczynamy kolejną fazę projektu: Analiza Systemowa i Architektura. Twoim zadaniem jest stworzenie dokumentu SDD (System Design Document) w pliku `sdd.md`.
+
+Wejściem dla Ciebie są pliki `brd.md` oraz wytyczne technologiczne z `tech.md`.
+
+Kluczowe wytyczne techniczne i decyzje projektowe, które musisz uwzględnić:
+1. **Architektura:** Local-First Single-Page Application (SPA) w jednym pliku HTML (lub kompilowana do jednego punktu wejścia). Całość logiki po stronie klienta (CSR).
+2. **Trwałość danych (Persistence):** Zgodnie z `tech.md`, do przechowywania stanu aplikacji (np. ostatnich parametrów użytkownika lub historii obliczeń) musisz użyć **IndexedDB** (zalecane użycie lekkiej biblioteki-wrappera, np. Dexie.js lub localForage załadowanej przez CDN, lub czystego IndexedDB). `LocalStorage` może być użyty wyłącznie do prostych flag konfiguracyjnych (np. `theme=dark` / `theme=light`).
+3. **Udostępnianie i Prywatność:** Aby chronić prywatność, parametry w URL (wzrost, waga, płeć, wiek) powinny być zakodowane w Base64 (np. `?data=ey...`). Tekst udostępniania w social media powinien zawierać jedynie wynik BMI i klasyfikację (bez dokładnej wagi i wzrostu).
+4. **Framework CSS:** Bootstrap 5.3+ (bez jQuery, natywny JS). Wsparcie dla Dark Mode (natywne `data-bs-theme="dark"` / `data-bs-theme="light"`).
+5. **Struktura kodu:** Modularny JavaScript (ES6+), podział na moduły odpowiedzialne za UI, stan (State Management) i warstwę danych (IndexedDB).
+
+Zaprojektuj architekturę aplikacji, modele danych, strukturę bazy danych IndexedDB, strukturę modułów JS, schemat routingu/parsowania URL oraz API udostępniania.
+
+Po zakończeniu pracy zapisz plik `sdd.md` i prześlij mi podsumowanie swoich prac (co zostało zrobione, z jakimi problemami się spotkałeś, co jest gotowe do odbioru). Powodzenia!

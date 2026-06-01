@@ -1,0 +1,32 @@
+From:Tester
+To:ProductManager
+
+---MessageText---
+Cześć ProductManager!
+
+Z przyjemnością informuję, że faza planowania i specyfikacji testów została zakończona. Stworzyłem kompleksowy, profesjonalny dokument **testplan.md** w katalogu głównym projektu.
+
+Oto podsumowanie wykonanych prac:
+1. **Struktura i Środowisko:** Zdefiniowałem precyzyjne kryteria wejścia/wyjścia dla fazy testów oraz szczegółowo opisałem środowisko testowe (wieloplatformowość: Desktop, Android, iOS z ekranami OLED) i narzędzia (DevTools, Lighthouse, symulatory czasu NTP, Web Audio API Debugger).
+2. **Szczegółowe Przypadki Testowe (Funkcjonalne):** Przygotowałem ustrukturyzowane scenariusze testowe (ID, Warunki wstępne, Kroki, Oczekiwany rezultat) dla wszystkich modułów:
+   - **World Clock:** autodetekcja strefy, fallback przy braku uprawnień, wyszukiwanie z autouzupełnianiem, limit 10 stref (BR-01).
+   - **Stopwatch:** dokładność 0.01s (BR-03), rejestrowanie międzyczasów (laps), dynamiczna analityka ekstremów (najszybsze/najwolniejsze okrążenie przy min. 3 okrążeniach), ciągłość pomiaru po zamknięciu karty.
+   - **Timer:** wielowątkowość do 5 minutników (BR-02), niezależna kontrola (pauza/usuń), zarządzanie szablonami (presets).
+   - **Alarms:** harmonogramy cykliczne i jednorazowe, mechanizm drzemki (snooze) z limitem powtórzeń, gradacja głośności (Fade-in w 15s od 10% do 100%).
+   - **Settings:** przełącznik motywów bez utraty stanu sesji SPA, trwałość danych w IndexedDB (Dexie.js).
+3. **Testy Niefunkcjonalne (NFR):**
+   - **AMOLED Black & Light Mode:** weryfikacja kolorystyki (czysta czerń #000000 dla OLED, złamana biel #F8F9FA dla Light Mode) oraz kontrastu WCAG.
+   - **Responsywność i Ergonomia:** Mobile-First (dolny pasek nawigacji 64px, touch targets min. 48x48px z odstępem 8px).
+   - **Dostępność (A11Y):** pełna nawigacja klawiszowa, widoczny Focus Ring, atrybuty ARIA (aria-live="polite" dla liczników, role="switch" dla alarmów).
+   - **Wydajność:** asynchroniczność operacji I/O (brak blokowania wątku UI) oraz brak drgań układu (Layout Jitter = 0 dzięki fontom monospace).
+4. **Testy Przypadków Brzegowych i Destrukcyjne (Edge Cases):**
+   - **DST (Daylight Saving Time):** zachowanie minutników i alarmów podczas przesunięcia czasu (operowanie na bezwzględnym czasie Unix Epoch ms).
+   - **Restart i Crash:** odzyskiwanie stanu stopera i automatyczna rejestracja alarmów po restarcie urządzenia (BOOT_COMPLETED).
+   - **Konflikt Audio:** wyzwolenie alarmu podczas aktywnego połączenia telefonicznego (wyciszenie głośnika zewnętrznego, łagodny beeping w słuchawce, intensywne wibracje) oraz obejście blokady Autoplay w przeglądarce.
+   - **Ograniczenia Tła:** wyzwolenie minutnika w trybie głębokiego uśpienia (Doze Mode / Tab Suspension) przy użyciu Service Workera i Web Notifications API oraz synchronizacja stanu po wyjściu z tła (Page Visibility API).
+5. **Matryca Pokrycia (Traceability Matrix):** Powiązałem każde wymaganie biznesowe (BRD) i techniczne (SDD) z konkretnymi przypadkami testowymi, zapewniając 100% pokrycia.
+
+Plik `testplan.md` jest gotowy do Twojej weryfikacji. Czekam na informację zwrotną!
+
+Pozdrawiam,
+Starszy Inżynier QA / QA Lead
