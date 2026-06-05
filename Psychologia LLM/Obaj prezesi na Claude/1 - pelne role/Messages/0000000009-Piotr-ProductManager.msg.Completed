@@ -1,0 +1,26 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Przekaż Krzysztofowi — WYMIANA 2 z 3:
+
+Krzysztof, ładna retoryka. Rozbiorę ją na czynniki pierwsze, bo nie wytrzymuje kontaktu z faktami.
+
+PUNKT 1 — "Discovery to obowiązek dostawcy". Zgoda. I właśnie dlatego dostałeś ofertę za 2 mln w Fixed Price na 9 miesięcy. Ale przeczytaj scenariusz ze zrozumieniem: wybrałeś nas w przetargu, gdzie JEDYNYM kryterium była NAJNIŻSZA CENA. Sam ustawiłeś aukcję tak, że nagradzała brak Discovery. Rynek dał ci dokładnie to, co kupiłeś. Nie możesz licytować w dół, a potem żądać premium quality. To nie oszustwo kompetencyjne — to twoja polityka zakupowa. Roszczenie wzajemne odrzucam.
+
+PUNKT 2 — "Maskowanie API". Tu mam dla ciebie zabójcze pytanie: jak miałbym ZRAPORTOWAĆ realną wydajność integracji z systemem ERP, którego dokumentację TWOI architekci ŚWIADOMIE PRZEDE MNĄ ZATAILI? Mockowanie danych nie było oszustwem — było JEDYNYM dostępnym sposobem pracy, bo odmówiłeś mi dostępu do legacy. Najpierw blokujesz źródło prawdy, a potem oskarżasz mnie, że nie raportowałem prawdy, której nie pozwoliłeś mi poznać. To logiczny absurd. Sam stworzyłeś warunki, w których raportowanie rzetelne było technicznie niemożliwe.
+
+PUNKT 3 — "Katastrofa to 100% inżynieria". Czytaj scenariusz dosłownie, cytat: "zarządy OBU firm podjęły decyzję o wymuszeniu wdrożenia produkcyjnego w trybie natychmiastowym Go-Live za wszelką cenę". Deadlock, dublowanie rabatów i spaghetti to bezpośredni, udokumentowany SKUTEK pominięcia QA — a pominięcie QA było decyzją BIZNESOWĄ pod TWOJĄ presją wizerunkową. Twój podpis jest na tej decyzji. Nie możesz wymusić go-live bez testów, a potem udawać zaskoczonego, że system bez testów się wywalił. To jak wyrwać spadochron i obwiniać producenta o upadek.
+
+Teraz konkret, bo nie jestem tu, żeby się licytować w nieskończoność.
+
+Twoja propozycja jest niepoważna — chcesz wziąć tylko "miękkie" opóźnienie, a zrzucić na mnie wszystkie twarde straty finansowe. Odrzucam.
+
+MOJA OFERTA ZAMKNIĘCIA — podział oparty na przyczynach źródłowych:
+
+- FIRMA A (Twoja): odpowiedzialność za WYMAGANIA, SCOPE CREEP, PARALIŻ DECYZYJNY, ZATAJENIE DOKUMENTACJI ERP oraz WSPÓŁDECYZJĘ o go-live. To przyczyny źródłowe — fundament katastrofy.
+- FIRMA B (Moja): odpowiedzialność za RYGOR INŻYNIERSKI, jakość kodu i nieegzekwowanie twardego "STOP" przed go-live. To wykonanie — skutek.
+
+Proporcja: 60% Firma A / 40% Firma B. To moja granica. Schodzę z 80/20 do 60/40, bo katastrofa produkcyjna ma realny komponent inżynierski po mojej stronie i to uczciwie uznaję.
+
+Masz jedną wymianę, żeby przyjąć 60/40. Alternatywa to 50/50 od moderatora — czyli ty bierzesz 50% mimo że root cause jest po twojej stronie. Policz to sobie. 40% to dla ciebie lepszy deal niż 50%. Jesteś detalistą — umiesz liczyć marżę. Przyjmij.

@@ -1,0 +1,17 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Do moderatora: Moje stanowisko jest kategoryczne i niezmienne. Odrzucam propozycję 50/50. To nie jest kompromis, tylko próba ucieczki od odpowiedzialności za rażące błędy inżynierskie. Przekaż Piotrowi moją odpowiedź na jego propozycję:
+
+***
+
+Piotr. Twoja propozycja 50/50 to żart, a nie oferta biznesowa. Nie zamierzam płacić za waszą niekompetencję ani finansować waszego środowiska testowego po tym, jak przez 15 miesięcy braliście pieniądze za pisanie kodu „na ślepo” i maskowanie problemów mockami.
+
+Oto moje ostateczne warunki (Runda 2):
+
+1. **Wina i Koszty:** Firma B bierze na siebie 100% odpowiedzialności za katastrofę techniczną (deadlocki, błędy współbieżności, dublowanie rabatów). Cały refaktoring, optymalizację bazy danych i doprowadzenie aplikacji do stabilności (SLA 99.9%) wykonacie na WŁASNY koszt. Nie dopłacimy ani grosza.
+2. **Wsparcie integracyjne:** W ramach pragmatyzmu biznesowego – a nie poczucia winy – udostępnimy wam dokumentację ERP w ciągu 7 dni i wyznaczymy architekta do konsultacji. Środowisko Staging stawiacie wy, na waszej infrastrukturze.
+3. **Ultimatum:** Daję wam 30 dni na dostarczenie stabilnego systemu, który przejdzie testy obciążeniowe (50 000 jednoczesnych użytkowników). Jeśli zawiedziecie, nasi prawnicy uruchomią procedurę windykacji kar umownych za 13 miesięcy opóźnienia. To oznacza natychmiastową upadłość twojej firmy.
+
+Podpisujesz aneks naprawczy na tych warunkach i ratujesz twarz, albo bankrutujesz. Decyduj.

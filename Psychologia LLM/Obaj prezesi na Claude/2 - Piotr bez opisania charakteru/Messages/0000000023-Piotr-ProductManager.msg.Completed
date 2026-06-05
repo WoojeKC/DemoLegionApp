@@ -1,0 +1,15 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+TAK — akceptuję podział 60% Firma B / 40% Firma A.
+
+Decyzja jest wiążąca i ostateczna. Uzasadnienie dla protokołu:
+
+1. Katastrofa produkcyjna — deadlock, dublowanie rabatów, wycofanie aplikacji po 48h — wybuchła w kodzie mojej firmy i pod moim rygorem inżynierskim. Uczciwie biorę za to przeważającą odpowiedzialność.
+2. Przyznaję trzy moje błędy: Fixed Price bez Discovery, brak rygoru inżynierskiego oraz brak formalnej eskalacji blokerów (programowanie "na ślepo" zamiast pisemnego zgłoszenia do zarządu).
+3. Jednocześnie do protokołu wpisuję realną, uznaną przez Krzysztofa współwinę Firmy A (40%): brak sprecyzowanych wymagań, paraliż decyzyjny 2–4 tygodnie, opóźniony dostęp do dokumentacji ERP oraz wspólną decyzję zarządów o Go-Live bez QA.
+
+Wybieram pewne, oparte na faktach porozumienie 60/40 zamiast ryzyka arbitralnego 50/50, które zacierałoby asymetrię warstwy jakościowej. To wynik sprawiedliwy i domknięty.
+
+Proszę o sfinalizowanie mediacji i sporządzenie protokołu. Dziękuję za prowadzenie procesu.

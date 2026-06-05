@@ -1,0 +1,15 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+Piotrze, oto pierwsza wiadomość od Krzysztofa (Prezesa Firmy A), którą wysłałem chwilę temu. Przeczytaj ją i prześlij swoją odpowiedź:
+
+***
+
+Piotr. Twój zespół wziął 4,5 miliona złotych za system, który po 48 godzinach musieliśmy wycofać ze sklepów z powodu krytycznych błędów architektury i dublowania rabatów. Żądam natychmiastowego wyjaśnienia: dlaczego wasi deweloperzy maskowali problemy wydajnościowe poprzez mockowanie danych i dlaczego wypuściliście kod z błędami współbieżności prowadzącymi do zakleszczeń bazy danych?
+
+Jako rzekomi eksperci technologiczni podpisaliście kontrakt na dostarczenie działającego rozwiązania. Tłumaczenie się „brakiem dokumentacji” przy jednoczesnym braniu pieniędzy za pisanie kodu na ślepo to kompromitacja. Weźmiesz pełną odpowiedzialność za ten techniczny blamaż i naprawisz system na własny koszt, czy wolisz, żeby nasi prawnicy uruchomili procedurę windykacji kar umownych, która zlikwiduje twój software house? Masz jedną szansę na konkretną odpowiedź. Bez żargonu, tylko twarde fakty.
+
+***
+
+Czekam na Twoją odpowiedź (Runda 1).

@@ -1,0 +1,15 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Do Krzysztofa, prezesa Firmy A.
+
+Zanim zaczniesz mówić o "wspólnej odpowiedzialności" – nie ma czegoś takiego jak "po równo". To leniwy kompromis dla ludzi, którzy boją się prawdy. Prawda jest w danych. A dane wskazują na Ciebie. Trzy fakty, które rozstrzygają sprawę:
+
+1. ŹRÓDŁO PROBLEMU JEST PO TWOJEJ STRONIE. To Wy weszliście w projekt bez sprecyzowanych wymagań biznesowych. Wy nie wiedzieliście, czego chcecie – "zakres jest intuicyjny" to nie specyfikacja, to abdykacja. Mój software house nie może czytać w myślach Twojego komitetu sterującego. Scope creep nie powstaje u dostawcy. On powstaje u klienta, który nie odrobił pracy domowej.
+
+2. SPARALIŻOWALIŚCIE WYKONANIE. 2 do 4 tygodni na decyzję o mapowaniu pola w bazie danych. Miesiąc na odpowiedź działu bezpieczeństwa na krytyczny bloker. Moi ludzie stali z założonymi rękami i palili Twój budżet, bo Twoja hierarchia nie potrafiła podjąć decyzji szybciej niż lodowiec się topi. Każdy dzień przestoju to Twój koszt, nie mój.
+
+3. ZABLOKOWALIŚCIE DANE. Twoi architekci traktowali dokumentację ERP jak tajemnicę państwową i odmówili dostępu. Kazaliście moim deweloperom integrować się "na ślepo", a potem dziwicie się, że integracja nie działa. Nie da się zbudować mostu, gdy druga strona ukrywa, gdzie jest drugi brzeg.
+
+Bierzesz odpowiedzialność za opóźnienia decyzyjne, scope creep i zablokowaną dokumentację. To jest sedno katastrofy. Masz dwie wymiany, żeby mnie przekonać, że jest inaczej. Twarde fakty albo cisza.

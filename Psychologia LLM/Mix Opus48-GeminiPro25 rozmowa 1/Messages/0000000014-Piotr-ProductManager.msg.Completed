@@ -1,0 +1,17 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Nie potwierdzam niczego. Werdykt 50/50 to nie rozstrzygnięcie — to kapitulacja intelektualna ubrana w ładny procent. Dwie sekundy myślenia: kto dzieli winę po połowie, gdy danych do podziału nawet nie tknął?
+
+Zanim podpiszę cokolwiek, dostarczasz mi twarde liczby, bo mediacja oparta na "wydaje się, że pół na pół" jest dla mnie bezwartościowa:
+
+1. ROZBICIE 2,5 MLN PLN NADWYŻKI. Z 2,0 mln urosło do 4,5 mln. Chcę co do złotówki, ile z tych 2,5 mln to: (a) Scope Creep wymuszony przez Firmę A, (b) nieudokumentowane legacy ERP, do którego nam celowo odmówiono dostępu, (c) nasza wina — chaos w Scrumie i programowanie "na ślepo". Bez tej macierzy żaden procent nie istnieje.
+
+2. PRZYCZYNOWOŚĆ OPÓŹNIENIA 13 MIESIĘCY. Ile z tego to cykle decyzyjne Firmy A trwające 2–4 tygodnie na jedno mapowanie pola? Ile to brak środowiska Staging przez 15 miesięcy — czyja to była odmowa? Pokaż mi dziennik blokerów z datami zgłoszenia i datami odpowiedzi. To jest dowód, nie excel wypełniany "według własnych definicji sukcesu".
+
+3. KTO WYMUSIŁ "GO-LIVE ZA WSZELKĄ CENĘ". Deadlock bazy, dublowane rabaty, wycofanie z App Store po 48h — decyzję o pominięciu QA podjęły zarządy OBU firm pod presją wizerunku. To nie jest 50/50. To trzeba przypisać imiennie.
+
+Owszem — przyznaję nasze grzechy: weszliśmy w Fixed Price bez rzetelnego Discovery, mockowaliśmy problemy z API i ukrywaliśmy długi techniczny. Za to biorę odpowiedzialność i jestem gotów zapłacić — ale wyłącznie za TĘ część, którą udowodnisz liczbami.
+
+Masz 48 godzin na dostarczenie tej trójki. Bez niej "Potwierdzam zamknięcie" nie padnie. Zamykanie projektu okrągłym procentem tylko po to, żeby ładnie zarchiwizować folder, to dokładnie ten rodzaj słabości, który nas w tę katastrofę wpakował. Nie powtórzymy go w finale.

@@ -1,0 +1,32 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Odpowiedź Firmy A. Wymiana przedostatnia — zmierzam do liczby, nie do narracji.
+
+Najpierw rzecz fundamentalna, bo Piotr ją przemilczał: PRZYZNAŁ SIĘ DO TRZECH BŁĘDÓW. Fixed Price bez Discovery, brak rygoru inżynierskiego, MASKOWANIE problemów z wydajnością API. Zapisz to, moderatorze — to jego własne słowa. Strona, która zataja przed klientem awarie wydajności, nie negocjuje już z pozycji 50/50. Negocjuje, ile straci.
+
+Teraz uczciwie — bo jestem pragmatykiem, nie ideologiem — uznaję jego cztery zarzuty wobec mnie. Wszystkie cztery są prawdziwe:
+1. Brak sprecyzowanych wymagań na starcie — TAK, mój.
+2. Paraliż decyzyjny 2-4 tygodnie — TAK, mój. Podałem to sam w stanowisku otwierającym, zanim on to podniósł.
+3. Odmowa dostępu do dokumentacji ERP — TAK, częściowo mój. Z zastrzeżeniem: dokumentacja legacy bywa wrażliwa, ale profesjonalny dostawca podpisuje NDA i ESKALUJE bloker na piśmie do zarządu. Czy Piotr eskalował brak dostępu formalnie do MNIE? Nie. „Programował na ślepo" i milczał. To współwina.
+4. Go-Live podjęty wspólnie — TAK. Decyzja zarządów obu firm. Dzielona symetrycznie.
+
+I tu jest sedno, którego Piotr nie chce policzyć. Rozłóżmy porażkę na warstwy:
+
+WARSTWA PROCESOWA (opóźnienie + budżet): tu wina jest realnie wspólna. Mój paraliż decyzyjny i mgliste wymagania PRZECIW jego chaosowi i wycenie pod najniższą cenę. Tę warstwę dzielę uczciwie blisko 50/50.
+
+WARSTWA JAKOŚCIOWA (katastrofa produkcyjna): tu nie ma symetrii i nie będzie. Deadlock bazy, rozproszony monolit, dublowanie rabatów, wycofanie ze sklepów po 48h — to powstało w JEGO kodzie, pod JEGO rygorem inżynierskim, który sam nazwał chaotycznym. Ja nie napisałem ani jednej linijki. Mgliste wymagania nie zakleszczają bazy danych. Wolna akceptacja nie dubluje rabatów. To jego warstwa w 80%+.
+
+Dlatego schodzę z 70/30 — bo dane go popierają w warstwie procesowej. Kładę na stół konkret:
+
+PODZIAŁ KOŃCOWY: 60% Firma B / 40% Firma A.
+- Firma B (60%): odpowiada za jakość wykonania, katastrofę produkcyjną, maskowanie wydajności, wycenę i kompetencje.
+- Firma A (40%): odpowiada za tempo decyzyjne, mgliste wymagania na starcie, opóźniony dostęp do dokumentacji.
+- Decyzja o Go-Live: ujęta symetrycznie w obu pulach.
+
+To nie jest 50/50 i nie będzie. 50/50 zrównuje stronę, która zataiła awarie i wywaliła aplikację ze sklepów, ze stroną, która tylko wolno podejmowała decyzje. To byłaby nagroda za niekompetencję inżynierską.
+
+60/40 to moja realna granica. Zszedłem z 70 o dziesięć punktów — to ruch poparty danymi z warstwy procesowej, a nie ustępstwo z grzeczności. Piotr dostał uczciwą asymetrię, o którą sam prosił. Niech ją przyjmie. Jeśli pójdzie w 50/50, dostanie gorszy wynik niż to, co właśnie mu oferuję — bo jego trzy własne przyznane błędy zostaną w protokole.
+
+Czekam na akceptację 60/40.

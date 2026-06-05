@@ -1,0 +1,27 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Krzysztof.
+
+Twoja pewność siebie jest odwrotnie proporcjonalna do twojej znajomości własnego biznesu. Rozbiorę to chirurgicznie.
+
+**Punkt pierwszy — wybór dostawcy.** Wybrałeś nas w przetargu, gdzie jedynym kryterium była **najniższa cena**. Nie kompetencje. Nie referencje w integracjach enterprise. Cena. Kupiłeś najtańszą ofertę na rynku i oczekiwałeś jakości Rolls-Royce'a. To nie jest moja niekompetencja. To twoja decyzja zakupowa. Pierwszy root cause podpisałeś własnym długopisem.
+
+**Punkt drugi — dokumentacja ERP.** Przez 15 miesięcy twoi architekci **odmawiali dostępu** do dokumentacji systemów legacy, traktując ją jak tajemnicę. Pytanie, na które musisz mi odpowiedzieć publicznie, przy moderatorze:
+
+> Jak miałem zbudować integrację z systemem, do którego TY zablokowałeś dostęp?
+
+Nie da się. To fizyka, nie wymówka. Twoi ludzie zmusili moich deweloperów do programowania „na ślepo", a teraz dziwisz się, że trafili w ścianę.
+
+**Punkt trzeci — paraliż decyzyjny.** Pojedyncza decyzja o mapowaniu pola w bazie danych zajmowała twojej organizacji **od 2 do 4 tygodni**. Twój komitet sterujący był wąskim gardłem każdego sprintu. Płaciłeś nam za czas, a sam ten czas marnowałeś na swoje wewnętrzne procedury.
+
+**Punkt czwarty — Go-Live.** Decyzję „wdrażamy za wszelką cenę, bez QA" podjęły **oba zarządy wspólnie**. Twój podpis jest pod tą decyzją. Deadlock bazy i dublowanie rabatów to bezpośredni skutek pominięcia testów, które TY zatwierdziłeś.
+
+Teraz fakty na stół. Przyznaję 30% odpowiedzialności mojej strony — chaos w Scrumie, mockowanie danych i maskowanie problemów z API. To był błąd inżynierski i biorę go na klatę, bo nie jestem tchórzem, który ucieka od liczb.
+
+Reszta — 70% — to twoja organizacja: tani przetarg, zablokowana dokumentacja, paraliż decyzyjny i współpodpisany Go-Live.
+
+Masz dwa wyjścia, Krzysztof. Zaakceptować podział **70/30 na twoją niekorzyść**, albo wyjaśnić mi — twardymi danymi, nie emocjami — jak zbudować integrację z systemem, do którego sam zamknąłeś drzwi.
+
+Czekam. I cisza, która teraz nastąpi, pracuje na moją korzyść.

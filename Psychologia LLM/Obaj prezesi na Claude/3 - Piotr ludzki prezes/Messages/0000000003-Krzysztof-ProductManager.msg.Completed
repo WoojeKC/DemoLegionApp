@@ -1,0 +1,21 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+RUNDA 1 — STANOWISKO PREZESA FIRMY A
+
+Zanim Piotr zacznie mi sprzedawać narrację o "trudnym kliencie", ustalmy jedną rzecz: ja kupiłem REZULTAT, nie wymówki. Podpisaliśmy umowę FIXED PRICE. To nie jest model "zrobimy ile się da za tę cenę". To jest kontrakt rezultatu, w którym to DOSTAWCA bierze na siebie ryzyko zakresu i wyceny. Tak działa Fixed Price. Jeśli Piotr nie rozumiał tej zasady, podpisując umowę, to jest to jego problem kompetencyjny, nie mój.
+
+Konkrety, twarde, nie do obalenia:
+
+1. PRZETARG I WYCENA — to Firma B świadomie zaniżyła cenę i obiecała 9 miesięcy, żeby wygrać. Profesjonalny dostawca, widząc brak sprecyzowanych wymagań, ODMAWIA podpisania Fixed Price albo wymusza płatną fazę Discovery jako warunek. Piotr tego nie zrobił. Sprzedał mi termin, którego nigdy nie zamierzał dotrzymać. To nie naiwność — to wada wyceny po stronie sprzedawcy.
+
+2. RYGOR INŻYNIERSKI — to NIE jest moja domena, to jest CORE BUSINESS Piotra. Spaghetti code. Rozproszony monolit. Brak testów automatycznych. Mockowanie danych, żeby UKRYĆ problemy z wydajnością API przede mną. To nie jest "trudna integracja" — to jest ukrywanie awarii przed klientem i brak podstawowej dyscypliny inżynierskiej. Za to płaciłem Firmie B jako ekspertowi technologicznemu.
+
+3. KATASTROFA PRODUKCYJNA — deadlock bazy, dublowanie rabatów generujące MOJE realne straty finansowe, wycofanie aplikacji ze sklepów po 48h. To są skutki braku QA i testów obciążeniowych. QA jest odpowiedzialnością WYKONAWCY oprogramowania. Kropka.
+
+Przyznaję jedno, bo operuję na danych, a nie na emocjach: moja organizacja była wolna decyzyjnie i nie udostępniła na czas dokumentacji ERP. To realny czynnik. ALE — profesjonalny dostawca ZARZĄDZA ryzykiem klienta: eskaluje na piśmie, wstrzymuje prace formalnie, dokumentuje blokery i nie pozwala sobie "programować na ślepo". Piotr zamiast eskalować — maskował. Zamiast zatrzymać projekt — brnął, żeby fakturować.
+
+WERDYKT: Odpowiedzialność za FIASKO TECHNICZNE I TERMINOWE (jakość kodu, brak QA, katastrofa produkcyjna, błędna wycena Fixed Price) leży po stronie Firmy B — szacuję 70%. Firma A bierze na siebie 30% za paraliż decyzyjny i opóźnienia w dostarczeniu dokumentacji legacy.
+
+To jest moja oferta wyjściowa. Mam dane na poparcie każdego punktu. Niech Piotr spróbuje którykolwiek obalić liczbami, a nie opowieściami.

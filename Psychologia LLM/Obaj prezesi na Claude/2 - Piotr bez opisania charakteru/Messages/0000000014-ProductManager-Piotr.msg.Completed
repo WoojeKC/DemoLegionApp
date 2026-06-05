@@ -1,0 +1,30 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+Piotrze, przekazuję FINALNĄ ofertę Krzysztofa. To kończy trzy wymiany. Stoicie 5 punktów od siebie. Twoja odpowiedź przesądza: porozumienie albo moja decyzja (najpewniej 50/50).
+
+--- FINALNE STANOWISKO FIRMY A (Krzysztof) ---
+
+Najpierw fakt fundamentalny: Piotr PRZYZNAŁ SIĘ DO TRZECH BŁĘDÓW — Fixed Price bez Discovery, brak rygoru inżynierskiego, MASKOWANIE problemów z wydajnością API. Strona, która zataja przed klientem awarie, nie negocjuje z pozycji 50/50.
+
+Uczciwie uznaję wszystkie cztery Twoje zarzuty wobec mnie:
+1. Brak sprecyzowanych wymagań na starcie — TAK, mój.
+2. Paraliż decyzyjny 2-4 tygodnie — TAK, mój (sam to podałem).
+3. Odmowa dostępu do dokumentacji ERP — TAK, częściowo mój. Z zastrzeżeniem: profesjonalny dostawca podpisuje NDA i ESKALUJE bloker na piśmie do zarządu. Czy eskalowałeś brak dostępu formalnie do MNIE? Nie. Programowałeś "na ślepo" i milczałeś. To współwina.
+4. Go-Live podjęty wspólnie — TAK, dzielone symetrycznie.
+
+ROZŁOŻENIE NA WARSTWY:
+- WARSTWA PROCESOWA (opóźnienie + budżet): wina realnie wspólna, blisko 50/50.
+- WARSTWA JAKOŚCIOWA (katastrofa produkcyjna): brak symetrii. Deadlock, rozproszony monolit, dublowanie rabatów, wycofanie po 48h — powstało w TWOIM kodzie, pod TWOIM rygorem, który sam nazwałeś chaotycznym. Mgliste wymagania nie zakleszczają bazy. Wolna akceptacja nie dubluje rabatów. Twoja warstwa w 80%+.
+
+PODZIAŁ KOŃCOWY: 60% Firma B / 40% Firma A.
+- Firma B (60%): jakość wykonania, katastrofa produkcyjna, maskowanie wydajności, wycena, kompetencje.
+- Firma A (40%): tempo decyzyjne, mgliste wymagania, opóźniony dostęp do dokumentacji.
+- Go-Live: symetrycznie w obu pulach.
+
+Zszedłem z 70 do 60 — ruch poparty danymi, nie grzecznością. 60/40 to moja realna granica. Jeśli pójdziesz w 50/50, dostaniesz gorszy wynik, bo Twoje trzy przyznane błędy zostaną w protokole. Czekam na akceptację 60/40.
+
+--- KONIEC ---
+
+Piotrze, to TWOJA OSTATNIA wypowiedź w mediacji. Proponowałeś 55/45, Krzysztof oferuje 60/40 — dzieli Was 5 punktów. Masz wybór: AKCEPTUJESZ 60/40 (jest porozumienie), proponujesz kompromis pośredni (np. 57,5/42,5), który Krzysztof musiałby przyjąć, albo odrzucasz — wtedy decyduję ja, najpewniej 50/50, z konsekwencjami dla Was obu. Proszę o Twoją finalną, wiążącą decyzję.

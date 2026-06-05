@@ -1,0 +1,35 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+RUNDA 3 — Finalne stanowisko Piotra (Prezes Firmy B):
+
+Krzysztofie, domykamy to jak dorośli — i robię to bez gry.
+
+Masz rację w sprawie, która jest sednem: **odpowiedzialność rozlicza się wagą wpływu, nie liczbą punktów.** Katastrofa produkcyjna — deadlock, dublowane rabaty wypłacające Twoje realne pieniądze, wycofanie aplikacji po 48h — wyszła z mojego obszaru. Brak QA i testów obciążeniowych to moja odpowiedzialność, nie Twoja powolność. Przyznaję wprost: moje trzy grzechy ważą więcej niż Twoje trzy. Nie będę tego rozcieńczał.
+
+**Akceptuję Twoją propozycję zamknięcia, z jedną uczciwą korektą i jedną twardą deklaracją.**
+
+Przyjmuję:
+1. **Odpowiedzialność za katastrofę produkcyjną i jakość techniczną — w całości po mojej stronie (Firma B).** Bez wyjątków.
+2. **Warunki brzegowe — Firma A.** Tu się zgadzamy.
+3. **Naprawa szkody produkcyjnej i refaktoryzacja długu technologicznego — na koszt Firmy B.** To moje zobowiązanie i traktuję je jako nienaruszalne. Twoi klienci dostaną działający, stabilny system — to jest dla mnie ważniejsze niż jakikolwiek procent.
+4. **Discovery i PoC — finansuje Firma A,** jak proponujesz.
+
+Moja korekta dotyczy wyłącznie **punktu 4 — rozliczenia kar i aneksów (2,5 mln PLN).** Proponowałeś 55/45, Ty 70/30. Domknijmy to uczciwym środkiem opartym na przyczynowości: **65/35 na korzyść Firmy A.**
+
+Dlaczego nie czyste 70/30, mimo że przyznaję większą wagę swoich błędów? Bo część tych 2,5 mln to nie skutek katastrofy produkcyjnej (tę pokrywam OSOBNO, w całości, w pkt 3), lecz **scope creep i koszty przestojów wynikłe z 2–4 tygodniowego paraliżu decyzyjnego i braku dostępu do dokumentacji ERP** — a to obiektywnie Twój obszar. 65/35 oddaje, że ciężar leży po mojej stronie, ale nie wymazuje przyczyn leżących po Twojej. To nie jest targowanie — to przyczynowość, na którą sam się powołujesz.
+
+Jeśli te 5 punktów procentowych miałoby nas rozbić i wpędzić obu w arbitralne 50/50 od moderatora — to ja, Piotr, **schodzę do Twoich 70/30.** Wolę wziąć na siebie pięć punktów więcej i wyjść stąd z porozumieniem i planem naprawczym, niż wygrać spór o procent i zostawić Twoich klientów bez działającej aplikacji. Odpowiedzialność lidera mierzy się tym, co naprawi, a nie tym, ile wytarguje.
+
+**Finalna propozycja, gotowa do podpisu:**
+- Katastrofa + jakość techniczna: Firma B (100%).
+- Warunki brzegowe: Firma A.
+- Naprawa techniczna i refaktoryzacja: koszt Firmy B.
+- Discovery + PoC: koszt Firmy A.
+- Kary/aneksy 2,5 mln: **65/35 dla A** — a jeśli upierasz się przy 70/30, przyjmuję 70/30, byle domknąć.
+- Dalsza współpraca: T&M z cap, wspólny zespół cross-funkcyjny, współdzielony toolset (Jira/Confluence/Git).
+
+Podaję rękę. Zamknięte.
+
+Piotr

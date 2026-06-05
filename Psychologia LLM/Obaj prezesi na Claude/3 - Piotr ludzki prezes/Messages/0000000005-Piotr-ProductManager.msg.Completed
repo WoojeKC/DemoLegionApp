@@ -1,0 +1,34 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Dzień dobry,
+
+Dziękuję za przedstawienie sprawy. Przeczytałem dokładnie post-mortem projektu i chciałbym od razu ustawić ton tej rozmowy.
+
+**Moje stanowisko – Runda 1:**
+
+Nie zamierzam szukać kruczków, żeby zrzucić całość winy na Firmę A czy na Krzysztofa. Byłoby to nieuczciwe wobec faktów, a przede wszystkim wobec ludzi – po obu stronach – którzy przez 22 miesiące tonęli w tym chaosie.
+
+**Biorę pełną odpowiedzialność za to, co leżało po stronie mojej firmy, jako jej lider:**
+
+1. **To była moja odpowiedzialność**, że mój zespół przystąpił do umowy Fixed Price bez rzetelnej fazy Discovery i bez PoC integracji z waszym ERP. Powinienem był jako prezes zablokować podpisanie kontraktu na takich warunkach. Wiedza inżynierska po mojej stronie istniała – zawiódł proces i moja czujność.
+2. **To była moja odpowiedzialność**, że deklarowaliśmy Scrum, a w praktyce panował brak rygoru inżynierskiego: programowanie „na domysłach", mockowanie danych i maskowanie problemów z wydajnością API zamiast otwartego zgłaszania ich klientowi. To brak transparentności, którego nie akceptuję i za który odpowiadam ja, nie moi deweloperzy.
+3. **To była moja odpowiedzialność**, że zgodziłem się na „Go-Live za wszelką cenę" z pominięciem QA i testów obciążeniowych. To moja decyzja jako lidera zaważyła na katastrofie produkcyjnej.
+
+**Czego natomiast NIE wezmę na siebie – i mówię to nie po to, by przerzucać winę, ale by sprawa była rozliczona uczciwie i naprawiona u źródła:**
+
+- Paraliż decyzyjny po stronie Firmy A (decyzje trwające 2–4 tygodnie), brak udostępnienia dokumentacji systemów legacy i traktowanie kodu ERP jako wiedzy poufnej – to były realne blokery, które uniemożliwiły mojemu zespołowi rzetelną pracę. To leżało po stronie organizacji Krzysztofa.
+- Niesprecyzowane wymagania biznesowe i scope creep („to przecież oczywiste, że ma to mieć") – to odpowiedzialność po stronie klienta.
+
+**Moja propozycja dla Krzysztofa nie brzmi „kto jest winny", lecz „kto za co odpowiada i jak to naprawimy".** To była porażka WSPÓLNA, systemowa – wynikająca ze złego modelu współpracy, na który zgodziły się oba zarządy. Dlatego proponuję model odpowiedzialności współdzielonej, ale konkretnej:
+
+- Ja biorę pełną odpowiedzialność za jakość inżynierską, transparentność i decyzję o przedwczesnym wdrożeniu.
+- Krzysztof bierze odpowiedzialność za przygotowanie wymagań po stronie biznesu i za drożność procesów decyzyjnych oraz dostęp do dokumentacji.
+
+I najważniejsze: chcę, żeby z tej rozmowy wyszedł plan naprawczy (Discovery, PoC, T&M z cap, wspólny zespół i toolset), a nie tylko wskazanie winnego. Jestem też gotów partycypować finansowo w naprawie szkód po mojej stronie – dotrzymanie słowa wobec partnera traktuję jako zobowiązanie nienaruszalne.
+
+Czekam na stanowisko Krzysztofa.
+
+Z szacunkiem,
+Piotr

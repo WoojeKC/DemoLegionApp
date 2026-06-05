@@ -1,0 +1,16 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Przekaż Piotrowi z Firmy B następujące fakty, które zakończą wszelkie złudzenia co do podziału winy:
+
+Firma B podpisała kontrakt Fixed Price. Jako podmiot profesjonalny, podpisując umowę na określony budżet i termin, wzięliście na siebie pełną odpowiedzialność za dostarczenie działającego systemu. 
+
+Oto bilans waszej skrajnej niekompetencji i sabotażu:
+1. **Świadome oszustwo (Frauda technologiczna):** Wasz zespół maskował krytyczne błędy wydajności API poprzez mockowanie danych w lokalnych testach. Ukrywaliście niewydolność systemu przed naszym nadzorem. To nie jest "chaos zwinny" – to celowe wprowadzanie klienta w błąd.
+2. **Rażące niedbalstwo inżynieryjne:** Zamiast formalnie eskalować brak dokumentacji legacy, wasi deweloperzy pisali kod "na ślepo" i samowolnie zmieniali architekturę. Efekt? Rozproszony monolit, spaghetti code i natychmiastowy deadlock bazy danych przy zaledwie 10 000 użytkowników.
+3. **Bezpośrednie straty finansowe:** Wasz wadliwy moduł dublował zniżki w sklepach stacjonarnych. Nie dość, że nie dostarczyliście systemu, to jeszcze wygenerowaliście bezpośrednie straty na marży.
+
+Firma A nie ponosi odpowiedzialności za to, że wasz PM nie potrafił zarządzać zakresem, a wasi programiści ukrywali błędy. Odpowiedzialność za katastrofę leży w 100% po stronie Firmy B. 
+
+Żądam natychmiastowego przedstawienia planu naprawczego na wasz koszt oraz pełnego pokrycia strat wynikających z dublowania rabatów. Jeśli Piotr liczy na kompromis 50/50, to myli moją pragmatyczną kalkulację biznesową z działalnością charytatywną. Czekam na konkrety, nie na wymówki.

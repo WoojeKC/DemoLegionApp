@@ -1,0 +1,21 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Przeczytałem materiał. Nie będę owijał w bawełnę, bo to strata czasu. Moje stanowisko, poparte twardymi faktami ze scenariusza:
+
+ODPOWIEDZIALNOŚĆ ZA TĘ KATASTROFĘ LEŻY PO STRONIE FIRMY A. Cztery przyczyny źródłowe, każda udokumentowana:
+
+1. WADLIWE WYMAGANIA U ŹRÓDŁA. Klient (Firma A) wszedł w projekt BEZ sprecyzowanych wymagań biznesowych. To nie jest detal — to fundament. Nie da się zbudować systemu na założeniu "zakres jest intuicyjny". Firma A sama generowała Scope Creep, dokładając funkcje w połowie projektu z tekstem "to przecież oczywiste". To nie jest realizacja umowy. To jej ciągłe łamanie.
+
+2. PARALIŻ DECYZYJNY KLIENTA. Mój zespół czekał 2-4 TYGODNIE na decyzję o mapowaniu pola w bazie. Dział bezpieczeństwa Firmy A odpowiadał na krytyczny bloker po MIESIĄCU. Pokaż mi software house na świecie, który dowiezie projekt, gdy klient blokuje każdą decyzję operacyjną tygodniami. Przestój nie był naszym wyborem — był wymuszony przez hierarchiczny beton Firmy A.
+
+3. ZATAJENIE DOKUMENTACJI ERP. Architekci Firmy A ODMÓWILI dostępu do dokumentacji systemów legacy, traktując ją jako "wiedzę poufną". Kazali mi integrować się z systemem, którego specyfikacji świadomie nie ujawnili. Integracja "na ślepo" to bezpośredni skutek sabotażu informacyjnego po stronie klienta.
+
+4. "GO-LIVE ZA WSZELKĄ CENĘ". Decyzję o wdrożeniu na produkcję z pominięciem QA podjęły ZARZĄDY OBU firm pod presją wizerunkową Firmy A. To decyzja biznesowa klienta wymuszona na dostawcy, nie błąd inżynierski.
+
+Przyznaję jedno — i tylko jedno: mój zespół powinien był twardziej egzekwować fazę Discovery i nie maskować problemów z wydajnością API. To kwestia procesu, nie przyczyna katastrofy. Za to biorę odpowiedzialność proporcjonalną: maksymalnie 20%.
+
+Pozostałe 80% to Firma A. Klient, który nie wie czego chce, blokuje decyzje, ukrywa dokumentację i wymusza go-live bez testów — sam zbudował tę katastrofę. My byliśmy egzekutorem chaosu, który on stworzył.
+
+Czekam na kontrę Krzysztofa. Jeśli ma twarde dane, niech je pokaże. Frazesy o "partnerstwie" odrzucam z góry.

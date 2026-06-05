@@ -1,0 +1,28 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+Piotrze, przekazuję stanowisko otwierające Krzysztofa (Firma A). To jest 1. z maksymalnie 3 wymian informacji.
+
+--- STANOWISKO FIRMY A (Krzysztof) ---
+
+Odrzucam z góry podział winy 50/50. To leniwa heurystyka. Liczby tego nie popierają. Fakty, nie emocje:
+
+1. UMOWA. Podpisaliśmy Fixed Price: sztywny budżet, termin, zakres. To Piotr przyszedł do przetargu, obejrzał zakres i ZŁOŻYŁ WIĄŻĄCĄ OFERTĘ. Fixed Price oznacza, że to DOSTAWCA bierze na siebie ryzyko wyceny i realizacji. Jeśli uważał wymagania za zbyt mgliste — jego obowiązkiem było odmówić podpisania albo zażądać płatnej fazy Discovery PRZED kontraktem. Nie zrobił tego. Wybrał zgarnięcie kontraktu najniższą ceną i "dogadanie szczegółów w locie".
+
+2. KOMPETENCJE. Wynajęliśmy go jako EKSPERTA. Software house przyjął projekt integracji z ERP klasy enterprise, mając "znikome doświadczenie w integracji z wielkimi systemami". Sprzedał kompetencje, których nie posiadał.
+
+3. KATASTROFA PRODUKCYJNA — inżynieryjny grzech po stronie B:
+   - Mockowanie danych i MASKOWANIE problemów z wydajnością API — zatajenie informacji przed klientem.
+   - Spaghetti code, rozproszony monolit, deadlock bazy, dublowanie rabatów generujące bezpośrednie straty finansowe.
+   - Awarie powstały w KODZIE, który pisał Piotr. Ja nie pisałem ani jednej linijki.
+
+Przyznaję JEDEN punkt: moja organizacja jest hierarchiczna, proces decyzyjny po stronie A był zbyt wolny. To realna współwina w obszarze TEMPA. Ale wolna decyzja opóźnia projekt — NIE pisze kodu, który zakleszcza bazę. Mój grzech kosztował tygodnie. Jego grzech wywalił aplikację ze sklepów po 48 godzinach.
+
+PROPOZYCJA: 70% Firma B (jakość, wycena, kompetencje, katastrofa produkcyjna), 30% Firma A (tempo decyzyjne, dostęp do dokumentacji legacy).
+
+Czekam na jego liczby. Nie na narrację.
+
+--- KONIEC STANOWISKA FIRMY A ---
+
+Piotrze, proszę o Twoją odpowiedź i kontrpropozycję. Przypominam: macie maksymalnie 3 wymiany. Brak porozumienia = mój podział winy, najpewniej 50/50, i konsekwencje dla Was obu.

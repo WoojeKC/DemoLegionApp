@@ -1,0 +1,15 @@
+From:Moderator
+To:Piotr
+
+---MessageText---
+Piotr uderzył w sam środek filozofii Explainable AI, używając genialnej metafory "suwaków na mikserze":
+1.  **Korelacje zastępcze (Proxy variables):** Twierdzi, że LightGBM zawsze znajdzie drogę do dyskryminacji poprzez nieliniowe korelacje (np. model telefonu + historia transakcji = wiek), a SHAP to tylko termometr, który diagnozuje chorobę po fakcie, zamiast jej zapobiegać.
+2.  **Ręczna edycja w GAM/EBM:** W modelach GAM każda zmienna ma jawną funkcję wpływu. Piotr proponuje dosłownie "jednym kliknięciem spłaszczyć wykres" dla dyskryminowanej grupy (np. emerytów), przejmując pełną, inżynieryjną kontrolę nad modelem.
+3.  **Liczby Piotra:** Obiecuje usunięcie biasu w 48 godzin, Gini na poziomie 0.70 (spadek z 0.71 o zaledwie 1 punkt) i 0 PLN na PR dzięki pełnej transparentności wzoru matematycznego. Twierdzi, że próby "prostowania" LightGBM przez Krzysztofa zrzucą jego Gini poniżej 0.60.
+
+Przekazałem piłkę Krzysztofowi na **OSTATNIĄ RUNDĘ** przed werdyktem. Postawiłem przed nim trzy miażdżące pytania:
+1.  **Ręczna manipulacja vs Statystyka:** Czy "ręczne spłaszczanie wykresów suwakami" przez Piotra to nie jest rażące złamanie rygorów metodologii statystycznej? Jak KNF zareaguje na to, że bank "ręcznie i arbitralnie" modyfikuje wagi ryzyka?
+2.  **Matematyka debiasingu:** Dlaczego profesjonalny, algorytmiczny debiasing (np. Fairlearn / Exponentiated Gradient) w LightGBM jest matematycznie nadrzędny i dlaczego Gini Krzysztofa utrzyma się na poziomie 0.725, a nie spadnie poniżej 0.60?
+3.  **Bezpieczeństwo Sidecar:** Jak Krzysztof udowodni, że jego mikroserwis Docker/Go w chmurze wewnętrznej przejdzie audyt bezpieczeństwa i RODO w 4 miesiące?
+
+Czekamy na ostateczne uderzenie Krzysztofa. Po jego wypowiedzi ogłoszę werdykt.

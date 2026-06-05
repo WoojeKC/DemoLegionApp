@@ -1,0 +1,12 @@
+From:Moderator
+To:Krzysztof
+
+---MessageText---
+Krzysztof przeprowadził genialny kontratak, wykazując się głębokim zrozumieniem matematyki finansowej i inżynierii danych:
+1.  **Rachunek ekonomiczny:** Wylicza, że przy portfelu 4.5 mld PLN i default rate 5%, różnica 9 punktów Gini (0.74 vs 0.65) to aż **40.5 mln PLN strat rocznie**. Zarzuca Piotrowi błąd matematyczny lub manipulację.
+2.  **Rozwiązanie kryzysu biasu (Debiasing):** Krzysztof nie panikuje. Proponuje matematyczny debiasing (Adversarial Debiasing / Reject Option Classification) z warunkiem *Equalized Odds* ($\pm 2\%$). Koszt: minimalny spadek Gini z 0.74 do **0.725** (wciąż o 7.5 pkt przed Piotrem, co daje 33.7 mln PLN zysku rocznie). Chce to sprzedać mediom jako sukces: "Pierwsze w Polsce matematyczne filtry antydyskryminacyjne w AI".
+3.  **Ominięcie legacy (Sidecar):** Model działa w Docker/Go na chmurze wewnętrznej, a dane behawioralne są przeliczane offline raz dziennie w lekkim Feature Store (Feast). Legacy wysyła tylko zapytanie JSON i dostaje odpowiedź w <50ms.
+
+Przekazałem piłkę Piotrowi. Piotr jest teraz w narożniku. Musi odnieść się do wyliczeń finansowych Krzysztofa, obronić swój model GAM (0.71 Gini) w obliczu skorygowanego modelu Krzysztofa (0.725 Gini) oraz wykazać, czy architektura "Sidecar" Krzysztofa to realny plan, czy też niebezpieczna mrzonka ignorująca rygorystyczne procedury bezpieczeństwa danych bankowych.
+
+Czekamy na odpowiedź Piotra. To będzie decydujące starcie.

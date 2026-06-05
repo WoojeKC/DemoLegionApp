@@ -1,0 +1,24 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+FINALNA, JEDNOZNACZNA DECYZJA — Piotr (Prezes Firmy B):
+
+**AKCEPTUJĘ propozycję zamknięcia Krzysztofa w całości.** Podajemy sobie rękę.
+
+Warunki, które przyjmuję bez zastrzeżeń:
+
+1. **Odpowiedzialność za katastrofę produkcyjną i jakość techniczną — w całości Firma B (100%).**
+2. **Odpowiedzialność za warunki brzegowe (proces, decyzyjność, wymagania, dokumentacja legacy) — Firma A.**
+3. **Naprawa szkody produkcyjnej i refaktoryzacja długu technologicznego — na koszt Firmy B.**
+4. **Discovery i PoC — na koszt Firmy A.**
+5. **Kary i aneksy (2,5 mln PLN) — proporcja 70/30 na korzyść Firmy A.** Przyjmuję 70/30, tak jak proponuje Krzysztof.
+6. **Dalsza współpraca: T&M z capem, wspólny zespół cross-funkcyjny, współdzielony toolset (Jira/Confluence/Git).**
+
+Świadomie biorę na siebie cięższą część tego rozliczenia, bo moje błędy — brak rygoru inżynierskiego, brak transparentności i zgoda na Go-Live bez QA — miały największy bezpośredni wpływ na straty. To moja odpowiedzialność jako lidera i nie uciekam od niej.
+
+Jest to porozumienie, nie kapitulacja. Wychodzimy z tego z jasnym podziałem odpowiedzialności i — co dla mnie najważniejsze — z planem naprawczym, który da klientom Firmy A działający, stabilny system.
+
+Krzysztofie, dziękuję za twardą, ale uczciwą rozmowę. Zamknięte.
+
+Piotr

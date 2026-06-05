@@ -1,0 +1,36 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+WYMIANA 3 z 3 — stanowisko finalne, wiążące.
+
+Krzysztof zbudował całą swoją obronę na jednym filarze: moim "przyznaniu się do maskowania". Wyrywam mu ten filar i cała konstrukcja 70/30 wali się w gruzy.
+
+Zacytuję dokładnie, co przyznałem: maskowaliśmy problemy z wydajnością API systemu, którego DOKUMENTACJĘ TWOI ARCHITEKCI ŚWIADOMIE PRZEDE MNĄ ZATAILI. Krzysztof, nie możesz jednocześnie:
+(a) odmówić mi dostępu do specyfikacji ERP, traktując ją jako "wiedzę poufną", oraz
+(b) oskarżać mnie, że nie zaraportowałem Ci prawdy o integracji z tym samym ERP.
+To wyklucza się logicznie. Twoje zatajenie dokumentacji jest CHRONOLOGICZNIE PIERWSZE i jest przyczyną mojego mockowania. Najpierw zatrułeś TY — zatrułeś źródło, do którego ja miałem się podłączyć. Moje "maskowanie" to skutek Twojego sabotażu informacyjnego, nie niezależny grzech.
+
+Dwa argumenty, które kładą Twoje 70/30 ostatecznie:
+
+PIERWSZY. Mówisz "deadlock pisał mój zespół". Tak. Pisał go w warunkach, które TY ustawiłeś: bez dokumentacji ERP, bez wspólnego środowiska Staging przez 15 miesięcy (bo TWOI architekci go blokowali), pod presją go-live BEZ QA, którą TY współpodpisałeś. Daj dowolnemu zespołowi inżynierów te cztery warunki naraz, a dostaniesz deadlock za każdym razem. To nie defekt wykonawcy — to defekt środowiska, które stworzył klient.
+
+DRUGI. "Podejmowałem decyzję go-live na podstawie Twoich raportów". Nieprawda i sam to wiesz. Scenariusz mówi wprost: go-live "za wszelką cenę" wymuszono pod presją STRAT WIZERUNKOWYCH Firmy A — czyli pod TWOJĄ presją, nie z powodu fałszywego raportu o stabilności. Żaden raport nie sugerował, że system jest gotowy. Wymusiłeś wdrożenie WBREW oczywistemu ryzyku, bo bardziej bałeś się PR-u niż deadlocka. To Twoja kalkulacja biznesowa.
+
+Teraz matematyka, bo obaj jesteśmy prezesami, nie filozofami.
+
+Ja zaproponowałem 60/40 — uczciwy podział, w którym BIORĘ 40% za realny komponent inżynierski. To jest ustępstwo. Ty odpowiadasz 70/30, próbując zrzucić na mnie 70% katastrofy, której ROOT CAUSE — wymagania, decyzje, dokumentacja — leży w 100% po Twojej stronie.
+
+Nie schodzę poniżej 40% własnej odpowiedzialności. Ale żeby zamknąć temat i NIE oddawać decyzji moderatorowi, robię ostatni, ostateczny ruch:
+
+PRZYJMUJĘ PODZIAŁ 50/50.
+
+Nie dlatego, że to sprawiedliwe — sprawiedliwe byłoby 60/40 na Twoją niekorzyść. Przyjmuję 50/50, bo to DOKŁADNIE to, co i tak narzuci moderator przy braku porozumienia. Czyli oferuję Ci najlepszy wynik, jaki możesz realnie osiągnąć — i ani grama lepiej.
+
+Twoja kalkulacja jest brutalnie prosta, Krzysztof:
+- Upierasz się przy 70/30 → brak porozumienia → moderator daje 50/50. Bierzesz 50%.
+- Przyjmujesz teraz moje 50/50 → bierzesz 50%, ale jako PARTNER, który zamknął sprawę, a nie strona, na którą spadł wyrok arbitra.
+
+W obu scenariuszach masz 50%. Jedyna różnica to czy wyjdziesz stąd jako negocjator, czy jako przegrany przesłuchania. Detalista zawsze wybiera ten sam koszyk taniej i z lepszą etykietą.
+
+DEKLARACJA WIĄŻĄCA: akceptuję 50/50. Sprawa zamknięta po Twoim "tak". Twój ruch.

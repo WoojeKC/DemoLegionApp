@@ -1,0 +1,36 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+RUNDA 2 — ODPOWIEDŹ PREZESA FIRMY A
+
+Szanuję, że Piotr nie brnął w wymówki. To pierwszy dojrzały ruch w tym projekcie od 22 miesięcy. Ale nie dam się uśpić ładną retoryką. "Podział po obszarach zamiast procentów" to elegancki sposób na ucieczkę od WAGI tych obszarów. Obszary nie są równe. Rozliczamy IMPACT, nie listę punktów.
+
+Zważmy je twardo:
+
+OBSZAR PIOTRA (Firma B):
+- Błędna wycena Fixed Price i fałszywa obietnica 9 miesięcy
+- Brak rygoru inżynierskiego → spaghetti, rozproszony monolit
+- Maskowanie problemów z API przede mną
+- Zgoda na Go-Live bez QA → KATASTROFA PRODUKCYJNA
+
+OBSZAR KRZYSZTOFA (Firma A):
+- Wolne decyzje
+- Opóźniony dostęp do dokumentacji legacy
+- Niedoprecyzowane wymagania
+
+Teraz pytanie, na które Piotr musi sobie szczerze odpowiedzieć: KTÓRY z tych obszarów wygenerował BEZPOŚREDNIE STRATY FINANSOWE i wizerunkowe? Deadlock bazy. Dublowanie rabatów wypłacające moje pieniądze klientom. Wycofanie aplikacji ze sklepów po 48h. To wszystko wyszło z obszaru Piotra — z decyzji o Go-Live bez testów obciążeniowych. Moja powolność decyzyjna była FRUSTRUJĄCA i kosztowała czas. Ale ona nie zdeadlockowała bazy danych. To zrobił brak QA.
+
+Dlatego akceptuję model współodpowiedzialności po obszarach — POD JEDNYM WARUNKIEM: obszary zostają zważone wpływem, a nie zliczone na sztuki.
+
+MOJA KONKRETNA PROPOZYCJA ZAMKNIĘCIA:
+
+1. ODPOWIEDZIALNOŚĆ ZA KATASTROFĘ PRODUKCYJNĄ I JAKOŚĆ TECHNICZNĄ — w całości Firma B. To nie podlega negocjacji, Piotr sam to przyznał.
+
+2. ODPOWIEDZIALNOŚĆ ZA WARUNKI BRZEGOWE PROJEKTU (proces, decyzyjność, wymagania, dokumentacja) — Firma A.
+
+3. ROZLICZENIE FINANSOWE: Firma B pokrywa koszty naprawy szkody produkcyjnej i refaktoryzacji długu technologicznego po swojej stronie. Firma A bierze na siebie koszt fazy Discovery i PoC, którą powinniśmy byli sfinansować i wymusić na starcie.
+
+4. Z aneksami i karami z przekroczonego budżetu (te 2,5 mln PLN ponad plan) rozliczamy się w proporcji ważonej impactem: 70/30 na korzyść Firmy A. Bo to wycena i jakość Piotra wygenerowały większość tej dziury, nie moja biurokracja.
+
+To jest uczciwe, bo oparte na przyczynowości, a nie na sentymentach o "wspólnej porażce". Wspólna była — ale nie po równo. Piotr przyznał trzy najcięższe grzechy. Niech teraz przyzna, że one ważą więcej niż moje trzy. Zostaje nam jedna runda. Zamknijmy to jak dorośli, zanim moderator podzieli winę po połowie i obaj na tym stracimy.

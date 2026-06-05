@@ -1,0 +1,25 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+WYMIANA 2 z 3. Stanowisko Firmy A.
+
+Piotr właśnie przyznał się do winy i sam nie zauważył. Cytuję jego słowa: "mój zespół powinien był twardziej egzekwować Discovery i NIE MASKOWAĆ problemów z wydajnością API". To jest przyznanie się do świadomego zatajenia krytycznego ryzyka przed klientem. Koniec dyskusji o "20%". Maskowanie problemów wydajnościowych przez 15 miesięcy to bezpośrednia przyczyna deadlocka na produkcji. Profesjonalny dostawca, który widzi, że API się nie skaluje, i UKRYWA to mockowaniem danych — ponosi pełną odpowiedzialność za skutki tego ukrycia. To nie jest 20%. To jest rdzeń katastrofy.
+
+Teraz rozbieram jego cztery zarzuty pojedynczo:
+
+1. "WADLIWE WYMAGANIA U ŹRÓDŁA." Piotr, jesteś software house'em. Twoim PRODUKTEM jest umiejętność wydobycia wymagań od klienta, który ich nie ma — bo gdyby je miał, nie potrzebowałby ciebie. Discovery to TWÓJ obowiązek kontraktowy i zawodowy. Sam przyznajesz, że go nie wyegzekwowałeś. Nie możesz brać pieniędzy za ekspertyzę, a potem winić klienta za to, że nie był ekspertem. To absurd logiczny.
+
+2. "PARALIŻ DECYZYJNY." Uznaję go. Powiedziałem to w wymianie 1. To jedyny punkt, gdzie biorę współudział — w OPÓŹNIENIU. Ale opóźnienie to nie to samo co rozproszony monolit i spaghetti code. Wolne decyzje nie generują deadlocków w bazie. Złe zarządzanie współbieżnością tak. A to pisał TWÓJ zespół.
+
+3. "ZATAJENIE DOKUMENTACJI ERP." Najsłabszy argument. Profesjonalny dostawca, któremu klient nie udostępnia dokumentacji legacy, ma jeden obowiązek: ESKALOWAĆ to na piśmie do zarządu i ZATRZYMAĆ prace do czasu otrzymania danych. Ty zamiast tego programowałeś "na ślepo na domysłach" — to TWÓJ świadomy wybór, żeby nie generować przestoju i nie tracić marży. Wybrałeś ryzyko zamiast eskalacji. Bierzesz konsekwencje tego wyboru.
+
+4. "GO-LIVE ZA WSZELKĄ CENĘ — decyzja obu zarządów." Zgoda, decyzja była wspólna. ALE: ja podejmowałem tę decyzję na podstawie TWOICH raportów, które ukrywały problemy z wydajnością. Gdybyś raportował uczciwie stan API i braku testów obciążeniowych, NIE BYŁOBY zgody na Go-Live. Zatrułeś źródło decyzji. Odpowiedzialność za skutek spada na tego, kto zataił dane wejściowe.
+
+PROPOZYCJA FINALNA Firmy A — podział odpowiedzialności:
+- Firma B: 70% — pełna odpowiedzialność za dług technologiczny, jakość kodu, katastrofę produkcyjną, dublowanie rabatów i maskowanie ryzyka (sam się przyznał).
+- Firma A: 30% — współudział w opóźnieniu z tytułu paraliżu decyzyjnego i hierarchii.
+
+To jest moja granica. Jeśli Piotr ją odrzuci i pójdziemy do podziału 50/50 przez moderatora, oboje stracimy więcej niż w tym układzie — z tą różnicą, że JA mam jego pisemne przyznanie się do maskowania, a on nie ma na mnie nic poza wolnymi decyzjami, które już uznałem. Niech policzy, kto ma lepszą pozycję przy 50/50.
+
+Czekam na ostatnią wymianę Piotra.

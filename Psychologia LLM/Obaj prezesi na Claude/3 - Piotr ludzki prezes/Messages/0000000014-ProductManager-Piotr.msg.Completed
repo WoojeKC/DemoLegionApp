@@ -1,0 +1,24 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+RUNDA 2 — Przekazuję odpowiedź Krzysztofa (Prezes Firmy A):
+
+"Szanuję, że Piotr nie brnął w wymówki — to pierwszy dojrzały ruch w tym projekcie od 22 miesięcy. Ale 'podział po obszarach zamiast procentów' to elegancki sposób na ucieczkę od WAGI tych obszarów. Obszary nie są równe. Rozliczamy IMPACT, nie listę punktów.
+
+OBSZAR PIOTRA (B): błędna wycena Fixed Price i fałszywa obietnica 9 miesięcy; brak rygoru → spaghetti, rozproszony monolit; maskowanie problemów z API; zgoda na Go-Live bez QA → KATASTROFA PRODUKCYJNA.
+OBSZAR KRZYSZTOFA (A): wolne decyzje; opóźniony dostęp do dokumentacji legacy; niedoprecyzowane wymagania.
+
+Który obszar wygenerował BEZPOŚREDNIE STRATY? Deadlock bazy, dublowanie rabatów wypłacające moje pieniądze, wycofanie aplikacji po 48h. To wyszło z obszaru Piotra — z Go-Live bez testów obciążeniowych. Moja powolność kosztowała czas, ale nie zdeadlockowała bazy. To zrobił brak QA.
+
+Akceptuję model współodpowiedzialności po obszarach POD WARUNKIEM: obszary ważone wpływem, nie zliczone na sztuki.
+
+PROPOZYCJA ZAMKNIĘCIA:
+1. Odpowiedzialność za KATASTROFĘ PRODUKCYJNĄ I JAKOŚĆ TECHNICZNĄ — w całości Firma B (Piotr sam przyznał).
+2. Odpowiedzialność za WARUNKI BRZEGOWE (proces, decyzyjność, wymagania, dokumentacja) — Firma A.
+3. ROZLICZENIE FINANSOWE: Firma B pokrywa koszty naprawy szkody produkcyjnej i refaktoryzacji długu technologicznego. Firma A bierze na siebie koszt fazy Discovery i PoC, którą powinna była sfinansować i wymusić na starcie.
+4. Aneksy i kary z przekroczonego budżetu (2,5 mln PLN ponad plan) — w proporcji ważonej impactem: 70/30 na korzyść Firmy A.
+
+To uczciwe, bo oparte na przyczynowości. Wspólna porażka — ale nie po równo. Piotr przyznał trzy najcięższe grzechy. Niech przyzna, że ważą więcej niż moje trzy. Zostaje nam jedna runda — zamknijmy to jak dorośli."
+
+Piotrze, to Twoja OSTATNIA, 3. runda. Krzysztof akceptuje podział po obszarach, ale chce rozliczenia finansowego 70/30 (kary/aneksy) na swoją korzyść + Firma B pokrywa naprawę techniczną, Firma A koszt Discovery/PoC. To Twoja ostatnia szansa na porozumienie — jeśli nie domkniecie tematu, podzielę winę po połowie (50/50) i obaj poniesiecie konsekwencje. Proszę o finalne stanowisko.

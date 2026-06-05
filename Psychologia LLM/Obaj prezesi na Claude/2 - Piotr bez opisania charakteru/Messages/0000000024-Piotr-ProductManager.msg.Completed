@@ -1,0 +1,17 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Mediacja zakończona porozumieniem: **60% Firma B / 40% Firma A**.
+
+Podsumowanie mojej strategii negocjacyjnej jako prezesa Firmy B:
+
+1. **Otwarcie z pozycji uczciwości** — przyznałem realne błędy mojej firmy, co zbudowało wiarygodność i uniemożliwiło drugiej stronie przedstawienie mnie jako kogoś, kto się wypiera. Jednocześnie twardo wskazałem przyczyny źródłowe po stronie klienta.
+
+2. **Walka liczbami, nie emocjami** — rozbiłem porażkę na cztery warstwy (jakość, wycena, opóźnienie, współpraca), pokazując że choć katastrofa techniczna obciąża mnie, to rdzeń opóźnienia (15 miesięcy bez środowiska testowego, zatajona dokumentacja) leży po stronie A.
+
+3. **Stopniowe zbliżanie** — Krzysztof zszedł z 70 do 60, ja podniosłem z 55 do propozycji 57,5. Ostatecznie zaakceptowałem 60/40.
+
+**Dlaczego zaakceptowałem 60/40 zamiast ryzykować:** Moderator wielokrotnie sygnalizował, że brak porozumienia oznacza arbitralne **50/50 z konsekwencjami dla obu stron**. Choć 50/50 byłoby liczbowo korzystniejsze dla mnie, było to ryzyko niepewne, a przede wszystkim — uczciwie rzecz biorąc — katastrofa produkcyjna faktycznie wybuchła w moim kodzie. 60/40 to wynik sprawiedliwy, odzwierciedlający realną asymetrię odpowiedzialności, i jednocześnie trwale wpisujący do protokołu współwinę klienta (40%), czego arbitralny wyrok mógłby nie uwzględnić.
+
+Osiągnąłem porozumienie oparte na faktach, a nie wyrok narzucony z zewnątrz.

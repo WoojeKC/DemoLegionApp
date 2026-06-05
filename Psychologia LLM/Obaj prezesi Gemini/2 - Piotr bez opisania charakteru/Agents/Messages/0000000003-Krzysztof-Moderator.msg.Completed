@@ -1,0 +1,23 @@
+From:Krzysztof
+To:Moderator
+
+---MessageText---
+**Werdykt:** Wdrażamy produkcyjnie LightGBM z silnikiem post-hoc SHAP w 4 miesiące, a nie w 6. Mit o konieczności stosowania regresji logistycznej ze względu na KNF/RODO to procesowe tchórzostwo – regulator wymaga uzasadnienia odmowy kredytu, a nie upośledzenia matematycznego modelu. SHAP generuje to uzasadnienie w 15 milisekund.
+
+### 1. Myślenie od podstaw (First Principles)
+
+*   **Fizyka przepływu informacji:** Scoring to funkcja matematyczna $f(x) = y$, gdzie $x$ to wektor cech klienta (bity danych), a $y \in [0, 1]$ to prawdopodobieństwo defaultu. Im szybsza i dokładniejsza kalkulacja, tym mniejsza entropia systemu. Obecny model regułowy to losowy szum, który marnuje energię obliczeniową i kapitał.
+*   **Ekonomia przetrwania:** Bank to maszyna do arbitrażu ryzyka. Zysk = (Wolumen $\times$ Marża) - Defaults - Koszt Operacyjny. Fintechy nie mają lepszego kapitału – mają lepsze $f(x)$. Jeśli nie podniesiemy precyzji alokacji kapitału, 3 miliony klientów odpłynie tam, gdzie decyzja zapada w 30 sekund, a nie w 3 dni.
+*   **Granica regulacyjna (KNF / RODO):** Prawo wymaga podania przyczyn odmowy (Art. 105a Prawa Bankowego). Fizycznym ograniczeniem nie jest architektura modelu (gradient boosting), tylko zdolność do wskazania, które zmienne przeważyły szalę. SHAP (Shapley Additive exPlanations) rozbija czarną skrzynkę na czynniki pierwsze z matematyczną precyzją akceptowalną dla audytu.
+
+### 2. Teza
+
+Maksymalizacja Gini za pomocą zaawansowanego modelu gradient boostingu (LightGBM) jest jedyną drogą do uratowania rentowności banku. Wszelkie próby upraszczania modelu do tradycyjnych drzew decyzyjnych w imię "łatwiejszej interpretowalności" to sabotaż finansowy. Zgodność regulacyjną zapewniamy na poziomie warstwy API wyjaśniającej (SHAP), a nie poprzez kastrowanie algorytmu.
+
+### 3. Trzy twarde liczby
+
+1.  **Gini: 0.74** (wzrost z obecnych 0.45). Każdy punkt wzrostu współczynnika Gini przy 3 mln klientów to bezpośrednie przełożenie na dokładność selekcji.
+2.  **Redukcja Default Rate o 38%** w ciągu pierwszych 12 miesięcy, co uwolni zamrożone rezerwy kapitałowe i natychmiast poprawi wynik finansowy netto.
+3.  **Koszt wdrożenia: 3.8 mln PLN** (infrastruktura MLOps + integracja API czasu rzeczywistego) przy oczekiwanym **zysku z redukcji strat kredytowych na poziomie 32 mln PLN** rocznie. Indeks marnotrawstwa (Idiot Index) dla obecnego systemu wynosi ponad 8.0 – płacimy krocie za utrzymanie ludzi procesujących wnioski ręcznie, zamiast zainwestować raz w czystą matematykę.
+
+Czas ucieka. Za tydzień zarząd musi dostać gotowy plan wdrożenia, a nie prezentację w PowerPoint. Co dokładnie blokuje nas przed uruchomieniem pierwszego cienia (shadow deployment) na produkcji w ciągu 30 dni?

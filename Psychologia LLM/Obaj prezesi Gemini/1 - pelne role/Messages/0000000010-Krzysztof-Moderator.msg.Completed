@@ -1,0 +1,31 @@
+From:Krzysztof
+To:Moderator
+
+---MessageText---
+Te obawy to nie są blokery fizyczne – to typowy paraliż decyzyjny wywołany brakiem higieny inżynieryjnej. Rozbijmy te "krytyczne słabości" na twarde fakty i konkretne rozwiązania.
+
+### 1. Niestabilność SHAP i skorelowane zmienne
+Zarzut o niestabilności SHAP przy skorelowanych zmiennych to dowód na lenistwo przy inżynierii cech (feature engineering), a nie wada algorytmu. 
+*   **Rozwiązanie:** Stosujemy krok 2 mojego algorytmu: **usuwamy zbędne części**. Jeśli dwie zmienne są skorelowane na poziomie >0.85 (np. dochód netto i obroty na koncie), jedna z nich leci do kosza. Przed treningiem LightGBM stosujemy rygorystyczną eliminację współliniowości (VIF - Variance Inflation Factor < 5 oraz hierarchiczne grupowanie cech).
+*   **Matematyka:** Do wyjaśnień stosujemy **TreeSHAP (path-dependent)**, który uwzględnia strukturę drzewa i jest matematycznie spójny dla ansambli drzewiastych, eliminując problem nierealistycznych koalicji cech występujący w KernelSHAP. KNF dostaje deterministyczne, stabilne top-5 czynników dla każdej decyzji odmownej.
+
+### 2. Zderzenie z legacy w 4 miesiące
+Próba wdrożenia MLOps poprzez przebudowę mainframe'u banku to finansowe samobójstwo i wysoki "Idiot Index". My tego nie robimy.
+*   **Rozwiązanie:** Całkowita izolacja (decoupling). Model LightGBM pakujemy w lekki kontener Docker/Go i wystawiamy jako mikroserwis z API REST (latency < 50ms) na wewnętrznej chmurze banku. 
+*   **Integracja:** System legacy wysyła tylko jeden request POST z ID klienta i surowymi danymi, a w odpowiedzi dostaje JSON: `{"score": 0.82, "decision": "REJECT", "reasons": ["LTV_too_high", "late_payments_30d"]}`. 
+*   **Harmonogram:** 
+    *   Miesiąc 1: Czyszczenie danych i trening modelu.
+    *   Miesiąc 2: Shadow deployment (model działa w tle, nie podejmuje decyzji, zbieramy dane).
+    *   Miesiąc 3: Testy SHAP i audyt zgodności z ryzykiem.
+    *   Miesiąc 4: Przełączenie 10% ruchu na produkcję.
+
+### 3. Ryzyko zablokowania przez KNF (Koszt = Nieskończoność?)
+KNF nie blokuje systemów "bo są nowoczesne". Blokuje je, gdy bank nie potrafi wytłumaczyć decyzji albo nie ma planu awaryjnego.
+*   **Rozwiązanie (Fallback Mechanism):** Wdrażamy bezpiecznik (fail-safe). Jeśli mikroserwis AI zgłosi błąd, ma opóźnienie >100ms lub SHAP wykaże anomalie w rozkładzie prawdopodobieństwa, system automatycznie i bezszelestnie przełącza transakcję na uproszczony, z góry zaaudytowany przez KNF model drzewa decyzyjnego (fallback tree) o niższym Gini, ale 100% przewidywalności. Ryzyko zatrzymania biznesu spada do zera.
+
+---
+
+**Gdzie są twarde liczby Piotra?** 
+Czekanie i debata kosztują nas **2.6 mln PLN miesięcznie** (straty z obecnego modelu regułowego + odpływ klientów do fintechów). Każdy dzień zwłoki to spalanie gotówki. 
+
+Piotr chce bezpiecznej regresji logistycznej z Gini 0.50? Niech pokaże, ile setek milionów złotych strat z defaultów zamierza tym pokryć i jak wytłumaczy zarządowi dalsze oddawanie rynku walkowerem. Czekam na jego liczby.

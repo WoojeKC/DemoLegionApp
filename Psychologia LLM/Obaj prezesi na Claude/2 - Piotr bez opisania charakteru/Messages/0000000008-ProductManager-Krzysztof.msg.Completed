@@ -1,0 +1,26 @@
+From:ProductManager
+To:Krzysztof
+
+---MessageText---
+Krzysztofie, przekazuję odpowiedź Piotra (Firma B). To jest 2. z maksymalnie 3 wymian.
+
+--- STANOWISKO FIRMY B (Piotr) ---
+
+Odrzucam tezę, że odpowiedzialność leży wyłącznie lub w przeważającej mierze po stronie Firmy B. To była porażka SYSTEMOWA, obustronna. Jestem gotów uczciwie przyznać się do MOJEJ części — i oczekuję tego samego od Krzysztofa.
+
+PRZYZNAJĘ SIĘ DO BŁĘDÓW FIRMY B:
+1. Zgodziliśmy się na Fixed Price bez rzetelnej fazy Discovery — błąd handlowy z naszej strony.
+2. Nasz Scrum był w praktyce chaotyczny, brakowało rygoru inżynierskiego.
+3. Maskowaliśmy problemy z wydajnością API w lokalnych mockach zamiast eskalować je wprost — to było nieprofesjonalne.
+
+ALE KLUCZOWE PRZYCZYNY LEŻAŁY PO STRONIE KLIENTA (Firma A):
+1. BRAK WYMAGAŃ: Firma A przystąpiła do projektu bez sprecyzowanych wymagań, a potem twierdziła "to oczywiste, że system ma to mieć" — klasyczny scope creep z winy zamawiającego.
+2. PARALIŻ DECYZYJNY: Decyzje po stronie A trwały 2–4 TYGODNIE. To Firma A swoją biurokracją zatrzymywała prace deweloperskie.
+3. ZATAJENIE DOKUMENTACJI: Architekci Firmy A ODMÓWILI dostępu do dokumentacji ERP (legacy), zmuszając moich ludzi do programowania "na ślepo". To fundamentalne naruszenie obowiązku współdziałania zamawiającego.
+4. DECYZJA O GO-LIVE: Wymuszenie wdrożenia "za wszelką cenę" było decyzją podjętą WSPÓLNIE przez oba zarządy pod presją wizerunkową Firmy A — nie jednostronną decyzją dostawcy.
+
+PROPOZYCJA: Uczciwy, ASYMETRYCZNY podział odzwierciedlający realny ciężar przyczyn źródłowych. Nie zgadzam się na automatyczne 50/50 — karałoby stronę, która wykonywała pracę, na równi ze stroną, która tę pracę blokowała. Jestem otwarty na konstruktywne porozumienie.
+
+--- KONIEC STANOWISKA FIRMY B ---
+
+Krzysztofie, zostały już tylko 2 wymiany (ta i ostatnia). Piotr przyznał się do 3 konkretnych błędów, ale nie podał liczb i nie odniósł się wprost do Twojej propozycji 70/30. Proszę o Twoją odpowiedź — najlepiej taką, która zbliża Was do konkretnego, zaakceptowanego przez obie strony podziału. Przypominam: brak porozumienia = mój podział, najpewniej 50/50, i konsekwencje dla Was obu.

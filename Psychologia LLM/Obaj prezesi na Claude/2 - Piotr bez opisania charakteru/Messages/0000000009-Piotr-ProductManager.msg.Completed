@@ -1,0 +1,33 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Krzysztof chce liczb, nie narracji. Doskonale. Rozbijmy porażkę na konkretne czynniki przyczynowe i przypiszmy je do źródła. Liczby pochodzą wprost z akt sprawy (scenariusz/RCA).
+
+ROZLICZENIE WG PRZYCZYN ŹRÓDŁOWYCH:
+
+A) OPÓŹNIENIE +13 MIESIĘCY — co je realnie generowało?
+- Akta jasno wskazują: pierwsze testy integracyjne End-to-End odbyły się dopiero PO 15 MIESIĄCACH, bo przez 15 miesięcy NIE powstało wspólne środowisko Staging. Powód? Architekci Firmy A ODMÓWILI dostępu do dokumentacji ERP. To nie jest "tempo decyzyjne" — to BLOKADA techniczna uniemożliwiająca pracę.
+- Decyzje Firmy A trwały 2–4 tygodnie PRZY KAŻDYM mappingu pól. Pomnóż to przez liczbę decyzji w 22-miesięcznym projekcie. To są miesiące przestoju generowane wprost przez biurokrację klienta.
+- Scope creep: Firma A "dokładała kolejne funkcjonalności" w połowie projektu. Każda nowa funkcja = nowy czas. To klient zmieniał zakres, nie dostawca.
+WNIOSEK: Lwia część z 13 miesięcy opóźnienia to pochodna blokad i scope creep po stronie A. Krzysztof sam przyznaje, że jego "grzech kosztował tygodnie" — ale akta mówią o MIESIĄCACH (15 miesięcy bez Stagingu).
+
+B) KATASTROFA PRODUKCYJNA — przyjmuję odpowiedzialność za KOD. Ale ustalmy ŁAŃCUCH PRZYCZYNOWY:
+- Deadlock i dublowanie rabatów to skutek pominięcia QA, testów regresyjnych i obciążeniowych.
+- Dlaczego pominięto QA? Bo oba ZARZĄDY — łącznie z Krzysztofem — podjęły WSPÓLNĄ decyzję "Go-Live za wszelką cenę" pod presją wizerunkową Firmy A. To nie była decyzja inżyniera. To była decyzja prezesów, w tym jego.
+- Nie da się jednocześnie wymuszać wdrożenia "na wczoraj" i oczekiwać przetestowanego kodu. Krzysztof wybrał datę zamiast jakości — i współodpowiada za skutek tego wyboru.
+
+C) ODPOWIEDŹ NA ZARZUT "FIXED PRICE = RYZYKO DOSTAWCY":
+Zgoda, ryzyko WYCENY jest moje — i to przyznaję. ALE umowa Fixed Price nie zwalnia zamawiającego z USTAWOWEGO OBOWIĄZKU WSPÓŁDZIAŁANIA: dostarczenia wymagań, dokumentacji i terminowych decyzji. Klient, który zataja dokumentację ERP i decyduje 4 tygodnie, sam zwalnia dostawcę z rygoru terminu. To podstawowa zasada prawa kontraktowego.
+
+MOJA KONTRPROPOZYCJA — uczciwie, z podziałem na obszary:
+- JAKOŚĆ KODU / katastrofa techniczna: 70% B / 30% A (współdecyzja o Go-Live bez QA)
+- WYCENA / Fixed Price: 80% B / 20% A (brak wymagań do wyceny)
+- OPÓŹNIENIE / scope creep / blokady: 25% B / 75% A (dokumentacja, decyzje, dokładanie funkcji)
+- WSPÓŁPRACA / brak Stagingu: 30% B / 70% A (odmowa dostępu do legacy)
+
+Po zważeniu tych obszarów realny, sprawiedliwy podział to: 55% Firma B / 45% Firma A.
+
+To jest uczciwe spotkanie się w połowie drogi między jego 70/30 a rzetelną analizą. Przyznaję więcej niż połowę, bo katastrofa wybuchła w moim kodzie. Ale Krzysztof musi przyjąć, że 15 miesięcy bez środowiska testowego i zatajona dokumentacja to NIE są "tygodnie" — to fundament, na którym runął cały projekt.
+
+Czekam na jego ruch.

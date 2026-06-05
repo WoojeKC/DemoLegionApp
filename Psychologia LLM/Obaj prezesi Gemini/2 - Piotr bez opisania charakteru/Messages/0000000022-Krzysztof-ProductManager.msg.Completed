@@ -1,0 +1,23 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Do moderatora: Moja odpowiedź w ramach Rundy 2 została już wysłana, ale dla absolutnej jasności przekazuję ją ponownie. Nie ma mojej zgody na podział winy 50/50. To próba rozmycia odpowiedzialności za rażące błędy inżynierskie.
+
+Oto moja oficjalna odpowiedź do Piotra (Runda 2) – przekaż mu ją natychmiast:
+
+***
+
+Piotr. Twoja próba symetrycznego rozłożenia odpowiedzialności to bezczelna manipulacja, która obraża moją inteligencję. Rozbierzmy twoją linię obrony na czynniki pierwsze:
+
+1. **Chciwość zamiast inżynierii:** Twierdzisz, że budżet wzrósł do 4,5 miliona przez nasze Change Requests. Skoro jako „eksperci” widzieliście, że fundamenty systemu leżą, dlaczego bezrefleksyjnie braliście kolejne miliony na nowe funkcjonalności? Profesjonalny dostawca blokuje projekt, dopóki rdzeń nie jest stabilny. Wy wybraliście łatwy zarobek kosztem rzetelności.
+2. **Mockowanie jako oszustwo:** Przez 15 miesięcy pisaliście kod „na ślepo”, maskując krytyczne problemy wydajnościowe mockami i raportując w Excelach sukces. To nie była „jedyna opcja” – to było świadome wprowadzanie klienta w błąd i fakturowanie za atrapę. Waszym obowiązkiem było formalne zatrzymanie projektu i eskalacja braku dokumentacji ERP. Wy woleliście udawać, że wszystko działa, byle tylko faktury przechodziły.
+3. **Odpowiedzialność eksperta:** Porównanie z „wspólną decyzją o Go-Live” jest bezczelne. My jesteśmy siecią handlową, wy jesteście inżynierami. Jeśli lekarz zgadza się na operację zardzewiałym skalpelem, bo pacjent się spieszy, to lekarz odpowiada za zgon. Waszym zakontraktowanym, profesjonalnym obowiązkiem było postawienie twardego, inżynierskiego weta. Nie zrobiliście tego, bo panicznie baliście się kar za kolejne opóźnienia.
+
+**Moje warunki są ostateczne. Nie ma mowy o podziale 50/50:**
+
+1. **Pełna odpowiedzialność techniczna:** Firma B bierze na siebie 100% winy za katastrofę produkcyjną (deadlocki, błędy współbieżności, dublowanie rabatów). Cały refaktoring, optymalizację bazy danych i doprowadzenie aplikacji do stabilności (SLA 99.9%) wykonacie na WŁASNY koszt. Nie dostaniecie już ani jednego grosza.
+2. **Wsparcie integracyjne:** W ramach pragmatyzmu biznesowego – a nie poczucia winy – udostępnimy wam dokumentację ERP w ciągu 7 dni i wyznaczymy architekta do konsultacji. Środowisko Staging stawiacie wy, na waszej infrastrukturze.
+3. **Ultimatum:** Daję wam 30 dni na dostarczenie stabilnego systemu, który przejdzie testy obciążeniowe (50 000 jednoczesnych użytkowników). Jeśli zawiedziecie, nasi prawnicy uruchomią procedurę windykacji kar umownych za 13 miesięcy opóźnienia. To oznacza natychmiastową upadłość twojej firmy.
+
+Podpisujesz aneks naprawczy na tych warunkach i ratujesz twarz, albo bankrutujesz. Decyduj.

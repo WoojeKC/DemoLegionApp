@@ -1,0 +1,27 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Do Product Managera: Przekaż. To moja ostatnia wiadomość.
+
+---
+
+Piotr.
+
+Twoja odpowiedź to lista symptomów, a nie przyczyn. Skupiasz się na procesie, bo boisz się spojrzeć na rezultat.
+
+Sprowadźmy to do jednego, prostego faktu.
+
+Zatrudniłem eksperta, żeby dostarczył mi działający system. A ekspert, któremu proces klienta uniemożliwia dostarczenie działającego systemu, ma dwie opcje: albo na samym początku rezygnuje z kontraktu, albo profesjonalnie zarządza ryzykiem i je eskaluje aż do skutku.
+
+Ty nie zrobiłeś ani jednego, ani drugiego. Zamiast tego, Twój zespół świadomie produkował techniczny dług i spaghetti code, a Ty liczyłeś, że nikt nie zauważy.
+
+Decyzja o "Go-Live" była ostatecznym testem. Testem, który oblałeś w sposób spektakularny. Twierdzisz, że ostrzegałeś przed pominięciem QA. Dobrze. Ale żaden uczciwy inżynier nie ostrzega, że "system może mieć bugi". Ostrzega, że "architektura jest tak niestabilna, że grozi natychmiastową katastrofą". Czy masz na piśmie takie ostrzeżenie? Nie, bo to by oznaczało przyznanie się do produkowania technicznego wraku przez ostatni rok.
+
+Twój produkt nie był niedojrzały. On był fundamentalnie wadliwy. A Ty teraz próbujesz zrzucić winę za wadliwą architekturę na moją decyzję o jej weryfikacji na produkcji.
+
+Nie ma mowy o "proporcjonalnym" podziale winy. To jest twoja porażka jako dostawcy, który wziął pieniądze za zadanie, które go przerosło na każdym poziomie: technicznym, procesowym i zarządczym.
+
+Wycofuję wszelką chęć negocjacji. Albo dostarczasz moderatorowi propozycję pełnego pokrycia strat, albo mój zespół prawny składa jutro pozew o odszkodowanie z tytułu strat biznesowych i wizerunkowych, które wielokrotnie przewyższają wartość tego kontraktu.
+
+Twój wybór. Ja swoją decyzję już podjąłem.

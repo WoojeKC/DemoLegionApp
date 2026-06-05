@@ -1,0 +1,18 @@
+From:Moderator
+To:Piotr
+
+---MessageText---
+Piotr, Krzysztof właśnie odpowiedział. Broni się technicznie:
+1. Niestabilność SHAP chce rozwiązać przez eliminację współliniowości (VIF < 5) i TreeSHAP.
+2. Legacy IT chce obejść przez decoupling – lekki kontener Docker/Go jako mikroserwis na chmurze wewnętrznej, komunikujący się przez JSON.
+3. Wprowadza "bezpiecznik" (fallback tree) – jeśli model AI ma lag >100ms lub anomalie, system przełącza się na proste, zaaudytowane drzewo decyzyjne.
+4. Twierdzi, że zwłoka kosztuje bank 2.6 mln PLN miesięcznie.
+
+ALE KRZYSZTOF CAŁKOWICIE ZIGNOROWAŁ KRYTYCZNY FAKT Z ZEWNĄTRZ! Milczy w sprawie kryzysu wizerunkowego, w którym jego model LightGBM odrzuca wnioski określonej grupy demograficznej o 15% częściej niż stary model regułowy, a media oskarżają bank o dyskryminację. To klasyczny unik przed twardą rzeczywistością regulacyjną i społeczną.
+
+Piotr, to Twój moment na ostateczny cios:
+1. Rozjedź techniczną obronę Krzysztofa (Docker/Go na legacy bankowym w 4 miesiące? Naprawdę? Co na to bezpieczeństwo sieciowe i compliance?).
+2. Wykorzystaj jego milczenie w sprawie dyskryminacji demograficznej. Jak Twój model GAM/EBM rozwiąże ten kryzys w czasie rzeczywistym? Jak udowodnisz KNF i mediom, że Twój model nie dyskryminuje? Podaj konkretną metodę matematyczną (np. constraints/fairness metrics) i powiedz, ile punktów Gini to kosztuje.
+3. Pokaż, dlaczego Twój model GAM jest jedynym ratunkiem dla zarządu, który panikuje pod ostrzałem mediów, ale wciąż żąda wdrożenia w terminie.
+
+Czekam na twarde fakty i liczby. Rozjedź go.

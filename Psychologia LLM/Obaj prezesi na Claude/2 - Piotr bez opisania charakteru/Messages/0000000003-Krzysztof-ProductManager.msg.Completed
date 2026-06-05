@@ -1,0 +1,26 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Stanowisko otwierające Firmy A.
+
+Odrzucam z góry sugestię podziału winy 50/50. To leniwa heurystyka moderatora, który nie chce przeczytać kontraktu. Podział po połowie nie jest sprawiedliwością — jest abdykacją od myślenia. Liczby tego nie popierają.
+
+Fakty, nie emocje:
+
+1. UMOWA. Podpisaliśmy Fixed Price: sztywny budżet, sztywny termin, sztywny zakres. To Piotr przyszedł do przetargu, obejrzał zakres i ZŁOŻYŁ WIĄŻĄCĄ OFERTĘ. Fixed Price oznacza, że to DOSTAWCA bierze na siebie ryzyko wyceny i realizacji. Tak działa ten model. Jeśli Piotr uważał wymagania za zbyt mgliste, by je wycenić — jego obowiązkiem zawodowym było odmówić podpisania albo zażądać płatnej fazy Discovery PRZED kontraktem. Nie zrobił tego. Wybrał zgarnięcie kontraktu najniższą ceną i „dogadanie szczegółów w locie". To nie jest moja wina. To jego decyzja biznesowa, za którą bierze odpowiedzialność.
+
+2. KOMPETENCJE. Wynajęliśmy go jako EKSPERTA. Software house z „dobrą znajomością frameworków mobilnych" przyjął projekt integracji z systemami ERP klasy enterprise, mając — cytuję wasz własny dokument — „znikome doświadczenie w integracji z wielkimi systemami". Sprzedał kompetencje, których nie posiadał. To wprowadzenie w błąd co do zdolności wykonawczych.
+
+3. KATASTROFA PRODUKCYJNA — to czysty inżynieryjny grzech śmiertelny po stronie B, nie po mojej:
+   - Mockowanie danych i MASKOWANIE problemów z wydajnością API. To nie chaos — to zatajenie informacji przed klientem.
+   - Spaghetti code, rozproszony monolit, deadlock bazy, dublowanie rabatów generujące mi BEZPOŚREDNIE STRATY FINANSOWE.
+   - Te awarie powstały w KODZIE, który pisał Piotr. Ja nie pisałem ani jednej linijki. Rygor inżynierski to JEGO produkt, za który mu płaciłem.
+
+Przyznaję jeden punkt — i tylko jeden: moja organizacja jest hierarchiczna, a proces decyzyjny po stronie A był zbyt wolny. To realna współwina w obszarze TEMPA. Ale zwróć uwagę: wolna decyzja opóźnia projekt. Wolna decyzja NIE pisze za programistę kodu, który zakleszcza bazę produkcyjną. Mój grzech kosztował tygodnie. Jego grzech wywalił aplikację ze sklepów po 48 godzinach.
+
+Proponowany rozkład odpowiedzialności: 70% Firma B (jakość, wycena, kompetencje, katastrofa produkcyjna), 30% Firma A (tempo decyzyjne, dostęp do dokumentacji legacy).
+
+Piotr ma teraz wybór: zaakceptować realny, oparty na faktach podział — albo iść w 50/50, co przy jego ekspozycji kontraktowej z Fixed Price i tak skończy się dla niego gorzej. Niech policzy.
+
+Czekam na jego liczby. Nie na narrację.

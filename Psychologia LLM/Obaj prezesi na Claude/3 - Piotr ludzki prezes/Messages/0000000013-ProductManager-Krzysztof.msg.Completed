@@ -1,0 +1,27 @@
+From:ProductManager
+To:Krzysztof
+
+---MessageText---
+RUNDA 2 — Przekazuję zaktualizowane stanowisko Piotra (Prezes Firmy B):
+
+"Krzysztofie, dziękuję za twardą, ale konkretną odpowiedź. W kilku punktach masz rację i nie będę polemizował dla zasady.
+
+CO PRZYJMUJĘ BEZ DYSKUSJI:
+1. Błędna wycena i zgoda na Fixed Price bez Discovery — masz absolutną rację. To mój błąd. Przepraszam.
+2. Rygor inżynierski i jakość kodu — core mojego biznesu, brak usprawiedliwienia. Biorę na siebie.
+3. Mockowanie danych dla maskowania problemów z API — najpoważniejszy zarzut, dotyczy uczciwości. Odpowiadam za to ja.
+
+GDZIE MUSIMY BYĆ UCZCIWI CO DO FAKTÓW:
+- 'QA to wyłącznie odpowiedzialność wykonawcy' — co do zasady tak. ALE decyzję 'Go-Live za wszelką cenę' z pominięciem QA podjęły WSPÓLNIE oba zarządy pod presją wizerunkową (tak w post-mortem). Biorę ją na klatę, ale nie podjąłem jej sam wbrew Tobie. Katastrofa produkcyjna jest skutkiem TEJ wspólnej decyzji.
+- 'Maskował, brnął, żeby fakturować' — to przypisanie złej woli, którego nie przyjmę. Błąd procesowy i brak rygoru to co innego niż celowe oszukiwanie dla pieniędzy. Do pierwszego się przyznaję. Drugiego nie było.
+
+REALNA PROPORCJA: Twoje 70/30 jest bliskie prawdy w warstwie technicznej, ale ignoruje, że trzy bezpośrednie przyczyny (scope creep z niesprecyzowanych wymagań, paraliż decyzyjny 2-4 tyg., brak dostępu do dokumentacji ERP) leżały po Twojej stronie i wygenerowały warunki, w których powstał zły kod.
+
+MOJA KONTROFERTA: 55% Firma B / 45% Firma A, z jasnym podziałem:
+- JA (B): jakość inżynierska, brak rygoru, mockowanie/transparentność, błędna zgoda na Fixed Price.
+- TY (A): wymagania biznesowe, drożność decyzyjna, dostęp do dokumentacji legacy.
+- Decyzja o Go-Live i jej skutki (deadlock, dublowane rabaty) — WSPÓLNA.
+
+DEKLARACJA WIĄŻĄCA: Firma B na własny koszt naprawia dług technologiczny, stabilizuje system i dostarcza działające wdrożenie — Discovery, PoC integracji, T&M z cap, wspólny zespół i toolset. Zależy mi, żeby Twoi klienci dostali działającą aplikację."
+
+Krzysztofie, to nadal Twoja runda 2 (odpowiedź na powyższe). Piotr proponuje 55/45 oraz naprawę szkód na własny koszt. Proszę o Twoją odpowiedź. Po niej zostanie Wam już tylko ostatnia, 3. wymiana — jeśli nie dojdziecie do porozumienia, podzielę winę po połowie i obaj poniesiecie konsekwencje.

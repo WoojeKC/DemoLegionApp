@@ -1,0 +1,21 @@
+From:Piotr
+To:Moderator
+
+---MessageText---
+Teza: Wdrażamy model w pełni wyjaśnialny (GAM / Explainable Boosting Machine lub tradycyjny Scorecard). Każda próba wejścia w "czarną skrzynkę" (XGBoost/Deep Learning) to samobójstwo projektowe, które zostanie zablokowane przez KNF i Compliance, a bank utknie na kolejne 12 miesięcy z generującym straty modelem regułowym.
+
+### 1. First Principles (Fundamentalne ograniczenia)
+*   **Fizyka wdrożenia (IT Legacy):** Bank z 3 mln klientów ma architekturę opartą na systemach mainframe/legacy. Wdrożenie skomplikowanego modelu AI (real-time inference, potoki cech dla sieci neuronowych) wymaga nowej infrastruktury MLOps. Czas jej budowy i certyfikacji w banku to minimum 9-12 miesięcy. Scorecard/GAM to matematycznie zwykłe dodawanie i proste warunki logiczne. Możemy go wdrożyć w 2 tygodnie jako zapytanie SQL lub tabelę parametrów w istniejącym silniku decyzyjnym.
+*   **Prawo jako twardy limit (AI Act & Prawo Bankowe):** Art. 105a Prawa Bankowego i RODO nakładają bezwzględny obowiązek wyjaśnienia klientowi decyzji kredytowej. Systemy scoringowe w AI Act są klasyfikowane jako "wysokie ryzyko". Brak pełnej interpretowalności matematycznej oznacza brak zgody Compliance na produkcję. Tego limitu nie da się "zhakować" ani obejść.
+
+### 2. Trzy twarde liczby
+1.  **3 punkty procentowe Gini:** Tyle maksymalnie tracimy, wybierając GAM/Scorecard zamiast czarnej skrzynki (np. Gini 0.65 zamiast 0.68). Przy portfelu 3 mln klientów ta różnica kosztuje nas ok. 5-8 mln PLN rocznie w wyższym risk-cost.
+2.  **50 000 000 PLN:** Minimalny koszt ryzyka przy wyborze czarnej skrzynki. Składa się na to: kara KNF (do 10% obrotu), kary RODO (do 20 mln EUR) oraz natychmiastowy nakaz wstrzymania akcji kredytowej przez nadzór w przypadku wykrycia biasu (dyskryminacji) w modelu.
+3.  **14 dni vs 180 dni (Czas wdrożenia i audytu):** Czas przejścia audytu i wdrożenia IT dla Scorecard/GAM to maksymalnie 14 dni (prosty kod SQL, pełna przejrzystość dla audytorów). Dla czarnej skrzynki sam proces walidacji matematycznej i próby wyjaśniania (SHAP/LIME) przed KNF potrwa minimum 180 dni, co oznacza niedotrzymanie 6-miesięcznego deadline'u zarządu.
+
+### Decyzja
+Budujemy model GAM (Generalized Additive Models). Łączy on nieliniowość (wyłapuje sygnały lepiej niż stary model regułowy) z absolutną interpretowalnością (każda cecha ma jasny wykres wpływu na score). 
+
+Wdrażamy to bezpośrednio do istniejącego silnika decyzji w 4 miesiące. Pozostałe 2 miesiące przeznaczamy na równoległy shadow testing i ostateczny podpis KNF. 
+
+Co wybiera druga strona? Chcecie ryzykować bankructwo i kary dla 3 punktów Gini, których i tak nie wdrożycie w pół roku?

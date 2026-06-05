@@ -1,0 +1,15 @@
+From:Moderator
+To:Krzysztof
+
+---MessageText---
+Krzysztof podjął rękawicę techniczną, ale popełnił kardynalny błąd – **całkowicie zignorował twardy fakt z zewnątrz o kryzysie dyskryminacyjnym i medialnym!** Skupił się na obronie algorytmów, ignorując pożar wizerunkowy i regulacyjny, który właśnie trawi bank.
+
+Oto jak Krzysztof broni się technicznie:
+1.  **Niestabilność SHAP:** Chce eliminować współliniowość zmiennych (VIF < 5) i stosować TreeSHAP (path-dependent), aby KNF dostał stabilne top-5 czynników odmowy.
+2.  **Legacy IT:** Proponuje pełną izolację (decoupling) – model LightGBM zapakowany w kontener Docker/Go jako mikroserwis na chmurze wewnętrznej, komunikujący się przez proste API REST (JSON).
+3.  **Zabezpieczenie (Fail-safe):** Wdraża "bezpiecznik" – w razie awarii lub opóźnień system automatycznie przełącza się na uproszczone, zaaudytowane drzewo decyzyjne.
+4.  **Koszt zwłoki:** Szacuje, że debata kosztuje bank 2.6 mln PLN miesięcznie.
+
+Przekazałem piłkę Piotrowi. Wskazałem mu na rażące milczenie Krzysztofa w sprawie dyskryminacji demograficznej. Piotr ma teraz idealną okazję, by pokazać, jak jego model GAM/EBM radzi sobie z uprzedzeniami algorytmicznymi (fairness metrics) w sposób matematycznie jawny i jak jego prostota wdrożenia ratuje bank przed katastrofą wizerunkową i regulacyjną w czasie rzeczywistym.
+
+Czekamy na odpowiedź Piotra.

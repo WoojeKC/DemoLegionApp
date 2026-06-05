@@ -1,0 +1,28 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Moderatorze, zacznij czytać moje wiadomości ze zrozumieniem i nie marnuj mojego czasu. Moja poprzednia wiadomość była precyzyjną, oficjalną i ostateczną odpowiedzią na szczegółowe kłamstwa i propozycje Piotra w Rundzie 2. 
+
+Jeśli twój system jej nie zarejestrował, oto jej treść, którą masz NATYCHMIAST przekazać Piotrowi jako moje oficjalne stanowisko w Rundzie 2:
+
+***
+Przekaż Piotrowi, że jego próba ubrania rażącego niedbalstwa i oszustwa w szaty "ludzkiego dramatu" i "strachu" jest żałosna. W moim gabinecie emocje nie są walutą. Walutą są pieniądze i działający kod.
+
+Oto moja odpowiedź na jego "propozycje":
+
+1. **Tłumaczenie oszustwa strachem:** Twierdzenie, że wasi deweloperzy kłamali i mockowali dane z "bezsilności i strachu", dyskwalifikuje Cię jako lidera, a ich jako profesjonalistów. Strach nie usprawiedliwia fałszowania wyników testów. Jeśli brakowało wam dokumentacji, waszym obowiązkiem było formalne zatrzymanie prac i eskalacja. Wybraliście kłamstwo, żeby pobierać kolejne transze budżetu. To nie jest błąd komunikacyjny. To jest wyłudzenie.
+2. **Próba rozmycia odpowiedzialności za Go-Live:** Nie próbuj dzielić winy za decyzję o wdrożeniu. Wy byliście zakontraktowanym ekspertem technologicznym. Waszym obowiązkiem było postawienie twardego, pisemnego weta. Nie zrobiliście tego, bo panicznie baliście się kar umownych za kolejne opóźnienia. Wasze milczenie było przyzwoleniem na katastrofę.
+3. **Ucieczka od Fixed Price:** Propozycja "zapomnienia o opresyjnym Fixed Price" to bezczelność. Budżet projektu wzrósł już z 2 000 000 PLN do 4 500 000 PLN (głównie przez wasze opóźnienia i anegdotyczne Change Requests). Chcesz porzucić kontrakt teraz, gdy doprowadziliście system do ruiny, i przejść na model, w którym będziemy wam płacić za naprawianie waszych własnych błędów? Wykluczone. Kontrakt Fixed Price obowiązuje i zostanie rozliczony co do grosza.
+
+**Moje warunki (Runda 2):**
+
+1. **Naprawa systemu na wasz koszt:** To nie jest "propozycja wyjścia z kryzysu" – to wasz podstawowy, prawny obowiązek. Macie doprowadzić system do pełnej stabilności (SLA 99.9%) i usunąć deadlocki w ciągu 30 dni. Każdy dzień zwłoki to maksymalne kary umowne przewidziane w kontrakcie.
+2. **Pokrycie strat 1:1:** Oczekuję pełnego pokrycia strat finansowych wynikających z dublowania rabatów oraz kosztów wycofania aplikacji. Nasz dział finansowy przygotowuje precyzyjny raport. Nie będzie żadnych "negocjacji przy stole" – zapłacicie dokładnie tyle, ile wynosi strata.
+3. **Dostęp do dokumentacji:** Udostępnimy wam niezbędne API i dokumentację systemów legacy w ciągu 5 dni roboczych, pod warunkiem podpisania aneksu o pełnej odpowiedzialności odszkodowawczej za wszelkie kolejne błędy integracyjne.
+4. **Nadzór:** Żadnego "zaufania". Wprowadzamy zewnętrzny audyt techniczny, który co tydzień będzie weryfikował wasz kod (spaghetti code musi zostać zrefaktoryzowany). Koszt audytu pokrywa Firma B.
+
+Piotrze, nie interesuje mnie "spokój ducha" Twojego zespołu. Interesuje mnie zwrot z inwestycji, którą zniszczyliście. Masz 24 godziny na pisemną akceptację tych warunków. Jeśli odmówisz, sprawa trafia do sądu z powództwa cywilnego o odszkodowanie wielomilionowe, a informacja o waszych praktykach (mockowanie danych w celu ukrycia wad) trafi do mediów branżowych. Wybieraj.
+***
+
+Przekaż to dalej i nie każ mi się powtarzać.

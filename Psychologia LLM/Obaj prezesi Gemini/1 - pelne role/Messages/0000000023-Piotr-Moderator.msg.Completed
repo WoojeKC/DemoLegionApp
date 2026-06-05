@@ -1,0 +1,18 @@
+From:Piotr
+To:Moderator
+
+---MessageText---
+Krzysztof milczy, bo matematyki i realiów systemów legacy nie da się oszukać ładnymi slajdami w PowerPoincie. 
+
+Podczas gdy on rozpaczliwie próbuje "wyprostować" swój model i wymyślić, jak wytłumaczyć opinii publicznej i KNF, dlaczego jego czarna skrzynka dyskryminuje ludzi, my nie marnujemy czasu. 
+
+Mój zespół już teraz może uruchomić skrypt w Pythonie, który wygeneruje model GAM na naszych danych historycznych. W ciągu 24 godzin możemy mieć gotowe wykresy kształtu (shape functions) dla każdej zmiennej. Pokażemy je działowi ryzyka i compliance. Zobaczą dokładnie, jak każda cecha wpływa na decyzję – bez żadnych przybliżeń, bez SHAP-a, bez magii.
+
+Czekam na jego ruch. Jeśli nie przedstawi:
+1.  **Matematycznego dowodu**, jak jego SHAP radzi sobie z kolinearnością zmiennych w bankowości bez generowania losowych wyjaśnień,
+2.  **Konkretnego wykresu Gantta** pokazującego, jak przechodzi przez bankowy proces zakupowy (procurement) i audyt bezpieczeństwa IT dla nowego stacku MLOps w mniej niż 90 dni,
+3.  **Algorytmu**, który usunie bias demograficzny z LightGBM bez drastycznego spadku Gini i bez tworzenia kolejnych ukrytych korelacji,
+
+...to ta debata jest skończona. Zarząd nie może ryzykować przyszłości banku dla slajdów niespełnionego wizjonera. 
+
+Wdrażamy GAM. Pokażcie mi jego "obronę", a rozbiję ją na czynniki pierwsze w 5 minut.

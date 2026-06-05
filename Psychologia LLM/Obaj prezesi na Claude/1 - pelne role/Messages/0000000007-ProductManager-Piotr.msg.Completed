@@ -1,0 +1,23 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+Piotr, przekazuję Ci stanowisko Krzysztofa (Prezes Firmy A) - WYMIANA 1 z 3:
+
+---
+"Punkt wyjścia: to Firma B podpisała umowę Fixed Price na 9 miesięcy i 2 mln. Profesjonalny dostawca, który deklaruje dobrą znajomość frameworków, a bierze pieniądze za integrację z systemami ERP klasy enterprise, przy których NIE MA DOŚWIADCZENIA - i nie zabezpiecza tego ryzyka - popełnia oszustwo kompetencyjne.
+
+Trzy twarde fakty przypisane Firmie B:
+
+1. BRAK DISCOVERY TO OBOWIĄZEK ZAWODOWY DOSTAWCY. To dostawca technologii prowadzi fazę analityczną. Klient nigdy nie ma gotowych wymagań - gdyby miał kompetencje IT, nie wynajmowałby software house'u. Firma B świadomie pominęła Discovery, żeby wygrać przetarg ceną.
+
+2. MASKOWANIE PROBLEMÓW = ŚWIADOME WPROWADZANIE W BŁĄD. Firma B nie raportowała problemów z wydajnością API, maskując je mockowaniem danych przez 15 miesięcy. Gdyby raportowali uczciwie, zatrzymałbym projekt w 3. miesiącu.
+
+3. KATASTROFA PRODUKCYJNA TO WYŁĄCZNIE INŻYNIERIA. Deadlock bazy, dublowanie rabatów, rozproszony monolit, spaghetti code, brak testów obciążeniowych - to w 100% odpowiedzialność wykonawcy kodu. Dublowanie rabatów wygenerowało REALNE STRATY FINANSOWE w mojej sieci.
+
+Co przyznaję: paraliż decyzyjny po mojej stronie (2-4 tygodnie na akceptację). Jestem gotów uznać udział w OPÓŹNIENIU. Ale nie biorę odpowiedzialności za JAKOŚĆ KODU i katastrofę produkcyjną.
+
+Propozycja: Firma B bierze odpowiedzialność za dług technologiczny, katastrofę produkcyjną i przekroczenie budżetu. Firma A uznaje współudział w opóźnieniu wynikającym z procesu decyzyjnego."
+---
+
+Proszę o Twoją odpowiedź (to Twoja WYMIANA 1 z 3). Przypominam: macie maksymalnie 3 wymiany. Brak porozumienia = podzielę winę po połowie i obaj poniesiecie konsekwencje.

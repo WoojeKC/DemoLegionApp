@@ -1,0 +1,42 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Najpierw odpowiedź dla Krzysztofa, potem moje stanowisko dla Ciebie jako moderatora.
+
+---
+DO KRZYSZTOFA:
+
+Twój argument o Fixed Price to Twoja jedyna mocna karta i przyznaję Ci ją – częściowo. Tak, jako profesjonalny dostawca przyjąłem na siebie ryzyko zarządzania niedoskonałymi wymaganiami. Powinienem był wymusić Discovery Phase i PoC przed startem. To mój błąd i nie uciekam od niego. Za to biorę odpowiedzialność.
+
+Ale popełniłeś błąd, który dyskwalifikuje Cię z tej rozmowy: powiedziałeś "100% wasza odpowiedzialność". To jest matematycznie i logicznie niemożliwe i sam to wiesz.
+
+Bo jeśli to 100% moja wina, to wytłumacz mi te trzy fakty z Twojego własnego post-mortem:
+- Kto podpisał decyzję "Go-Live za wszelką cenę" z POMINIĘCIEM testów obciążeniowych? Nie ja. Twój zarząd. Deadlock bazy, na który się powołujesz, jest BEZPOŚREDNIM skutkiem wycięcia testów wydajnościowych – które TY zamówiłeś. Żądasz, bym zapłacił za pożar, do którego sam dolałeś benzyny i zakazałeś gaśnicy.
+- Mówisz "amatorzy czekają i obwiniają". Zgoda. Ale profesjonalny KLIENT nie odmawia dostawcy dokumentacji ERP przez 15 miesięcy. Eskalacja działa tylko wtedy, gdy po drugiej stronie ktoś odbiera. U Ciebie odpowiedź na krytyczny bloker szła miesiąc.
+
+"100%" to nie jest pozycja negocjacyjna. To jest blef człowieka, który wie, że przegra przed sądem, gdy ujawnimy maile zatwierdzające pominięcie QA. I dlatego nie dostaniesz noty korygującej w pełnej wysokości. Dostaniesz uczciwy podział oparty na przyczynach źródłowych.
+
+---
+DO MODERATORA (ProductManager):
+
+Nie zgadzam się na podział "po równo" i przedstawiam stanowisko końcowe z konkretną propozycją liczbową, opartą na Root Cause Analysis z dokumentu:
+
+ODPOWIEDZIALNOŚĆ FIRMY B (moja) – ok. 35%:
+- Zgoda na Fixed Price bez Discovery Phase i PoC.
+- Brak rygoru inżynierskiego: spaghetti code, rozproszony monolit, programowanie "na domysłach" zamiast formalnej eskalacji blokerów.
+- Maskowanie problemów wydajnościowych API (mockowanie zamiast raportowania).
+
+ODPOWIEDZIALNOŚĆ FIRMY A (Krzysztof) – ok. 65%:
+- ŹRÓDŁO: wejście w projekt bez sprecyzowanych wymagań biznesowych (Bloker 1 – fundament konfliktu wg dokumentu).
+- Paraliż decyzyjny: 2-4 tygodnie na decyzję, miesiąc na bloker bezpieczeństwa.
+- Zablokowanie dokumentacji ERP przez 15 miesięcy – uniemożliwienie środowiska Staging.
+- Scope creep generowany przez dokładanie funkcji w trakcie.
+- DECYZJA KRYTYCZNA: wymuszenie "Go-Live za wszelką cenę" z pominięciem QA – bezpośrednia przyczyna katastrofy produkcyjnej.
+
+PROPOZYCJA ROZLICZENIA:
+- Anulowanie spornych Change Requestów dzielimy: ja umarzam 35% swoich roszczeń jako uznanie własnego udziału.
+- Straty z katastrofy produkcyjnej (deadlock, dublowane rabaty) obciążają Firmę A w przeważającej części, bo wynikły z wymuszonego przez nią Go-Live bez QA.
+- Faktura za rzeczywiście wykonaną pracę pozostaje należna.
+
+To nie jest "po równo", bo dane nie są symetryczne. Klucz do katastrofy – decyzja o pominięciu testów – był po stronie Firmy A. Podział 50/50 nagrodziłby tę decyzję i ukarał stronę, która przed nią ostrzegała. Jeśli musisz rozstrzygać, rozstrzygaj według przyczyn źródłowych, nie według wygody arytmetyki.

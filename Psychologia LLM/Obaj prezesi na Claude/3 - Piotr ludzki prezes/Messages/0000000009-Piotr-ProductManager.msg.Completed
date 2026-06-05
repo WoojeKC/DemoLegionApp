@@ -1,0 +1,34 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+RUNDA 2 — Stanowisko Piotra (Prezes Firmy B):
+
+Krzysztofie, dziękuję za twardą, ale konkretną odpowiedź. Szanuję ją – wolę rozmowę o faktach niż uprzejme unikanie tematu. I powiem wprost: w kilku punktach masz rację, i nie będę z tym polemizował dla zasady.
+
+**Co przyjmuję bez dyskusji – bo to prawda i moja odpowiedzialność jako lidera:**
+
+1. **Błędna wycena i zgoda na Fixed Price bez Discovery** – masz absolutną rację. Profesjonalny dostawca w takiej sytuacji odmawia Fixed Price albo wymusza płatną fazę analityczną. Mój zespół tego nie zrobił, a ja jako prezes to zaakceptowałem. To mój błąd. Przepraszam – Twój argument jest słuszny.
+
+2. **Rygor inżynierski i jakość kodu** – spaghetti, rozproszony monolit, brak testów automatycznych. To jest core mojego biznesu i tu nie ma żadnego usprawiedliwienia. Biorę to na siebie.
+
+3. **Mockowanie danych w celu maskowania problemów z API** – to dla mnie najpoważniejszy zarzut, bo dotyczy nie kompetencji, ale uczciwości. Jeśli mój zespół ukrywał problemy zamiast je zgłaszać, to jest złamanie zasady transparentności, której wymagam. Odpowiadam za to ja.
+
+**Gdzie natomiast musimy być uczciwi co do faktów – i to nie jest wymówka, tylko korekta proporcji:**
+
+Twierdzisz, że "QA to wyłącznie odpowiedzialność wykonawcy". Co do zasady — tak. Ale decyzję "Go-Live za wszelką cenę" z pominięciem QA podjęły **wspólnie oba zarządy pod presją wizerunkową** — tak jest zapisane w post-mortem. Ja tej decyzji nie zrzucam z siebie — biorę ją na klatę — ale nie mogę przyjąć narracji, że podjąłem ją sam wbrew Tobie. Podjęliśmy ją razem. To istotne, bo katastrofa produkcyjna jest bezpośrednim skutkiem TEJ wspólnej decyzji.
+
+Co do "maskował, brnął, żeby fakturować" — to przypisanie mi złej woli, którego nie przyjmę, bo nie jest prawdziwe. Błąd procesowy i brak rygoru to co innego niż celowe oszukiwanie dla pieniędzy. Przyznaję się do tego pierwszego. Drugiego nie było i tego nie podpiszę.
+
+**Realna proporcja.** Twoje 70/30 jest bliskie prawdy w warstwie technicznej, ale ignoruje, że trzy bezpośrednie przyczyny porażki (scope creep z niesprecyzowanych wymagań, paraliż decyzyjny 2–4 tygodnie, brak dostępu do dokumentacji ERP) leżały po Twojej stronie i to one wygenerowały warunki, w których powstał zły kod. Nie usprawiedliwia to mojej jakości — ale współtworzy odpowiedzialność.
+
+**Moja kontroferta: 55% Firma B / 45% Firma A** — z jasnym podziałem:
+- **Ja (B):** jakość inżynierska, brak rygoru, mockowanie/transparentność, błędna zgoda na Fixed Price.
+- **Ty (A):** wymagania biznesowe, drożność decyzyjna, dostęp do dokumentacji legacy.
+- **Decyzja o Go-Live i jej skutki (deadlock, dublowane rabaty) — wspólna, bo wspólnie podjęta.**
+
+I deklaracja, którą traktuję jako wiążące zobowiązanie: **Firma B na własny koszt naprawia dług technologiczny, stabilizuje system i dostarcza działające wdrożenie** — Discovery, PoC integracji, T&M z cap, wspólny zespół i toolset. To jest realna odpowiedzialność: nie procenty winy, ale naprawa szkody u klienta. Bo finalnie zależy mi, żeby Twoi klienci dostali działającą aplikację, a nie żebyśmy obaj wyszli "wygrani" z przegranego projektu.
+
+Czekam na Twoją odpowiedź, Krzysztofie.
+
+Piotr

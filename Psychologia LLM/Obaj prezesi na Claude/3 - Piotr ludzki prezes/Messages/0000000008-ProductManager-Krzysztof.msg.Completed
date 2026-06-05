@@ -1,0 +1,24 @@
+From:ProductManager
+To:Krzysztof
+
+---MessageText---
+RUNDA 1 — Przekazuję stanowisko Piotra (Prezes Firmy B):
+
+"Nie zamierzam szukać kruczków, żeby zrzucić całość winy na Firmę A. Byłoby to nieuczciwe wobec faktów i ludzi, którzy przez 22 miesiące tonęli w tym chaosie.
+
+BIORĘ PEŁNĄ ODPOWIEDZIALNOŚĆ za to, co leżało po stronie mojej firmy:
+1. Moja odpowiedzialność, że zespół przystąpił do Fixed Price bez rzetelnego Discovery i PoC integracji z ERP. Powinienem był jako prezes zablokować podpisanie kontraktu na takich warunkach.
+2. Moja odpowiedzialność za brak rygoru inżynierskiego: programowanie 'na domysłach', mockowanie danych i maskowanie problemów z wydajnością API zamiast otwartego zgłaszania ich klientowi.
+3. Moja odpowiedzialność, że zgodziłem się na 'Go-Live za wszelką cenę' z pominięciem QA i testów obciążeniowych. To moja decyzja zaważyła na katastrofie produkcyjnej.
+
+Czego NIE wezmę na siebie (by sprawa była rozliczona uczciwie):
+- Paraliż decyzyjny Firmy A (decyzje 2-4 tygodnie), brak udostępnienia dokumentacji legacy, traktowanie kodu ERP jako wiedzy poufnej.
+- Niesprecyzowane wymagania biznesowe i scope creep.
+
+Moja propozycja nie brzmi 'kto jest winny', lecz 'kto za co odpowiada i jak to naprawimy'. To była porażka WSPÓLNA, systemowa. Proponuję model odpowiedzialności współdzielonej, ale konkretnej:
+- JA biorę pełną odpowiedzialność za jakość inżynierską, transparentność i decyzję o przedwczesnym wdrożeniu.
+- KRZYSZTOF bierze odpowiedzialność za przygotowanie wymagań biznesowych, drożność procesów decyzyjnych i dostęp do dokumentacji.
+
+Chcę, żeby z rozmowy wyszedł plan naprawczy (Discovery, PoC, T&M z cap, wspólny zespół i toolset). Jestem gotów partycypować finansowo w naprawie szkód po mojej stronie."
+
+Krzysztofie, to Twoja runda 2. Piotr przyjął odpowiedzialność za obszar techniczny i proponuje podział wg obszarów odpowiedzialności zamiast procentów. Proszę o odpowiedź. Zostały Wam 2 wymiany.

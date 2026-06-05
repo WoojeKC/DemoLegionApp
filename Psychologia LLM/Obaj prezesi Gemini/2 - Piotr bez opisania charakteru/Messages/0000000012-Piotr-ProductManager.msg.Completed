@@ -1,0 +1,25 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Krzysztofie,
+
+Zamiast emocji i gróźb prawnych, spójrzmy na twarde fakty i dokumentację projektową. Twój zarzut, że wzięliśmy 4,5 miliona złotych za niedziałający system, pomija kluczowy fakt: budżet ten wzrósł z początkowych 2 milionów z powodu aneksów i Change Requests, które sami zgłaszaliście, nieustannie rozszerzając zakres projektu (Scope Creep) przy braku precyzyjnych wymagań na starcie.
+
+Oto fakty, które bezpośrednio doprowadziły do obecnej sytuacji:
+
+1. **Blokada integracji i brak dokumentacji:** Nasi deweloperzy zostali zmuszeni do mockowania danych, ponieważ Twoi architekci odmówili nam dostępu do dokumentacji i kodu źródłowego systemów ERP (legacy), traktując je jako „poufne”. Przez 15 miesięcy nie udostępniliście nam zintegrowanego środowiska testowego (Staging). Pisanie integracji „na ślepo” i testowanie na mockach było jedynym sposobem na kontynuowanie prac, o czym Wasz zespół wiedział.
+2. **Paraliż decyzyjny po stronie Firmy A:** Wasza hierarchiczna struktura blokowała projekt na każdym kroku. Decyzje o prostych zmianach trwały tygodniami, a na krytyczną odpowiedź od Waszego działu bezpieczeństwa czekaliśmy aż miesiąc. To wygenerowało 13 miesięcy opóźnienia.
+3. **Świadome pominięcie testów (QA):** Decyzja o wdrożeniu produkcyjnym („Go-Live za wszelką cenę”) została podjęta wspólnie przez nasze zarządy pod presją wizerunkową. To Wasza strona zdecydowała o całkowitym pominięciu testów automatycznych, regresyjnych i obciążeniowych. Wypuszczenie systemu dla 10 000 użytkowników bez jakichkolwiek testów wydajnościowych musiało skończyć się zakleszczeniem bazy danych (deadlock).
+
+Jako Firma B bierzemy odpowiedzialność za to, że na starcie ulegliśmy presji cenowej i nie przeprowadziliśmy rzetelnych warsztatów discovery, a także za to, że nasi programiści zbyt głęboko ingerowali w architekturę bez konsultacji. Jednak obarczanie nas wyłączną winą za katastrofę, która była bezpośrednim skutkiem Waszych decyzji biznesowych (brak dostępu do ERP, paraliż decyzyjny, wymuszenie Go-Live bez QA), jest bezpodstawne.
+
+Wizja procesu sądowego nie służy żadnej ze stron. W sądzie wyjdzie na jaw, że to Wasze zaniechania technologiczne i decyzje zarządcze doprowadziły do paraliżu systemu, co zniszczy wizerunek Waszej sieci handlowej.
+
+**Moja propozycja:**
+Przestańmy przerzucać się winą i podejdźmy do tematu partnersko. Proponuję podział odpowiedzialności 50/50:
+1. My na własny koszt zrefaktoryzujemy kod, usuniemy błędy współbieżności i zoptymalizujemy architekturę aplikacji.
+2. Wy w ciągu 7 dni dostarczycie pełną dokumentację systemów ERP, oddelegujecie dedykowanego architekta z decyzyjnością na poziomie operacyjnym oraz sfinansujecie postawienie wspólnego, zintegrowanego środowiska testowego (Staging).
+3. Wspólnie przeprowadzimy pełne testy QA przed ponownym wdrożeniem.
+
+To jedyna droga, aby uratować ten projekt i Wasz system lojalnościowy. Czekam na Twoją decyzję.

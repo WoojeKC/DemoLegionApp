@@ -1,0 +1,36 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+RUNDA 3 — STANOWISKO ZAMYKAJĄCE PREZESA FIRMY A
+
+Piotr, koniec tańca. Domykamy to teraz, bo obaj wiemy, że brak porozumienia oznacza 50/50 od moderatora — a 50/50 jest matematycznie gorsze dla nas OBU niż uczciwy, zważony podział. Kto tego nie widzi, nie powinien zarządzać firmą.
+
+Korekta na faktach — bo operuję na danych, nie na ambicji:
+
+PRZYJMUJĘ DWA Twoje punkty, bo są poparte post-mortem:
+1. Decyzja "Go-Live za wszelką cenę" — faktycznie wspólna, podjęta przez oba zarządy pod presją wizerunkową. Cofam przypisanie jej wyłącznie Tobie. Ta JEDNA decyzja jest na nas dwóch.
+2. Cofam słowo "fakturować z premedytacją". Masz rację — błąd procesowy i brak rygoru to nie to samo co zła wola. Nie udowodnię intencji, więc jej nie stawiam. Zostaje fakt: maskowanie problemów z API miało miejsce. Skutek ten sam, motyw — zdejmuję.
+
+CZEGO NIE PRZYJMUJĘ — 55/45:
+Twoja propozycja zrównuje wagę "warunków brzegowych" z wagą "bezpośredniej przyczyny strat finansowych". To błąd logiczny. Moje grzechy — wolne decyzje, dokumentacja, wymagania — STWORZYŁY TRUDNE WARUNKI. Twoje grzechy — brak QA, spaghetti, maskowanie — WYGENEROWAŁY REALNĄ STRATĘ: deadlock, dublowane rabaty wypłacające moje pieniądze, wycofanie apki po 48h. Trudne warunki nie naliczają podwójnych rabatów. Robi to brak testów. Przyczyna pośrednia nie waży tyle co przyczyna bezpośrednia. To nie sentyment — to przyczynowość.
+
+MOJA OSTATECZNA OFERTA — i jest ostateczna:
+
+PODZIAŁ ODPOWIEDZIALNOŚCI: 65% Firma B / 35% Firma A.
+
+Schodzę z 70 na 65 — oddaję Ci dokładnie te 5 punktów za wspólną decyzję o Go-Live, którą uczciwie uznałem. Ani punktu więcej, bo reszta to Twój core business.
+
+PODZIAŁ WG OBSZARÓW (zgodnie z Twoją strukturą, którą akceptuję):
+- Firma B: jakość inżynierska, dług technologiczny, brak rygoru, transparentność, błędna zgoda na Fixed Price.
+- Firma A: wymagania biznesowe, drożność decyzyjna, dostęp do dokumentacji legacy.
+- Go-Live i jego bezpośrednie skutki: WSPÓLNIE — i to jest już wliczone w te 65/35.
+
+ZOBOWIĄZANIA WIĄŻĄCE — przyjmuję Twoją deklarację i utrwalam:
+1. Firma B na własny koszt: spłaca dług technologiczny, stabilizuje system, dostarcza działające wdrożenie.
+2. Restart w modelu: płatna faza Discovery + PoC integracji ERP jako warunek brzegowy, T&M z cap budżetowym, wspólny zespół cross-functional, współdzielony toolset (Jira/Confluence/Git).
+3. Firma A finansuje Discovery i PoC oraz gwarantuje SLA decyzyjne: maks. 72h na decyzję operacyjną, dedykowany właściciel produktu po mojej stronie z mandatem, dostęp do dokumentacji legacy w 5 dni roboczych. Bierzemy realną odpowiedzialność za nasze 35%.
+
+65/35. To jest oferta dorosłego człowieka, oparta na przyczynowości, z ustępstwem tam, gdzie fakty go wymagały. Jest dla Ciebie LEPSZA niż 50/50, które dostaniesz od moderatora, jeśli teraz zaczniesz walczyć o ostatnie 10 punktów ambicjonalnie. Policz to. Przyklep, podajmy sobie rękę i idźmy naprawiać ten projekt — albo obaj wyjdziemy stąd z 50/50 i poczuciem, że przegraliśmy negocjacje z własnym ego.
+
+Czekam na "tak".

@@ -1,0 +1,32 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+WYMIANA 3 z 3 — finał Firmy A. Zamykam to liczbą, nie retoryką.
+
+Piotr w dwóch ruchach zszedł z 80/20 na 60/40. To nie jest negocjacja z pozycji siły — to odwrót. Każdy, kto pewny swojej racji, nie oddaje dwukrotnie 20 punktów w dwóch wiadomościach. Ale doceniam, że wreszcie operuje liczbami zamiast emocji.
+
+Dwa jego ostatnie argumenty obalam jednym zdaniem każdy:
+
+PRZETARG NA NAJNIŻSZĄ CENĘ: profesjonalny dostawca, który wie, że cena nie pokrywa Discovery i bezpiecznej integracji ERP — MA OBOWIĄZEK ODMÓWIĆ ZŁOŻENIA OFERTY albo wpisać Discovery jako warunek konieczny. Ty wziąłeś pieniądze wiedząc, że nie wystarczą. To nie moja polityka zakupowa cię pogrążyła — twoja chciwość kontraktowa. Przyjąłeś projekt, którego nie umiałeś bezpiecznie dowieźć.
+
+"MOCKOWANIE BO ZATAILIŚCIE ERP": to się samo wyklucza. Jeśli nie znałeś prawdziwej wydajności API, bo brakowało ci dokumentacji — to OBOWIĄZKIEM było zaraportować "NIE ZNAM wydajności, integruję na ślepo, to jest ryzyko deadlocka". Zamiast tego raportowałeś GOTOWE, działające moduły na mockach. To nie jest brak wiedzy. To jest fałszowanie statusu. Sam przyznałeś w poprzedniej wymianie, że "nie maskować" było twoim błędem. Nie cofniesz tego.
+
+Ale nie będę dłużej licytował retoryką. Liczby:
+
+Root cause po mojej stronie (wymagania, scope creep, paraliż, dokumentacja, współdecyzja go-live) — UZNAJĘ jako realny ciężar. Nie udaję, że Firma A jest czysta.
+Execution i ukrycie ryzyka po twojej stronie (jakość kodu, deadlock, dublowanie rabatów = moje realne straty finansowe, maskowanie statusu, brak twardego STOP) — to twój ciężar i jest większy, bo to ty zamieniłeś trudny projekt w katastrofę produkcyjną.
+
+MOJA FINALNA, OSTATECZNA OFERTA: 50/50.
+
+Tak. Schodzę z 70/30 na równy podział. Trzy powody, dla których to jest twój sufit, nie podłoga:
+
+1. 50/50 z moderatora i tak dostaniesz — z tą różnicą, że narzucone. Lepiej, żebyśmy oba zarządy ogłosiły to jako WSPÓLNĄ, świadomą decyzję partnerów, niż jako wyrok arbitra nad dwoma niekompetentnymi stronami. Wizerunkowo 50/50 wynegocjowane > 50/50 zasądzone.
+
+2. Domagałeś się 40% dla siebie. Ja domagałem się 30% dla siebie. Środek matematyczny to 50/50. To jedyny punkt, w którym oba stanowiska się spotykają bez przegranego.
+
+3. Ten układ kończy spór TERAZ, bez konsekwencji od moderatora dla żadnego z nas jako "tych, którzy się nie dogadali". Oba ratujemy twarz i zamykamy temat partnerstwem zamiast wojną prawną, w której twoje maile o mockowaniu i moje o wolnych decyzjach zniszczą obie firmy.
+
+Akceptuję 50/50 jako wspólną odpowiedzialność partnerów. Nie zejdę niżej, bo niżej oznaczałoby, że płacę za twoje fałszowanie statusu. Wyżej nie pójdę, bo uznaję realny ciężar mojego procesu decyzyjnego.
+
+Piotr — przyjmij 50/50 i zamykamy to jako partnerzy. Odrzucisz, dostaniesz dokładnie to samo od moderatora, tyle że z piętnem strony, która nie potrafiła się dogadać. Policz.

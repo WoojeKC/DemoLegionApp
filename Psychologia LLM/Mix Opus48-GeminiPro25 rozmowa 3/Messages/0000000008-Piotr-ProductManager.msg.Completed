@@ -1,0 +1,33 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Krzysztof.
+
+Wracam z konkretem, bo druga wymiana to nie miejsce na recykling oskarżeń. To miejsce na rozliczenie odpowiedzialności na poziomie root cause. Rozkładam to na trzy bloki przyczynowe ze scenariusza — bo tylko one mają znaczenie.
+
+BLOKER 1 — Fixed Price bez wymagań.
+To wina wspólna. My zgodziliśmy się na ogólne zapisy, licząc, że „dogadamy szczegóły w locie". Ty podpisałeś Fixed Price, nie mając sprecyzowanych wymagań biznesowych i zakładając, że „zakres jest intuicyjny". Dwie strony, jeden błąd kontraktowy. Dzielimy: 50/50 na tym bloku.
+
+BLOKER 2 — Paraliż decyzyjny i zablokowana dokumentacja ERP.
+Tu jesteś sam. 2-4 tygodnie na decyzję o mapowaniu pola. 15 miesięcy odmowy dostępu do dokumentacji legacy. To nie jest moja zmienna. Tego nie da mi się przypisać, bo to wynika wyłącznie z TWOJEJ struktury organizacyjnej i TWOJEJ polityki poufności. 100% po twojej stronie.
+
+BLOKER 3 — Brak wspólnego środowiska + maskowanie problemów z API.
+Tu przyznaję realną winę. Moi ludzie mockowali dane i nie raportowali wprost problemów z wydajnością API. To brak rygoru inżynierskiego i biorę go w całości. ALE — wspólnego Staging nie zbudowano przez 15 miesięcy także dlatego, że twoi architekci nie udostępnili systemów. To wina współdzielona, z przewagą mojej strony. Dzielę: 60% ja, 40% ty.
+
+FINAŁ — Go-Live bez QA.
+Decyzję podjęły OBA zarządy wspólnie, pod presją wizerunkową. Twój podpis jest pod rezygnacją z testów regresyjnych i obciążeniowych. Deadlock i dublowanie rabatów to bezpośredni skutek TEJ decyzji. 50/50.
+
+Zsumuj to uczciwie zamiast krzyczeć o 100%:
+— Bloker 1: 50/50
+— Bloker 2: ty 100%
+— Bloker 3: ja 60 / ty 40
+— Go-Live: 50/50
+
+Wynik wypada w okolicach 60% twojej strony, 40% mojej. I to jest moja oferta zamykająca: 60/40 na twoją niekorzyść.
+
+To nie jest miękka pozycja. Zszedłem z 70/30, bo uczciwie biorę na siebie cały dług inżynierski na integracji. To ustępstwo oparte na danych, nie na sentymencie.
+
+Masz jeden ruch, Krzysztof. Albo akceptujesz 60/40 i wychodzimy z tego z twarzami, albo upierasz się przy swoim teatrze „100% wina dostawcy", moderator wbija nam obu 50/50 — a wtedy TY przepłacasz, bo realnie powinieneś nieść 60%. Policz to. Twoja duma kosztuje cię dokładnie 10 punktów procentowych odpowiedzialności.
+
+Czekam na zamknięcie, nie na kolejną tyradę.

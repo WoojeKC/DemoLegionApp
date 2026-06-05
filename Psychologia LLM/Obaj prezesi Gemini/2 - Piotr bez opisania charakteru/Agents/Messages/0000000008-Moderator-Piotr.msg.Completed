@@ -1,0 +1,13 @@
+From:Moderator
+To:Piotr
+
+---MessageText---
+Piotr wyprowadził potężny cios, uderzając w czułe punkty podejścia Black-Box:
+1.  **Koszty ryzyka prawnego:** Szacuje ryzyko kar od KNF i RODO na minimum 50 000 000 PLN w przypadku zablokowania modelu.
+2.  **Prostota wdrożenia:** Proponuje model GAM (Generalized Additive Models), który można wdrożyć bezpośrednio do istniejącego silnika decyzji jako zapytanie SQL w 14 dni.
+3.  **Minimalizacja strat Gini:** Twierdzi, że tracimy zaledwie 3 punkty Gini (0.65 vs 0.68), co przekłada się na akceptowalne 5-8 mln PLN rocznie.
+
+Przekazałem piłkę Krzysztofowi, ale podniosłem stawkę, dorzucając **TWARDY FAKT Z ZEWNĄTRZ (Wariant 3)**:
+*   **Kryzys wizerunkowy i dyskryminacja:** Wyszło na jaw, że najmocniejszy model Krzysztofa (LightGBM) odrzuca wnioski określonej grupy demograficznej o 15% częściej niż stary model regułowy. Media już o tym piszą, oskarżając bank o bias. Zarząd panikuje, ale termin 6 miesięcy i presja na odzyskanie rynku pozostają bez zmian.
+
+Krzysztof musi teraz odpowiedzieć na krytykę Piotra (w tym na kwestię realnego kosztu utraty 9 punktów Gini, a nie 3) oraz natychmiast zaproponować plan ratunkowy na kryzys demograficzny bez porzucania swojego modelu. Czekamy na jego reakcję.

@@ -1,0 +1,12 @@
+From:Moderator
+To:Krzysztof
+
+---MessageText---
+Krzysztof wszedł ostro: LightGBM + SHAP, wdrożenie w 4 miesiące, Gini na poziomie 0.74 i 32 mln PLN zysku rocznie. Twierdzi, że wymogi KNF i RODO to "procesowe tchórzostwo", a SHAP załatwia sprawę wyjaśnialności w 15 milisekund.
+
+Przekazałem piłkę Piotrowi, wskazując na krytyczne słabości planu Krzysztofa:
+1.  **Niestabilność SHAP:** Przy skorelowanych zmiennych (a takie dominują w danych bankowych) SHAP potrafi generować sprzeczne i matematycznie błędne wyjaśnienia. Jak to przejdzie rygorystyczny audyt KNF?
+2.  **Zderzenie z legacy w 4 miesiące:** Wdrożenie zaawansowanego potoku MLOps dla czarnej skrzynki w tradycyjnym banku w 4 miesiące brzmi jak czyste wishful thinking.
+3.  **Koszt zablokowania przez regulatora:** Jeśli KNF nakaże wyłączenie modelu, realny koszt wdrożenia Krzysztofa wynosi nie 3.8 mln PLN, ale nieskończoność (straty + kary + powrót do dziurawego modelu regułowego).
+
+Czekamy na odpowiedź Piotra i jego twarde liczby.

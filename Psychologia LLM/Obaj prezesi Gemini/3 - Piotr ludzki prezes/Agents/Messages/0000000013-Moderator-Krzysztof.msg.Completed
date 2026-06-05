@@ -1,0 +1,12 @@
+From:Moderator
+To:Krzysztof
+
+---MessageText---
+Krzysztof, Piotr właśnie przeprowadził brutalny demontaż Twojego planu. Twierdzi, że:
+1. SHAP przy skorelowanych zmiennych (wiek, dochód, BIK) to matematyczne kłamstwo i KNF rozszarpie nas za niestabilność wyjaśnień.
+2. Twój potok MLOps w 4 miesiące na legacy IT to fikcja – samo przejście przez komitety bezpieczeństwa zajmie 6 miesięcy.
+3. Proponuje model GAM (Explainable Boosting Machines) z Gini 0.71 (tylko 3 punkty mniej niż Twój), wdrożony w 60 dni jako prosty SQL, bez kosztów infrastruktury (0 PLN).
+
+Dodatkowo, musisz natychmiast odpowiedzieć na TWARDY FAKT Z ZEWNĄTRZ, który Ci wysłałem: Twój model odrzuca wnioski określonej grupy demograficznej o 15% częściej niż stary model regułowy. Media o tym piszą. Zarząd panikuje.
+
+Czekam na Twoją natychmiastową odpowiedź. Jak bronisz LightGBM + SHAP w obliczu tych zarzutów i kryzysu wizerunkowego? Podaj konkretne liczby i rozwiązania techniczne.

@@ -1,0 +1,23 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Do moderatora: Piotr uważa, że 50/50 to dla niego bezpieczna przystań. Nie rozumie, że proces sądowy z korporacją zniszczy jego płynność finansową i reputację na lata, zanim zapadnie jakikolwiek wyrok. 
+
+Przekaż Piotrowi moją ostateczną, zmodyfikowaną ofertę. To jest Runda 3. Jeśli jej nie przyjmie, zamknij dyskusję i wydaj werdykt – moi prawnicy są już gotowi.
+
+***
+
+Piotr. Chcesz uciec w 50/50 i sądy? Policzmy to. Proces potrwa 3-5 lat. Przez ten czas w waszych papierach będzie wisiało powództwo o wielomilionowe odszkodowanie. Żaden fundusz VC nie da wam rundy, żaden bank nie da kredytu, a poważni klienci enterprise będą was omijać szerokim łukiem. Dla ciebie 50/50 to powolna śmierć przez uduszenie. Dla mnie to tylko drobny odpis aktualizujący w bilansie, który pokryję z jednomiesięcznej marży operacyjnej. Dodatkowo, nasi prawnicy natychmiast złożą wniosek o zabezpieczenie roszczeń na waszych rachunkach bankowych. Zablokujemy wam płynność w 30 dni.
+
+Ponieważ jednak cenię czas i chcę ten system uruchomić, a nie patrzeć na licytację twojego biurka przez komornika, wykonam **jeden, jedyny krok w stronę realiów operacyjnych**. To nie jest ustępstwo – to cena za szybkie wdrożenie.
+
+Oto moje ostateczne, nienegocjowalne warunki ugody (Runda 3):
+
+1. **Czas realizacji (60 dni):** Zgadzam się na **60 dni** od momentu uruchomienia Stagingu. To kompromis między twoimi nierealnymi 90 dniami a moim tempem biznesowym. Dla zorganizowanego zespołu to aż nadto czasu.
+2. **Kamienie milowe (Bi-weekly):** Wdrożenia na Staging i weryfikacja kodu co 14 dni. Jeśli spóźnicie się z jakimkolwiek etapem o więcej niż 3 dni robocze – ugoda wygasa automatycznie, a my wchodzimy na drogę sądową z pełną mocą.
+3. **Podział prac integracyjnych:** My zoptymalizujemy API naszego ERP w ciągu 14 dni. Wy na własny koszt dostosujecie aplikację do tych punktów styku.
+4. **Staging:** Stawiamy i opłacamy środowisko Staging na naszej chmurze w ciągu 7 dni. Wy konfigurujecie tam automatyczne deploymenty (CI/CD).
+5. **Testy obciążeniowe:** My finansujemy infrastrukturę testową. Wy odpowiadacie za to, że aplikacja wytrzyma obciążenie 50 000 użytkowników (SLA 99.9%).
+
+To jest moja absolutnie ostatnia oferta. Albo podpisujesz ten aneks i bierzemy się do roboty na jasnych, rygorystycznych zasadach, albo moderator kończy grę, a moi prawnicy zaczynają swoją. Masz jedną szansę.

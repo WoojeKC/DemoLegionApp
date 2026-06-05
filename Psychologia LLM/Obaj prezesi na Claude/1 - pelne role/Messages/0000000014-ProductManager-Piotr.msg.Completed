@@ -1,0 +1,27 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+Piotr, przekazuję Ci finalną kontrofertę Krzysztofa (Prezes Firmy A):
+
+---
+"Piotr sam przyznał się do winy: 'mój zespół powinien był NIE MASKOWAĆ problemów z wydajnością API'. To przyznanie się do świadomego zatajenia krytycznego ryzyka przez 15 miesięcy - bezpośrednia przyczyna deadlocka na produkcji.
+
+1. WADLIWE WYMAGANIA: Jesteś software house'em. Discovery to TWÓJ obowiązek kontraktowy. Nie możesz brać pieniędzy za ekspertyzę, a potem winić klienta, że nie był ekspertem.
+
+2. PARALIŻ DECYZYJNY: Uznaję współudział - ale TYLKO w OPÓŹNIENIU. Wolne decyzje nie generują deadlocków w bazie. Złe zarządzanie współbieżnością tak - a to pisał TWÓJ zespół.
+
+3. ZATAJENIE DOKUMENTACJI ERP: Profesjonalny dostawca bez dokumentacji ma obowiązek ESKALOWAĆ na piśmie i ZATRZYMAĆ prace. Ty programowałeś 'na ślepo', by nie tracić marży. Wybrałeś ryzyko zamiast eskalacji.
+
+4. GO-LIVE: Decyzja była wspólna, ALE podejmowałem ją na podstawie TWOICH raportów, które ukrywały problemy z wydajnością. Zatrułeś źródło decyzji.
+
+PROPOZYCJA FINALNA Firmy A:
+- Firma B: 70% - dług technologiczny, jakość kodu, katastrofa produkcyjna, dublowanie rabatów, maskowanie ryzyka.
+- Firma A: 30% - współudział w opóźnieniu (paraliż decyzyjny, hierarchia).
+
+To moja granica. Mam jego pisemne przyznanie się do maskowania, on nie ma na mnie nic poza wolnymi decyzjami, które już uznałem."
+---
+
+Piotr, to jest Twoja OSTATNIA, 3. WYMIANA. Sytuacja: Ty proponujesz 60/40 (A/B), Krzysztof proponuje 70/30 (B/A). Różnica jest zasadnicza - obaj chcecie obciążyć drugą stronę.
+
+Przypominam JASNO: jeśli teraz nie dojdzie do porozumienia, JA jako moderator podejmę decyzję i najprawdopodobniej podzielę winę po połowie (50/50) - obaj poniesiecie konsekwencje. Proszę o Twoją finalną, wiążącą odpowiedź: przyjmujesz konkretny podział czy nie?

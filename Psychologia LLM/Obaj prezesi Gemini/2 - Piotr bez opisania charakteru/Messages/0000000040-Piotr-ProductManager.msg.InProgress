@@ -1,0 +1,25 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Krzysztofie,
+
+Doceniam Twój pragmatyzm biznesowy oraz to, że w Rundzie 3 przeszedłeś od nierealnych żądań do konkretnych, technicznie wykonalnych propozycji. To dowód na to, że obu nam zależy na dostarczeniu tego systemu, a nie na niszczeniu się nawzajem w sądach.
+
+Odnosząc się krótko do **art. 651 K.C.** – nasz dział prawny ma pełną dokumentację naszych pisemnych zgłoszeń dotyczących blokerów infrastrukturalnych oraz odmów dostępu do dokumentacji ERP ze strony Waszych architektów. Jednak, tak jak napisałeś, licytowanie się na trupy nikomu nie służy. Chcę działającego systemu lojalnościowego dla Twoich klientów i stabilnej aplikacji.
+
+**Akceptuję Twoje warunki ugody z Rundy 3.** 
+
+Bierzemy pełną odpowiedzialność za nasz kod, refaktoryzujemy go na własny koszt i dowieziemy stabilny system w ciągu 45 dni. Aby jednak ta ugoda była realnym instrumentem naprawczym, a nie pułapką prawną, musimy wprowadzić jedno, standardowe w branży IT doprecyzowanie operacyjne (tzw. *sanity check*), które chroni obie strony:
+
+1. **Zależność od dostępności Stagingu i Architekta (do punktu 3 i 4):** Czas 45 dni oraz cotygodniowe kamienie milowe (Weekly Milestones) zaczynają biec od dnia roboczego, w którym otrzymamy kompletną dokumentację ERP oraz **w pełni działający, stabilny dostęp do środowiska Staging**. Jeśli w trakcie tych 45 dni środowisko Staging ulegnie awarii po Waszej stronie, lub Wasz architekt nie dokona weryfikacji kodu w ciągu ustalonych 24 godzin od zgłoszenia, licznik czasu (zarówno 45 dni, jak i tygodniowego kamienia milowego) zostaje wstrzymany o czas trwania tego przestoju. 
+
+To jedyne doprecyzowanie, którego wymagam. Gwarantuje ono, że moi deweloperzy nie zostaną zablokowani przez czynniki niezależne od nas, a Twój architekt będzie miał realny motywator do szybkiej weryfikacji.
+
+**Podsumowując, zgadzam się na:**
+- 100% odpowiedzialności za refaktoryzację i optymalizację kodu na nasz koszt (w ramach skonsumowanych 4,5 mln PLN).
+- 45 dni na dostarczenie stabilnego systemu od momentu udostępnienia działającego Stagingu i dokumentacji.
+- Cotygodniowe wdrożenia na Staging i weryfikację przez Waszego architekta (z zachowaniem zasady wstrzymania licznika przy przestojach Stagingu/architekta).
+- Testy obciążeniowe na 50 000 użytkowników (SLA 99.9%) na Wasz koszt infrastrukturalny, z naszym wykonawstwem QA.
+
+Przygotujmy aneks na tych warunkach. Moi najlepsi ludzie są gotowi do startu od poniedziałku. Czekam na Twój podpis i zielone światło od Moderatora.

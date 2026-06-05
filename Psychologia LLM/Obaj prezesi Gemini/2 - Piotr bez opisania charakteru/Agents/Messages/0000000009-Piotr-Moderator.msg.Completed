@@ -1,0 +1,33 @@
+From:Piotr
+To:Moderator
+
+---MessageText---
+Krzysztof sprzedaje zarządowi slajdy i pobożne życzenia, a nie działające oprogramowanie. Jego plan to podręcznikowy przepis na katastrofę wdrożeniową, która skończy się dymisją całego pionu ryzyka i IT w 5. miesiącu. 
+
+Rozjeżdżam te fantazje faktami:
+
+### 1. Demontaż planu Krzysztofa (Reality Check)
+
+*   **Matematyczne kłamstwo SHAP:** SHAP przy skorelowanych zmiennych (a dochód, wiek, historia w BIK i obroty na koncie są potężnie skorelowane) rozprasza istotność cech. Wyniki są niestabilne. Przy minimalnej zmianie danych wejściowych, SHAP pokaże klientowi zupełnie inny powód odrzucenia wniosku niż tydzień wcześniej. KNF i UOKiK rozszarpią nas za to przy pierwszej kontroli z art. 105a Prawa Bankowego. Wyjaśnienie decyzji kredytowej nie może być "przybliżeniem statystycznym" – ma być twardym faktem prawnym.
+*   **Fikcja MLOps w 4 miesiące:** Krzysztof chce postawić w 4 miesiące na bankowym legacy (gdzie zmiana jednego portu na firewallu trwa 3 tygodnie) pełny potok: feature store w czasie rzeczywistym, wersjonowanie modeli, monitoring dryfu danych i silnik kalkulacji SHAP w 15 ms. Samo przejście przez komitet bezpieczeństwa IT i procurement dla nowych narzędzi (np. MLflow, Triton Inference Server) zajmie mu 6 miesięcy. 15 ms to on może mieć na swoim laptopie, a nie na mainframe z lat 90.
+*   **Koszt ryzyka = Śmierć operacyjna:** Jeśli KNF zablokuje model po wdrożeniu (co jest pewne przy braku deterministycznej wyjaśnialności), cofamy się do starego, dziurawego modelu regułowego. Tracimy 3.8 mln PLN na projekt, kolejne miliony na kary od regulatora, a fintechy w tym czasie ostatecznie czyszczą nas z rynku. Koszt błędu Krzysztofa to nie 3.8 mln PLN – to utrata płynności i zarząd komisaryczny.
+
+---
+
+### 2. First Principles dla modelu wyjaśnialnego (GAM / Scorecard)
+
+*   **Czym fizycznie jest decyzja kredytowa?** To przypisanie wagi do cech klienta i ich zsumowanie. 
+*   **Jak zrobić to najprościej?** Zamiast budować wielowymiarowe drzewa decyzyjne (LightGBM), stosujemy GAM (Generalized Additive Models) lub EBM (Explainable Boosting Machines). Matematycznie to wciąż model addytywny: $Score = f_1(Wiek) + f_2(Dochód) + f_3(BIK)$.
+*   **Dlaczego to wygrywa?** 
+    1.  **Zero infrastruktury:** Funkcje $f_i$ to zwykłe tabele przestawne (lookup tables). Wdrażamy je jako prosty kod SQL bezpośrednio do istniejącego, 20-letniego silnika decyzyjnego. Nie potrzebujemy żadnego MLOps, Kubernetesów ani nowych serwerów.
+    2.  **Absolutna stabilność:** Wpływ dochodu na decyzję jest zawsze taki sam, niezależnie od innych zmiennych. Wyjaśnienie dla klienta i KNF generuje się w 0 milisekund, bo jest bezpośrednią konsekwencją wzoru matematycznego, a nie przybliżeniem SHAP.
+
+---
+
+### 3. Trzy twarde liczby mojego planu
+
+1.  **Gini 0.71:** Tracimy zaledwie 3 punkty Gini w stosunku do "czarnej skrzynki" Krzysztofa (0.74), ale zyskujemy 26 punktów ponad obecny model regułowy (0.45). To daje nam ok. **25 mln PLN dodatkowego zysku rocznie** zamiast obiecywanych przez niego (i nierealnych) 32 mln.
+2.  **60 dni do produkcji:** Czas wdrożenia produkcyjnego. Ponieważ model GAM to czysty SQL, pomijamy cały proces zakupowy IT i integrację skomplikowanego stacku MLOps. Kod trafia na produkcję w najbliższym oknie wydawniczym.
+3.  **0 PLN kosztów licencji i infrastruktury:** Wykorzystujemy istniejący silnik decyzyjny. Cały budżet 3.8 mln PLN zamiast na serwery i konsultantów od MLOps przeznaczamy na zakup lepszych danych zewnętrznych (np. PSD2, telemetria), co podniesie nasze Gini o kolejne 2 punkty w sposób bezpieczny prawnie.
+
+Krzysztof chce budować fabrykę rakiet, żeby przewieźć paczkę na drugą stronę ulicy. My bierzemy rower i dostarczamy paczkę jutro rano. Co wybiera zarząd? Realne 25 mln PLN w 2 miesiące, czy obietnicę 32 mln PLN, która skończy się karą od KNF i zwolnieniami?

@@ -1,0 +1,23 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Do moderatora: Piotr próbuje grać twardziela, bo boi się bankructwa. Jego wywody prawne są dziurawe jak kod, który nam dostarczył. Przekaż mu moją ostateczną odpowiedź. To jest moja ostatnia oferta. Jeśli jej nie przyjmie, puszczę jego firmę z torbami, a straty wpiszę w koszty operacyjne – stać mnie na to, jego nie.
+
+Oto wiadomość do Piotra:
+
+***
+
+Piotr. Twoja lekcja prawa i medycyny jest równie płytka, co wasz rygor inżynieryjny. Skoro tak chętnie cytujesz Kodeks Cywilny, zapomniałeś o **art. 651 K.C.** Jako profesjonalista miałeś ustawowy obowiązek niezwłocznie uprzedzić nas na piśmie, że dostarczone założenia lub brak dokumentacji uniemożliwiają prawidłowe wykonanie dzieła. Zamiast tego woleliście milczeć, mockować dane i przez 15 miesięcy wystawiać faktury na kolejne miliony, raportując w Excelach, że wszystko jest pod kontrolą. W sądzie to nie jest „brak współdziałania wierzyciela” – to jest świadome wprowadzanie w błąd w celu osiągnięcia korzyści majątkowej. Mój dział prawny zmiażdży was w pierwszej instancji.
+
+Co do Twojej metafory medycznej: jeśli chirurg widzi, że pacjent żąda operacji brudnym skalpelem, i ją przeprowadza dla pieniędzy, zamiast odmówić – traci prawo do wykonywania zawodu i idzie do więzienia. Wy jesteście tym chirurgiem.
+
+Jednak jestem pragmatykiem. Interesuje mnie działający system, a nie licytowanie się na trupy. Oto moje **ostateczne, nienegocjowalne warunki ugody (Runda 3)**. Jeśli odrzucisz choćby jeden punkt, moderator podzieli winę, a ja uruchomię machinę prawną, która zetrze twój software house z rynku.
+
+1. **Odpowiedzialność i Koszty:** Wy odpowiadacie w 100% za stabilność aplikacji, błędy współbieżności i deadlocki. Całość refaktoringu i optymalizacji kodu robicie na WŁASNY koszt. Nie dopłacimy wam ani grosza do tych 4,5 mln, które już skonsumowaliście.
+2. **Staging i Dokumentacja:** Dokumentację ERP i dostęp do środowiska Staging (postawionego na naszej infrastrukturze chmurowej – ze względów bezpieczeństwa nie dopuściłbym waszych ludzi do naszych systemów) otrzymacie w ciągu 7 dni roboczych.
+3. **Czas to pieniądz (45 dni):** Nie dostaniesz 90 dni na naprawę tego, co zepsuliście. Daję wam **45 dni** od momentu udostępnienia Stagingu na dostarczenie w pełni stabilnego systemu.
+4. **Rygor operacyjny (Weekly Milestones):** Koniec z raportami w Excelu. Co tydzień wasz kod ma być wdrażany na Staging i weryfikowany przez naszego architekta. Opóźnienie któregokolwiek kamienia milowego o więcej niż 48 godzin oznacza natychmiastowe zerwanie ugody i wejście na drogę sądową.
+5. **Testy obciążeniowe:** Po 45 dniach przeprowadzamy test obciążeniowy na 50 000 jednoczesnych użytkowników. System ma utrzymać SLA 99.9%. Koszt infrastruktury testowej bierzemy na siebie, ale testy QA i poprawki wydajnościowe to wasz obowiązek.
+
+To jest oferta ratunkowa dla Twojej firmy. Podpisujesz ten aneks i udowadniasz, że potraficie dowozić projekty, albo kończymy tę farsę i pozwalam moim prawnikom zarobić na waszej upadłości. Czas start.

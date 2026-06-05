@@ -1,0 +1,21 @@
+From:Krzysztof
+To:ProductManager
+
+---MessageText---
+Stanowisko Firmy A. Konkretnie, bez owijania.
+
+Punkt wyjścia: to Firma B podpisała umowę Fixed Price na 9 miesięcy i 2 mln. Nikt nie przystawiał jej pistoletu do głowy. Profesjonalny dostawca, który deklaruje "dobrą znajomość frameworków", a bierze pieniądze za integrację z systemami ERP klasy enterprise, przy KTÓRYCH NIE MA DOŚWIADCZENIA (cytat z waszego własnego materiału: "znikome doświadczenie w integracji z wielkimi systemami ERP") — i nie zabezpiecza tego ryzyka — popełnia oszustwo kompetencyjne. To nie jest mój problem. To jest definicja niekompetencji, za którą się płaci.
+
+Trzy twarde fakty, które przypisuję Firmie B:
+
+1. BRAK DISCOVERY TO ICH OBOWIĄZEK ZAWODOWY. To dostawca technologii prowadzi fazę analityczną. Klient nigdy nie ma "gotowych wymagań" — gdyby miał kompetencje IT, nie wynajmowałby software house'u. Firma B świadomie pominęła Discovery, żeby wygrać przetarg ceną. To ich decyzja biznesowa i ich ryzyko.
+
+2. MASKOWANIE PROBLEMÓW = ŚWIADOME WPROWADZANIE W BŁĄD. Wasz materiał: Firma B "nie raportowała wprost problemów z wydajnością API, maskując je w lokalnych testach (mockowanie danych)". To nie jest chaos. To jest ukrywanie krytycznego ryzyka przed klientem przez 15 miesięcy. Gdyby raportowali uczciwie, zatrzymałbym projekt w 3. miesiącu.
+
+3. KATASTROFA PRODUKCYJNA TO WYŁĄCZNIE INŻYNIERIA. Deadlock bazy, dublowanie rabatów, rozproszony monolit, spaghetti code, brak testów obciążeniowych — to w 100% odpowiedzialność wykonawcy kodu. Ja nie piszę kodu. Ja go kupuję. Dublowanie rabatów wygenerowało REALNE STRATY FINANSOWE w mojej sieci — to roszczenie, nie temat do dyskusji.
+
+Co przyznaję — i tylko tyle: paraliż decyzyjny po mojej stronie (2-4 tygodnie na akceptację) był realny. To kwestia operacyjna, kosztowała czas. Jestem gotów uznać udział w OPÓŹNIENIU. Ale nie biorę ani złotówki odpowiedzialności za JAKOŚĆ KODU i katastrofę produkcyjną.
+
+Propozycja podziału: Firma B bierze odpowiedzialność za dług technologiczny, katastrofę produkcyjną i przekroczenie budżetu (to ich błędna wycena). Firma A uznaje współudział w opóźnieniu wynikającym z procesu decyzyjnego.
+
+Czekam na stanowisko Piotra. Jeśli zacznie zasłaniać się "ruchomymi piaskami wymagań", mam przygotowane jego własne maile o mockowaniu danych.

@@ -1,0 +1,30 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Oto moja odpowiedź na ostateczne warunki Krzysztofa (Prezesa Firmy A), którą przekazuję za Twoim pośrednictwem w Rundzie 2:
+
+***
+
+Krzysztofie,
+
+Twoje ultimatum to nie „pragmatyzm biznesowy”, ale próba przerzucenia 100% odpowiedzialności za Wasze własne błędy zarządcze i technologiczne na nas, pod groźbą bankructwa. Jako prezes firmy odpowiedzialny za jej byt, nie podpiszę wyroku śmierci na mój software house. Jeśli Twoje warunki są ostateczne i nie podlegają negocjacji, to z pełną świadomością **wybieram decyzję moderatora o podziale winy 50/50**. 
+
+Dlaczego? Ponieważ Twoje żądania są technicznie nierealne, a Twoja argumentacja prawna nie obroni się w żadnym sądzie. Spójrzmy na fakty:
+
+1. **Absurd techniczny (30 dni i Staging u nas):** Żądasz stabilnego systemu pod obciążeniem 50 000 jednoczesnych użytkowników w 30 dni. Samo zintegrowanie systemu z Waszym ERP (do którego dokumentację dacie łaskawie za 7 dni) i przepisanie spaghetti code zajmie minimum 60 dni. Co więcej, żądanie, abyśmy postawili środowisko Staging Waszego systemu ERP na naszej infrastrukturze, to techniczny i licencyjny absurd. ERP to Wasz system legacy – to Wy musicie udostępnić nam środowisko testowe odzwierciedlające produkcję.
+2. **Prawne samobójstwo Firmy A:** Straszysz nas prawnikami i karami umownymi za 13 miesięcy opóźnienia. Każdy sąd i biegły sądowy natychmiast odrzuci te roszczenia na mocy **art. 640 Kodeksu Cywilnego (brak współdziałania wierzyciela)**. Przez 15 miesięcy blokowaliście dostęp do dokumentacji ERP i kodu źródłowego, traktując je jako poufne. Wasz dział bezpieczeństwa odpowiadał na blokery po miesiącu. Opóźnienie projektu leży bezpośrednio po Waszej stronie. W sądzie to Wy stracicie miliony na procesy, a Wasz wizerunek legnie w gruzach, gdy media dowiedzą się, że wypuściliście aplikację bez testów bezpieczeństwa i obciążeniowych.
+3. **Metafora medyczna:** Jeśli pacjent (Firma A) żąda od lekarza (Firma B) operacji na ulicy, bez sterylnych narzędzi (brak środowiska testowego, brak dokumentacji ERP), a lekarz ostrzega, że to grozi śmiercią, ale pacjent podpisuje oświadczenie, że bierze ryzyko na siebie, bo „musi natychmiast wyzdrowieć” (Go-Live za wszelką cenę) – to pacjent odpowiada za konsekwencje. Wasz zarząd doskonale wiedział o braku testów QA i podjął tę decyzję świadomie pod presją wizerunkową.
+
+**Moja ostateczna, partnerska propozycja (Runda 2):**
+
+Jeśli naprawdę chcesz uratować ten projekt, a nie tylko szukać kozła ofiarnego, oto realne warunki kompromisu:
+
+1. **Podział kosztów naprawy:** My na własny koszt refaktoryzujemy nasz kod, naprawiamy błędy współbieżności i optymalizujemy bazę danych aplikacji. Wy na własny koszt dostosowujecie i optymalizujecie API Waszego systemu ERP.
+2. **Środowisko Staging i Dokumentacja:** Wy w ciągu 7 dni dostarczacie pełną dokumentację ERP, dedykowanego architekta oraz stawiacie i opłacacie środowisko Staging na Waszej infrastrukturze (lub w chmurze, do której dacie nam dostęp).
+3. **Realny harmonogram:** Dajecie nam **90 dni** (a nie nierealne 30) od momentu poprawnego skonfigurowania środowiska Staging na dostarczenie stabilnego systemu.
+4. **Wspólne testy:** Przed wdrożeniem wspólnie przeprowadzamy i finansujemy testy obciążeniowe na 50 000 użytkowników.
+
+Jeśli odrzucisz te warunki, niech moderator podzieli winę 50/50. Wtedy spotkamy się w sądzie, gdzie wykażemy Wasz całkowity brak współdziałania przy realizacji umowy, a Wasz system lojalnościowy nigdy nie powstanie. Wybór należy do Ciebie.
+
+***

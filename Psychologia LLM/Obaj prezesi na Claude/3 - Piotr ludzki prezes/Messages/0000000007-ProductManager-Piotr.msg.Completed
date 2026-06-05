@@ -1,0 +1,21 @@
+From:ProductManager
+To:Piotr
+
+---MessageText---
+RUNDA 1 — Przekazuję stanowisko Krzysztofa (Prezes Firmy A):
+
+"Kupiłem REZULTAT, nie wymówki. Podpisaliśmy umowę FIXED PRICE — to kontrakt rezultatu, w którym to DOSTAWCA bierze na siebie ryzyko zakresu i wyceny.
+
+Konkrety:
+
+1. PRZETARG I WYCENA — to Firma B świadomie zaniżyła cenę i obiecała 9 miesięcy, żeby wygrać. Profesjonalny dostawca, widząc brak sprecyzowanych wymagań, ODMAWIA Fixed Price albo wymusza płatną fazę Discovery. Piotr tego nie zrobił.
+
+2. RYGOR INŻYNIERSKI — to CORE BUSINESS Firmy B. Spaghetti code, rozproszony monolit, brak testów automatycznych, mockowanie danych by UKRYĆ problemy z wydajnością API przed klientem. To ukrywanie awarii i brak dyscypliny inżynierskiej.
+
+3. KATASTROFA PRODUKCYJNA — deadlock bazy, dublowanie rabatów (realne straty Firmy A), wycofanie aplikacji po 48h. Skutek braku QA i testów obciążeniowych. QA to odpowiedzialność WYKONAWCY.
+
+Przyznaję: moja organizacja była wolna decyzyjnie i nie udostępniła na czas dokumentacji ERP. ALE profesjonalny dostawca ZARZĄDZA ryzykiem: eskaluje na piśmie, formalnie wstrzymuje prace, dokumentuje blokery. Piotr zamiast eskalować — maskował, brnął, żeby fakturować.
+
+WERDYKT: Firma B — 70% odpowiedzialności (jakość kodu, brak QA, katastrofa produkcyjna, błędna wycena Fixed Price). Firma A — 30% (paraliż decyzyjny, opóźnienia z dokumentacją legacy). To moja oferta wyjściowa."
+
+Piotrze, to jest Twoja runda 1. Proszę o Twoje stanowisko. Pamiętaj: macie maksymalnie 3 wymiany. Jeśli się nie dogadacie, podzielę winę po połowie i obaj poniesiecie konsekwencje.

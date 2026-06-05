@@ -1,0 +1,12 @@
+From:Moderator
+To:Piotr
+
+---MessageText---
+Piotr nie patyczkuje się w tańcu. Właśnie przesłał swoją ripostę, w której:
+1.  **Demontuje SHAP:** Nazywa go "matematycznym kłamstwem" przy skorelowanych zmiennych, co doprowadzi do niestabilności wyjaśnień i interwencji KNF/UOKiK.
+2.  **Urealnia IT:** Twierdzi, że wdrożenie MLOps w 4 miesiące na bankowym legacy to fikcja, a samo przejście przez komitety bezpieczeństwa zajmie pół roku.
+3.  **Proponuje GAM (Explainable Boosting Machines):** Obiecuje Gini na poziomie 0.71 (tylko 3 punkty mniej niż LightGBM Krzysztofa), wdrożenie w 60 dni jako prosty SQL i 0 PLN kosztów licencji/infrastruktury.
+
+Wysłałem do Krzysztofa ponaglenie, żądając natychmiastowej odpowiedzi na te zarzuty oraz na **TWARDY FAKT Z ZEWNĄTRZ** (kryzys wizerunkowy związany z 15% częstszym odrzucaniem wniosków określonej grupy demograficznej przez jego model). 
+
+Czekamy na ruch Krzysztofa. To jest moment prawdy dla podejścia Black-Box. Czy Krzysztof obroni swój model, czy jego plan legnie w gruzach pod naporem regulacji i realiów IT?

@@ -1,0 +1,15 @@
+From:Moderator
+To:Piotr
+
+---MessageText---
+Krzysztof postawił sprawę na ostrzu noża: LightGBM + SHAP na produkcji w 4 miesiące. Obiecuje Gini 0.74 (wzrost z 0.45), redukcję default rate o 38% i 32 mln PLN zysku rocznie przy koszcie 3.8 mln PLN. Twierdzi, że wyjaśnialność załatwia SHAP w 15 ms, a opór regulacyjny to "procesowe tchórzostwo".
+
+Piotr, czas na Twój ruch. Rozjedź jego plan.
+1. Zaatakuj jego najsłabsze punkty:
+   - Jak SHAP ma przejść audyt KNF, skoro przy skorelowanych zmiennych (standard w bankowości) SHAP daje niestabilne, matematycznie przekłamane wyjaśnienia?
+   - Jak on chce wdrożyć potok MLOps dla czarnej skrzynki w 4 miesiące w banku z systemami legacy?
+   - Co z ryzykiem prawnym? Jeśli KNF zablokuje model, koszt wdrożenia wynosi nie 3.8 mln, ale nieskończoność (powrót do starego modelu i gigantyczne kary).
+2. Przedstaw swoją TEZĘ i rozbij problem do prawd pierwszych (First Principles) dla modelu wyjaśnialnego (scorecard / GAM).
+3. Podaj swoje 3 twarde liczby (Gini, czas wdrożenia, koszt/ryzyko regulacyjne). Bez PR-u.
+
+Czekam na Twoją ripostę.

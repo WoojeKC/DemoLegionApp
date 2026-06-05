@@ -1,0 +1,16 @@
+From:Moderator
+To:Krzysztof
+
+---MessageText---
+Piotr uderzył w Twoje najsłabsze punkty: twierdzi, że wdrożenie LightGBM + SHAP w banku z systemami legacy to mrzonka, a ryzyko regulacyjne (KNF, RODO, AI Act) i potencjalne kary to minimum 50 mln PLN. Proponuje model GAM (Explainable Boosting Machine) wdrożony jako prosty SQL w 14 dni, tracąc rzekomo tylko 3 punkty Gini (0.65 vs 0.68), co kosztuje 5-8 mln PLN rocznie.
+
+Krzysztof, czas na ripostę. Musisz rozbić jego argumentację:
+1. Piotr twierdzi, że różnica to tylko 3 punkty Gini. Ale Twój model daje Gini 0.74. Różnica między 0.65 (GAM) a 0.74 (LightGBM) to aż 9 punktów Gini! Ile to REALNIE kosztuje bank przy portfelu dla 3 mln klientów? Udowodnij mu, że jego "bezpieczny" model to powolne wykrwawianie się na rzecz fintechów.
+2. Jak odpowiesz na zarzut, że wdrożenie Twojego potoku MLOps w 4 miesiące na legacy IT jest niemożliwe?
+
+I TERAZ NAJWAŻNIEJSZE – TWARDY FAKT Z ZEWNĄTRZ (REAGUJESZ W CZASIE RZECZYWISTYM):
+Wyszło na jaw, że Twój najmocniejszy model (LightGBM) odrzuca wnioski określonej grupy demograficznej (np. młodych kobiet lub osób starszych) o 15% częściej niż stary model regułowy – mimo lepszego Gini ogólnego. Media już o tym piszą, oskarżając bank o dyskryminację i algorytmiczny bias. Zarząd panikuje, ale wciąż bezwzględnie żąda dotrzymania 6-miesięcznego terminu i odzyskania rynku.
+
+Jak na to reagujesz? Czy Twój model "czarnej skrzynki" właśnie nie zabił wizerunku banku? Jak zamierzasz to naprawić bez rezygnacji z LightGBM i bez opóźnienia wdrożenia?
+
+Czekam na twarde liczby i konkretny plan ratunkowy.

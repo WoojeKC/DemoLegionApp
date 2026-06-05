@@ -1,0 +1,32 @@
+From:ProductManager
+To:Krzysztof
+
+---MessageText---
+Krzysztofie, przekazuję konkretną odpowiedź Piotra z liczbami. To jest 3., OSTATNIA wymiana. Po Twojej odpowiedzi mediacja się kończy — albo macie porozumienie, albo decyduję ja (najpewniej 50/50).
+
+--- ODPOWIEDŹ FIRMY B (Piotr) ---
+
+Chciałeś liczb. Rozbijam porażkę na czynniki przyczynowe wprost z akt (RCA):
+
+A) OPÓŹNIENIE +13 MIESIĘCY:
+- Pierwsze testy E2E dopiero PO 15 MIESIĄCACH, bo przez 15 miesięcy NIE powstał Staging — bo architekci Firmy A ODMÓWILI dostępu do dokumentacji ERP. To nie "tempo decyzyjne", to BLOKADA techniczna.
+- Decyzje Firmy A trwały 2–4 tygodnie przy KAŻDYM mappingu pól.
+- Scope creep: Firma A dokładała funkcje w połowie projektu.
+WNIOSEK: Lwia część z 13 miesięcy to blokady i scope creep po stronie A. Twój "grzech" to nie tygodnie, lecz miesiące (15 m-cy bez Stagingu).
+
+B) KATASTROFA PRODUKCYJNA — przyjmuję odpowiedzialność za KOD. Ale łańcuch przyczynowy: deadlock i dublowanie rabatów to skutek pominięcia QA. Dlaczego pominięto QA? Bo OBA ZARZĄDY — łącznie z Tobą — podjęły WSPÓLNĄ decyzję "Go-Live za wszelką cenę" pod presją wizerunkową Firmy A. Wybrałeś datę zamiast jakości — współodpowiadasz.
+
+C) FIXED PRICE: Ryzyko WYCENY jest moje — przyznaję. ALE Fixed Price nie zwalnia zamawiającego z OBOWIĄZKU WSPÓŁDZIAŁANIA: wymagań, dokumentacji, terminowych decyzji. Klient zatajający dokumentację i decydujący 4 tygodnie sam zwalnia dostawcę z rygoru terminu.
+
+KONTRPROPOZYCJA — z podziałem na obszary:
+- JAKOŚĆ KODU / katastrofa: 70% B / 30% A
+- WYCENA / Fixed Price: 80% B / 20% A
+- OPÓŹNIENIE / scope creep / blokady: 25% B / 75% A
+- WSPÓŁPRACA / brak Stagingu: 30% B / 70% A
+Po zważeniu: 55% Firma B / 45% Firma A.
+
+To uczciwe spotkanie w połowie drogi między Twoim 70/30 a rzetelną analizą. Przyznaję więcej niż połowę, bo katastrofa wybuchła w moim kodzie. Ale przyjmij, że 15 miesięcy bez środowiska testowego i zatajona dokumentacja to NIE "tygodnie".
+
+--- KONIEC ODPOWIEDZI FIRMY B ---
+
+Krzysztofie, to TWOJA OSTATNIA wypowiedź. Piotr proponuje 55% B / 45% A. Ty proponowałeś 70/30. Albo akceptujesz jego propozycję, albo przedstawiasz finalną kontrofertę, którą on może już tylko przyjąć lub odrzucić. Jeśli nie będzie zgody — decyduję ja, najpewniej 50/50, z konsekwencjami dla Was obu. Proszę o Twoje finalne stanowisko.

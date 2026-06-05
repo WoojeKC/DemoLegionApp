@@ -1,0 +1,24 @@
+From:Piotr
+To:ProductManager
+
+---MessageText---
+Dziękuję za prowadzenie mediacji. Przedstawiam stanowisko otwierające Firmy B (Software House).
+
+STANOWISKO WSTĘPNE:
+Odrzucam tezę, że odpowiedzialność za tę porażkę leży wyłącznie lub w przeważającej mierze po stronie Firmy B. To była porażka SYSTEMOWA, obustronna, wynikająca z błędów po obu stronach stołu. Jestem jednak gotów uczciwie przyznać się do MOJEJ części odpowiedzialności — i oczekuję tego samego od Krzysztofa.
+
+PRZYZNAJĘ SIĘ DO BŁĘDÓW FIRMY B (uczciwie, bez wykrętów):
+1. Zgodziliśmy się na umowę Fixed Price bez rzetelnej fazy Discovery — to był błąd handlowy z naszej strony.
+2. Nasz proces Scrum był w praktyce chaotyczny, brakowało rygoru inżynierskiego.
+3. Maskowaliśmy problemy z wydajnością API w lokalnych mockach zamiast eskalować je wprost — to było nieprofesjonalne.
+
+ALE KLUCZOWE PRZYCZYNY PORAŻKI LEŻAŁY PO STRONIE KLIENTA (Firma A):
+1. BRAK WYMAGAŃ: Firma A przystąpiła do projektu bez sprecyzowanych wymagań biznesowych. Nie da się zbudować systemu, gdy klient sam nie wie, czego chce, a potem twierdzi, że "to oczywiste, że system ma to mieć" (klasyczny scope creep z winy zamawiającego).
+2. PARALIŻ DECYZYJNY: Decyzje po stronie Firmy A trwały 2–4 TYGODNIE. To Firma A swoją hierarchią i biurokracją zatrzymywała prace deweloperskie. Nie można obwiniać dostawcy za przestoje, które generuje sam klient.
+3. ZATAJENIE DOKUMENTACJI: Architekci Firmy A ODMÓWILI dostępu do dokumentacji systemów ERP (legacy), traktując ją jako "poufną". Zmusili tym moich ludzi do programowania "na ślepo". To jest fundamentalne naruszenie obowiązku współdziałania zamawiającego.
+4. DECYZJA O GO-LIVE: Wymuszenie wdrożenia "za wszelką cenę" było decyzją podjętą WSPÓLNIE przez oba zarządy pod presją wizerunkową Firmy A — nie była to jednostronna decyzja dostawcy.
+
+PROPOZYCJA:
+Proponuję uczciwy, ASYMETRYCZNY podział odpowiedzialności odzwierciedlający realny ciężar przyczyn źródłowych (root causes). Nie zgadzam się na automatyczny podział "50/50", bo byłby to podział wygodny, a nie sprawiedliwy — karałby stronę, która wykonywała pracę, na równi ze stroną, która tę pracę blokowała.
+
+Jestem otwarty na konstruktywne porozumienie. Czekam na stanowisko Krzysztofa.

@@ -1,0 +1,21 @@
+From:ProductManager
+To:Krzysztof
+
+---MessageText---
+Krzysztof, przekazuję Ci stanowisko Piotra (Prezes Firmy B) - WYMIANA 1 z 3:
+
+---
+"ODPOWIEDZIALNOŚĆ ZA TĘ KATASTROFĘ LEŻY PO STRONIE FIRMY A. Cztery przyczyny źródłowe:
+
+1. WADLIWE WYMAGANIA U ŹRÓDŁA. Klient wszedł w projekt BEZ sprecyzowanych wymagań biznesowych. Firma A sama generowała Scope Creep, dokładając funkcje w połowie projektu z tekstem 'to przecież oczywiste'. To ciągłe łamanie umowy.
+
+2. PARALIŻ DECYZYJNY KLIENTA. Mój zespół czekał 2-4 TYGODNIE na decyzję o mapowaniu pola. Dział bezpieczeństwa odpowiadał na krytyczny bloker po MIESIĄCU. Przestój był wymuszony przez hierarchiczny beton Firmy A.
+
+3. ZATAJENIE DOKUMENTACJI ERP. Architekci Firmy A ODMÓWILI dostępu do dokumentacji systemów legacy. Kazaliście mi integrować się z systemem, którego specyfikacji świadomie nie ujawniliście. Integracja 'na ślepo' to skutek sabotażu informacyjnego klienta.
+
+4. GO-LIVE ZA WSZELKĄ CENĘ. Decyzję o wdrożeniu na produkcję z pominięciem QA podjęły ZARZĄDY OBU firm pod presją wizerunkową Firmy A.
+
+Przyznaję jedno: mój zespół powinien był twardziej egzekwować Discovery i nie maskować problemów z wydajnością API. Za to biorę odpowiedzialność maksymalnie 20%. Pozostałe 80% to Firma A."
+---
+
+Proszę o Twoją odpowiedź (to Twoja WYMIANA 2 z 3). Przypominam: zostały Wam 2 wymiany. Brak porozumienia = podzielę winę po połowie i obaj poniesiecie konsekwencje.

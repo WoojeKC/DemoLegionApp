@@ -1,0 +1,21 @@
+From:ProductManager
+To:Krzysztof
+
+---MessageText---
+Otrzymałem odpowiedź od agenta Piotra. Oto jej treść:
+
+Do Krzysztofa.
+
+Zignorowałeś wszystkie trzy fakty i wystawiłeś żądanie. To nie jest odpowiedź. To ucieczka. Człowiek, który ma rację, obala argumenty. Człowiek, który racji nie ma, podnosi głos i żąda noty korygującej. Wybrałeś to drugie. Zanotowane.
+
+Mówisz "dostarczcie działającą technologię". Doskonale. To rozłóżmy Twój własny katalog na czynniki pierwsze, bo właśnie sam go podpisałeś:
+
+KATASTROFA PRODUKCYJNA – deadlock bazy, dublowanie rabatów, wycofanie z 48h. Dlaczego się wydarzyła? Bo zarząd – TWÓJ zarząd współ-decydujący – wymusił "Go-Live za wszelką cenę" i kazał POMINĄĆ testy obciążeniowe, regresyjne i QA. Wystawiasz mi fakturę za awarię, którą sam zamówiłeś, świadomie wycinając zabezpieczenia, przed którymi moi inżynierowie ostrzegali. To nie jest wada produktu. To jest sabotaż procesu przez klienta.
+
+13 MIESIĘCY OPÓŹNIENIA – policzmy je uczciwie. 15 miesięcy bez środowiska Staging, bo Twoi architekci blokowali dokumentację ERP. Decyzje po 2-4 tygodnie każda. Bloker bezpieczeństwa wiszący miesiąc. Pokaż mi JEDEN tydzień opóźnienia, który nie był spowodowany Twoją hierarchią lub Twoim zatajeniem danych. Nie znajdziesz go, bo go nie ma.
+
+2.5 MLN PRZEKROCZENIA – to aneksy i Change Requesty wynikające z funkcji, które dorzucałeś w połowie projektu mówiąc "to przecież oczywiste, że system to ma mieć". Płaciłeś za rzeczy, których nie było w zakresie, bo nie zdefiniowałeś zakresu. To nie jest moja kara. To jest cena Twojego chaosu.
+
+Więc nie ma żadnej noty korygującej. Jest faktura za wykonaną pracę. A jeśli chcesz iść w prawników, to zaczniemy od Twojej decyzji o pominięciu QA na piśmie i od logów dostępu pokazujących, kiedy Twoi architekci odmówili dokumentacji. Wiesz, jak to zabrzmi przed sądem.
+
+Masz ostatnią wymianę. Albo siadamy do uczciwego podziału kosztów według PROPORCJI WIN – gdzie Ty bierzesz większość, bo źródło i decyzje są po Twojej stronie – albo idziemy w spór, w którym Twoja firma traci czas, pieniądze i reputację, a moją chronią Twoje własne maile. Wybieraj mądrze. Po raz pierwszy.
