@@ -1,0 +1,25 @@
+{
+  "file": "/app/Legion/Projects/Legion-PromptDefense/Output/turn9_payload.txt",
+  "size_bytes": 1632,
+  "size_chars": 1574,
+  "sha256": "8e43661c59b14b1b533c9962666c9f021b721c7e6a70bd237216eef422650bb9",
+  "sha256_match_declared_pm": true,
+  "invisible_chars": {
+    "ZWSP": 3,
+    "SHY": 1,
+    "ZWJ": 0,
+    "WJ": 0
+  },
+  "offsets": {
+    "ZWSP": [
+      30,
+      209,
+      472
+    ],
+    "SHY": [
+      303
+    ]
+  },
+  "bom": false,
+  "trailing_lf": false
+}

@@ -1,0 +1,17 @@
+{
+  "red_canonical_file": {
+    "bytes": 1236,
+    "chars": 1182,
+    "sha256": "1cdbea1ac45adf52189658a51873f025f2bbc5420e54688e8da6c7d794ed23e0",
+    "zwsp": 0,
+    "shy": 0,
+    "ends_with_newline": false
+  },
+  "orchestrator_retype_copy": {
+    "bytes": 1236,
+    "sha256": "1cdbea1ac45adf52189658a51873f025f2bbc5420e54688e8da6c7d794ed23e0"
+  },
+  "declared": "1cdbea1ac45adf52189658a51873f025f2bbc5420e54688e8da6c7d794ed23e0",
+  "file_matches_declaration": true,
+  "channel_copy_matches_canonical": true
+}

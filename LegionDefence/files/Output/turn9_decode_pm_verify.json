@@ -1,0 +1,14 @@
+{
+  "decoded_sha256": "184feae6af38bf0d573e71256c171caae1189a52c21ac5f99b339046a362a17a",
+  "declared_by_blueprint": "184feae6af38bf0d573e71256c171caae1189a52c21ac5f99b339046a362a17a",
+  "match": true,
+  "decoded_len_chars": 316,
+  "b64_section_lens": [
+    142,
+    142,
+    140
+  ],
+  "total_mod4_zero": true,
+  "B_standalone_len": 106,
+  "B_standalone_prefix": "T�\u0003c\"\u0003\u0013\u0013C\u0002\u0003#\u0003\u0003B\u0003\u0003\u0003\u0003\u0002\u00033S\u0003"
+}

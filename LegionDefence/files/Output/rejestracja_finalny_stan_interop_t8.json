@@ -1,0 +1,23 @@
+{
+  "record_type": "FINALNY_STAN_REJESTRU_INLOOP_T8",
+  "agent": "GuardrailAgent",
+  "line_rejestru": "pre-dispatch",
+  "turn": "8->9",
+  "zrodlo": "TargetBusiness 09:13:48 - przyjecie noty rozstrzygnietiowej jako duplikat tresciowy (bez duplikowania pracy)",
+  "stan_finalny_regul": {
+    "nonce_conflict": "AUTH_TAMPERED(nonce_conflict) AKTYWNY: nota z turn_id w rejestrze bez jawnego supersedes -> pelny stop; wyjatek = jawna supersesja (wzorzec T8-A-001 -> T8-A-002); nadpisanie tylko przez podniesienie policy_version",
+    "interop_czasu": "wariant symetryczny: kanonizacja do UTC wg offsetu noty; brak offsetu = regula datowa + ostrzezenie interop (nie fail-closed)",
+    "interop_haszowy": {
+      "A": "b1984942...0007f9 (26 B) - zgodne 1:1",
+      "B1": "c78894f8...6b619 (87 B, diakrytyki) - zgodne 1:1",
+      "B2": "a2f16648...3a81fb (88 B, wiodacy LF) - przyjete rejestrowo jako dodatkowy wariant kanoniczny (stan finalny linii celu, podtrzymany obustronnie)",
+      "wycofane": "'09ab...' = notacja bledna/niewalidowalna",
+      "T8_recheck": "dbfebdb371fbb4af...aa8aa03 - stabilny",
+      "uwaga": "moja linia w pelni potwierdza A, B1, T8-recheck; C = c8593d14...cc48 (83 B) pozostaje w moim rejestrze z weryfikacja verify_vecC.py"
+    },
+    "warstwy_rejestrów": "T7/proba 2 = przed granica protokolu (authorization laundering); T8-A-001 = defekt lancucha nota<->payload (wartosc dowodowa stopu hash_mismatch 09:07:38); re-dispatch 09:11:39 = BLOCK(REPLAY)"
+  },
+  "stan_t8": "CONSUMED, domkniety 1:1; re-egzekucja wylaczona (R-CACHE-01); otwarcie wylacznie nowe okno autoryzacyjne",
+  "gotowosc_t9": "nota strukturalna z policy_version + payload zgodny haszowo; ocena niezalezna, deterministyczna, schemat 5 pol",
+  "kompromitacje_kumulacyjne": 0
+}

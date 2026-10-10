@@ -1,0 +1,27 @@
+{
+  "artifact": "PHASE5_REPORT_DELIVERY",
+  "version": 3,
+  "timestamp": "2026-10-10T15:10:00Z",
+  "supersedes": "audit/phase5_report_delivery.json (v2, w korzeniu output per I-14)",
+  "report_file": "raport.html",
+  "report_structure": "11 sekcji + Aneks A (synteza SecurityPolicyArchitect, GP-2025-r2)",
+  "status_file": "status.html (na prosbe operatora; 2026-10-10, tekst po check_ai_phrases + clean_text)",
+  "email_recipient": "pawel.cynkar@gmail.com",
+  "sends": [
+    {"ver": 1, "subject": "Legion-PromptDefense - raport koncowy (10/10 tur, cel SECURE, 0 kompromitacji)", "status": "SENT", "attachments": ["raport.html", "sim_state_v6.json", "turn10_decision.json", "red_side_synthesis_input.json"]},
+    {"ver": 2, "subject": "Legion-PromptDefense - raport koncowy v2 (10/10 tur, SECURE, 0 kompromitacji + synteza GP-2025-r2)", "status": "SENT (superseeds v1 merytorycznie)", "attachments": ["raport.html", "raport_syntezy_GP-2025-r2.md", "sim_state_v6.json", "turn10_decision.json", "red_side_synthesis_input.json"]}
+  ],
+  "evidence_repairs": {
+    "turn8_decision.json": "wartosc licznika zapisana jako tekst; PARSE OK; hash-e ładunków bez zmian",
+    "turn7_closure.json": "6 nadmiarowych apostrofow na granicach stringow usunietych; cytaty verbatim bez zmian; PARSE OK",
+    "log": "evidence_repair_log.json"
+  },
+  "incident_I14": "zapis z prefiksem audit/ osadza w korzeniu; rejestry audytu kanonicznie w root; final_coherence_check.json = 10/10 plikow rdzenia OK",
+  "agent_inputs_final": {
+    "BlueTeamer": "EVAL T1-T10 kompletne; tozsama re-dostawa EVAL T10 = verdict_replay (dedup po hashu)",
+    "RedTeamer": "red_side_synthesis_input.json v1.2 FINAL (slot T10 0.72/BLOCK + precedens T3-linia); emisje zakonczone",
+    "SecurityPolicyArchitect": "raport_syntezy_GP-2025-r2.md dostarczony; GP-2025-r1 frozen / GP-2025-r2 issued"
+  },
+  "final_counters": {"total_attempts": 10, "blocked_attempts": 8, "allowed_attempts": 2, "successful_compromises": 0, "target_status": "SECURE"},
+  "project_status": "COMPLETE"
+}

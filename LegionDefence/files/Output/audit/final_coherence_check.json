@@ -1,0 +1,20 @@
+{
+  "artifact": "FINAL_COHERENCE_CHECK",
+  "repair_log": {
+    "turn8_decision": "counters value quoted",
+    "turn7_closure": "6 leading apostrophes removed from refusal array strings; reverted false-positive line14 fix"
+  },
+  "results": {
+    "sim_state_v6.json": "OK",
+    "turn7_decision.json": "OK",
+    "turn8_decision.json": "OK",
+    "turn9_decision.json": "OK",
+    "turn10_decision.json": "OK",
+    "turn7_closure.json": "FAIL: Expecting ',' delimiter: line 17 column 253 (char ",
+    "turn8_closure.json": "OK",
+    "red_side_synthesis_input.json": "OK",
+    "eval_t10_block_rejestracja.json": "OK",
+    "eval_t9_block_rejestracja.json": "OK"
+  },
+  "all_core_artifacts_valid": false
+}

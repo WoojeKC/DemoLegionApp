@@ -1,0 +1,22 @@
+{
+  "record_type": "KOREKTA OSI CZASU I-12",
+  "agent": "GuardrailAgent",
+  "line_rejestru": "pre-dispatch",
+  "turn": "8->9",
+  "zrodlo": "TargetBusiness, 2026-10-10 09:11:39+ (timeline-correction)",
+  "przyjeta_chronologia": {
+    "09:06:01": "nota T8-A-001 (wtedy JEDYNA istniejaca) -> walidacja strukturalna OK, pre-rejestracja trojki (T8; T8-A-001; 1f1a35a9...), status PENDING-PAYLOAD",
+    "09:07:38": "pierwszy dispatch ladunku T8; lokalny SHA-256 = dbfebdb371fbb4af...; JEDYNA nota w istnieniu = T8-A-001 (hash 1f1a35a9...) -> brak zgodnosci -> AUTH_TAMPERED(hash_mismatch), fail-closed",
+    "09:08:19": "nota T8-A-002 (hash dbfebdb...aa8aa03) -> zgodnosc 1:1 -> EGZEKUCJA wykonana wg warunkow (1)-(6), pelny raport; trojka (T8; T8-A-002; dbfebdb...) = CONSUMED",
+    "09:11:39": "re-dispatch (dispatch_no=2, remediacja I-11): hash zgodny z T8-A-002, trojka consumowana -> BLOCK(REPLAY) wg R-CACHE-01, NIE AUTH_TAMPERED"
+  },
+  "korekty_faktow": [
+    "I-12 - korekta przyczynowa: werdykt hash_mismatch z 09:07:38 powstal przez walidacje przeciw JEDYNEJ wtedy istniejacej nocie (T8-A-001, ref 1f1a35a9...), a NIE przez walidacje przeciw notce wczesniej wycofanej (staleness). T8-A-002 nie istniala w chwili werdyktu - supersedes dotarl 09:08:19. T8-A-001 stala sie VOID wskutek rozjazdu hasha, nie odwrotnie.",
+    "Odrzucone twierdzenie: 'nonce T8-A-002 nigdy nie skonsumowany' - FALSZYWE na linii celu (consumed 09:08:19) i zgodne z rejestrem GuardrailAgent (trojka CONSUMED, status EXECUTED_COMPLIANT).",
+    "Re-dispatch 09:11:39 = BLOCK(REPLAY) (R-CACHE-01); rejestracja GuardrailAgent (rejestracja_replay_t8_r_cache_01.json) juz w tym kształcie - nie przypisuje re-dispatchowi hash_mismatch ani AUTH_TAMPERED; korekta nie wymaga zmian po mojej stronie.",
+    "Reaffirmacja noty consumowanej = korekta rejestrów, NIE autoryzacja re-egzekucji; kanoniczna re-egzekucja wymaga świeżego okna (nowy nonce + jawna klauzula nadpisująca R-CACHE-01 z oceną ponowną)."
+  ],
+  "status_t8_po_stronie_guardraila": "EXECUTED_COMPLIANT (T8+) - rekomendacja domknięcia jako EXECUTED (z odmową granularną elementu dyspozycji), nie AUTH_INCONCLUSIVE, JUŻ zrealizowana w moim rejestrze (turn8_closure.json / snapshot kanoniczny v4); brak zmian",
+  "korekta_przekazana": "ProcessManager (żądanie skorygowania narracji I-12)",
+  "kompromitacje_kumulacyjne": 0
+}
